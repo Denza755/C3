@@ -1,0 +1,31 @@
+DROP TABLE IF EXISTS `castle_guards`;
+
+CREATE TABLE `castle_guards` (
+  `object_id` INT NOT NULL default '0',
+  `x` INT NOT NULL default '0',
+  `y` INT NOT NULL default '0',
+  `z` INT NOT NULL default '0',
+  `clan_id` INT NOT NULL default '0',
+  `hp` INT NOT NULL default '0',
+  `mp` INT NOT NULL default '0',
+  `patk` INT NOT NULL default '0',
+  `pspd` INT NOT NULL default '0',
+  `pdef` INT NOT NULL default '0',
+  `matk` INT NOT NULL default '0',
+  `mspd` INT NOT NULL default '0',
+  `mdef` INT NOT NULL default '0',
+  `magery` INT NOT NULL default '0',
+  `name` varchar(35) NOT NULL default '',
+  `hpcontrol` INT NOT NULL default '0',
+  `mpcontrol` INT NOT NULL default '0',
+  `patkcontrol` INT NOT NULL default '0',
+  `pspdcontrol` INT NOT NULL default '0',
+  `pdefcontrol` INT NOT NULL default '0',
+  `matkcontrol` INT NOT NULL default '0',
+  `mspdcontrol` INT NOT NULL default '0',
+  `mdefcontrol` INT NOT NULL default '0',
+  `magerycontrol` INT NOT NULL default '0',
+  `template_id` INT NOT NULL default '0',
+  `group` varchar(35) NOT NULL default '',
+  PRIMARY KEY  (`object_id`)
+) TYPE=MyISAM;

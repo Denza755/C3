@@ -1,0 +1,3 @@
+Please change announcements.txt file.
+Viết tiếng Việt bằng UTF-8.
+По-русски пишите в UTF-8.

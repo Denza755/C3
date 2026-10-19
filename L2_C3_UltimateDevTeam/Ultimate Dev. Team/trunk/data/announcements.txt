@@ -1,0 +1,2 @@
+﻿data/announcements.txt 
+файл с вашими анонсами.

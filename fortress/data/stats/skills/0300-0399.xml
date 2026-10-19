@@ -1,0 +1,1148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<skill id="301" levels="5" name="Summon Big Boom">
+  <table name="#mpConsume"> 74 82 88 94 100 </table>
+  <table name="#itemConsumeCount"> 3 3 4 4 5 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="itemConsumeId" val="1458"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="itemConsumeCount" val="#itemConsumeCount"/>
+  <set name="reuseDelay" val="40000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="SUMMON"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <!-- Summon-specific -->
+  <table name="#npcIds">
+   12516 12517 12518 12519 12520
+  </table>
+  <set name="npcId" val="#npcIds"/>
+  <set name="expPenalty" val="0.3"/>
+  <set name="isCubic" val="false"/>
+  <for>
+  </for>
+</skill>
+<skill id="302" levels="9" name="Spoil Festival">
+  <table name="#mpConsume"> 74 93 113 132 150 172 184 194 204 </table>
+  <table name="#mLevel"> 28 36 43 49 55 62 66 70 74 </table>
+  <set name="magicLevel" val="#mLevel"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="205"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="1800"/>
+  <set name="skillType" val="SPOIL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="303" levels="4" name="Soul of Sagittarius">
+  <table name="#mp"> 185 271 316 364 </table>
+  <table name="#hpConsume"> 185 271 316 364 </table>
+  <set name="weaponsAllowed" val="32"/>
+  <set name="hpConsume" val="#hpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+       <add stat='maxMp' order='0x40' val='#mp'>
+         <using kind="Bow"/>
+       </add>
+    </effect>
+  </for>
+</skill>
+<skill id="304" levels="1" name="Song of Vitality">
+  <table name="#Tab-maxHp"> 1.25 </table>
+  <set name="mpConsume" val="60"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="120" count="1" val="0">
+      <mul  order='0x50' stat='maxHp' val="#Tab-maxHp"/>
+    </effect>
+  </for>
+</skill>
+<skill id="305" levels="1" name="Song of Vengeance">
+  <table name="#Tab-reflectDam"> 20.0 </table>
+  <set name="mpConsume" val="60"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="120" count="1" val="0">
+      <add  order='0x50' stat='reflectDam' val="#Tab-reflectDam"/>
+    </effect>
+  </for>
+</skill>
+<skill id="306" levels="1" name="Song of Flame Guard">
+  <set name="mpConsume" val="60"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="120" count="1" val="0" >
+      <sub stat="fireRes" val="30" order="0x40"/>
+    </effect>
+  </for>
+</skill>
+<skill id="307" levels="1" name="Dance of Aqua Guard">
+<set name="weaponsAllowed" val="512"/>
+<set name="mpConsume" val="60"/>
+<set name="target" val="TARGET_PARTY"/>
+<set name="skillRadius" val="900"/>
+<set name="reuseDelay" val="10000"/>
+<set name="skillTime" val="2000"/>
+<set name="skillType" val="BUFF"/>
+<set name="operateType" val="OP_ACTIVE"/>
+<set name="buffDuration" val="120000"/>
+<set name="castRange" val="-1"/>
+<for>
+  <effect name="Buff" time="120" count="1" val="0">
+    <sub stat="waterRes" val="30" order="0x40"/>
+  </effect>
+</for>
+</skill>
+<skill id="308" levels="1" name="Song of Storm Guard">
+  <set name="mpConsume" val="60"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="120" count="1" val="0" >
+      <sub stat="windRes" order="0x40" val="30"/>
+    </effect>
+  </for>
+</skill>
+<skill id="309" levels="1" name="Dance of Earth Guard">
+<set name="weaponsAllowed" val="512"/>
+<set name="mpConsume" val="60"/>
+<set name="target" val="TARGET_PARTY"/>
+<set name="skillRadius" val="900"/>
+<set name="reuseDelay" val="10000"/>
+<set name="skillTime" val="2000"/>
+<set name="skillType" val="BUFF"/>
+<set name="operateType" val="OP_ACTIVE"/>
+<set name="buffDuration" val="120000"/>
+<set name="castRange" val="-1"/>
+<for>
+  <effect name="Buff" time="120" count="1" val="0">
+    <sub stat="earthRes" val="30" order="0x40"/>
+  </effect>
+</for>
+</skill>
+<skill id="310" levels="1" name="Dance of Vampire">
+  <set name="weaponsAllowed" val="512"/>
+  <set name="mpConsume" val="60"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="120" count="1" val="0">
+      <add stat="absorbDam" val="10" order="0x40"/>
+    </effect>
+  </for>
+</skill>
+<skill id="311" levels="1" name="Dance of Protection">
+<set name="weaponsAllowed" val="512"/>
+<set name="mpConsume" val="60"/>
+<set name="target" val="TARGET_PARTY"/>
+<set name="skillRadius" val="900"/>
+<set name="reuseDelay" val="10000"/>
+<set name="skillTime" val="2000"/>
+<set name="skillType" val="BUFF"/>
+<set name="operateType" val="OP_ACTIVE"/>
+<set name="buffDuration" val="120000"/>
+<set name="castRange" val="-1"/>
+<for>
+  <effect name="Buff" time="120" count="1" val="0">
+    <sub stat="earthRes" val="30" order="0x40"/>
+  </effect>
+</for>
+</skill>
+<skill id="312" levels="20" name="Vicious Stance">
+ <table name="#mpConsume"> 4 5 5 6 7 7 8 9 9 10 10 11 11 12 12 13 13 13 14 14 </table>
+ <table name="#crit"> 4 8 12 16 20 24 28 32 36 40 44 46 50 54 58 64 68 72 76 80 </table>
+ <table name="#critMult"> 1.3 1.33 1.36 1.39 1.42 1.45 1.48 1.51 1.54 1.57 1.6 1.63 1.66 1.69 1.72 1.75 1.78 1.81 1.84 1.87 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="0x7fffffff" name="ManaDamOverTime" time="3" val="#mpConsume">
+      <add order="0x10" stat="cAtk" val="#crit"/>
+      <mul order="0x50" stat="cAtk" val="#critMult"/>
+      <mul order="0x50" stat="blowAtk" val="#critMult"/>
+    </effect>
+  </for>
+</skill>
+<skill id="313" levels="8" name="Snipe">
+  <table name="#mpConsume"> 55 58 60 62 64 65 67 69 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 </table>
+  <table name="#Acc"> 3 5 7 8 10 12 14 16 </table>
+  <table name="#rate"> 1.06 1.08 1.1 1.12 1.14 1.16 1.18 1.2 </table>
+  <set name="weaponsAllowed" val="32"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1800000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  <cond><using kind="Bow"/></cond>
+  <effect count="1" name="ImobileBuff" time="30" val="0">
+     <mul order="0x50" stat="pAtk" val="#rate"/>
+     <add order="0x40" stat="accCombat" val="#Acc"/>
+     <mul order="0x50" stat="rCrit" val="#rate"/>
+  </effect>
+  </for>
+</skill>
+<skill id="314" levels="16" name="Fatal Counter">
+<table name="#mpConsume">
+	129 132 135 135 138 140 143 145 148 150
+	153 155 157 160 162 164
+</table>
+<table name="#power">
+	2908.0 3030.0 3154.0 3280.0 3408.0 3537.0 3668.0 3800.0 3933.0
+	4067.0 4201.0 4336.0 4470.0 4604.0 4738.0 4870.0
+</table>
+  <set name="weaponsAllowed" val="32"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true" />
+  <set name="reuseDelay" val="25000" />
+  <set name="skillTime" val="3000" />
+  <set name="skillType" val="DEATHLINK_PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <for>
+  </for>
+</skill>
+<skill id="315" levels="16" name="Crush of Doom">
+<table name="#power">
+	4558.0 4750.0 4944.0 5142.0 5342.0 5545.0 5751.0 5958.0 6166.0 6376.0
+	6586.0 6797.0 7006.0 7218.0 7427.0 7635.0
+</table>
+<table name="#hpConsume">
+	231 235 236 241 245 250 254 258 263 267
+	271 275 279 283 287 290
+</table>
+  <set name="weaponsAllowed" val="2048"/>
+  <set name="hpConsume" val="#hpConsume"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="skillTime" val="1360"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="316" levels="1" name="Aegis">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <set stat="shldAngle" val="180" order="0x80"/>
+  </for>
+</skill>
+<skill id="317" levels="1" name="Focus Attack">
+ <table name="#acc"> 15 </table>
+ <table name="#mpConsume"> 7 </table>
+  <set name="weaponsAllowed" val="64"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="0x7fffffff" name="ManaDamOverTime" time="2" val="#mpConsume">
+      <add order="0x10" stat="accCombat" val="#acc"/>
+      <set order="0xff" stat="poleAngle" val="-1"/>
+    </effect>
+  </for>
+</skill>
+<skill id="318" levels="1" name="Aegis Stance">
+ <table name="#mpConsume"> 9 </table>
+ <table name="#ShieldDef"> 0.7 </table>
+ <table name="#Tab-pDef"> 1.35 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="0x7fffffff" name="ManaDamOverTime" time="2" val="#mpConsume">
+      <mul stat="sDef" val="#ShieldDef" order="0x50"/>
+      <set stat="shldAngle" val="180" order="0x80"/>
+    </effect>
+  </for>
+</skill>
+<skill id="319" levels="2" name="Agile Movement">
+<table name="#Accuracy"> 1.1 1.2 </table>
+<table name="#Speed"> 8 12 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <add order="0x40" stat="runSpd" val="#Speed">
+      <and>
+        <using kind="Light"/>
+        <not>
+		<using kind="Heavy,Magic"/>
+		</not>
+      </and>
+   </add>
+   <mul order="0x40" stat="accCombat" val="#Accuracy">
+      <and>
+        <using kind="Light"/>
+        <not>
+		<using kind="Heavy,Magic"/>
+		</not>
+	 </and>
+  </mul>
+  </for>
+</skill>
+<skill id="320" levels="10" name="Wrath">
+<table name="#mpConsume">
+	73 74 75 77 78 79 80 81 82 83
+</table>
+<table name="#CP">
+	0.93 0.90 0.88 0.85 0.83 0.80 0.78 0.75 0.73 0.7
+</table>
+  <set name="weaponsAllowed" val="64"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#CP"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="80"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="321" levels="10" name="Blinding Blow">
+  <table name="#mpConsume"> 133 135 137 139 141 143 145 147 149 151 </table>
+  <table name="#power"> 2751.0 2850.0 2950.0 3050.0 3151.0 3252.0 3353.0 3453.0 3553.0 3653.0 </table>
+  <table name="#runSpeed"> 5 6 7 8 9 10 11 12 13 14 </table>
+  <set name="weaponsAllowed" val="16"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="reuseDelay" val="11000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="FATALBLOW"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+    <effect count="1" name="Buff" time="10" val="0">
+   	  <div order="0x50" stat="runSpd" val="#runSpeed"/>
+    </effect>
+  </for>
+</skill>
+<skill id="322" levels="6" name="Shield Fortress">
+ <table name="#mpConsume"> 12 13 13 13 14 14 </table>
+ <table name="#ShieldDefRate"> 1.1 1.2 1.3 1.4 1.5 1.6 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="0x7fffffff" name="ManaDamOverTime" time="2" val="#mpConsume">
+      <mul stat="rShld" val="#ShieldDefRate" order="0x01"/>
+    </effect>
+  </for>
+</skill>
+<skill id="323" levels="1" name="Quiver of Arrow: Grade A">
+<!---
+	Summons between 450 and 1800 Mithril arrows. Consumes 1 Crystal: A Grade.
+-->
+  <set name="mpConsume" val="130"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="3000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="324" levels="1" name="Quiver of Arrow: Grade S">
+<!---
+	Summons between 650 and 2600 shining arrows. Consumes 1 Crystal: S Grade.
+-->
+  <set name="mpConsume" val="200"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="3000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="325" levels="1" name="Strider Siege Assault">
+<!---
+	Strider's powerful attack on castle gate and wall. Can only be used while one is riding on a strider.
+	Consumes 5 Spirit Ores. Power 15005.
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="326" levels="1" name="Build Advanced Headquarters">
+<!---
+	Only need add double HP to nps
+-->
+  <table name="#itemConsumeCount"> 300 </table>
+  <set name="mpConsume" val="30"/>
+  <set name="itemConsumeId" val="2131"/>
+  <set name="itemConsumeCount" val="#itemConsumeCount"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="35000"/>
+  <set name="skillTime" val="30000"/>
+  <set name="skillType" val="SIEGEFLAG"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="327" levels="1" name="Wyvern Aegis">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases P. Def and M.Def significantly. Can only be used while mounted. Requires 20 Spirit Ores. Effect 3.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="328" levels="1" name="Wisdom">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to Hold and Sleep.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="329" levels="1" name="Health">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to Poison and Bleed.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="330" levels="1" name="Skill Mastery">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Masters excellence in skills. Low possibility of being able to re-use skills without delay or doubles the duration. Influenced by STR.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="331" levels="1" name="Skill Mastery">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Masters excellence in skills. Low possibility of being able to re-use skills without delay or doubles the duration. Influenced by INT.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="332" levels="1" name="Extra Inventory">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Increases size of inventory.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="333" levels="1" name="Extra Sales Slots">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Increases private store sales slots.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="334" levels="1" name="Focus Skill Mastery">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Increases skill success rate significantly. MP will be consumed continuously.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="335" levels="1" name="Fortitude">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to Shock/Paralysis significantly. Continuously consumes MP while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="336" levels="1" name="Arcane Wisdom">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Significantly increases efficiency of magic and decreases MP consumption of skills. Casting Spd. is decreased and HP will be continuously consumed while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="337" levels="1" name="Arcane Agility">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Significantly increases Casting Spd. and decreases skill re-use time at an increased MP consumption per skill. HP will be continuously consumed while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="338" levels="1" name="Arcane Agility">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Significantly increases Casting Spd. and decreases skill re-use time at an increased MP consumption per skill. HP will be continuously consumed while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="339" levels="1" name="Parry Stance">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Uses weapon to block incoming attacks. P. Def and M.Def increase significantly. Speed, Atk. Spd. and accuracy are decreased. MP will be continuously consumed while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="340" levels="1" name="Riposte Stance">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Uses weapon to reflect incoming attacks. It reflects the damage received and has a chance to reflect buff/de-buff skill attacks. The damage received through the skill use and remote attack are excluded.  Speed, Atk. Spd. and accuracy are decreased. MP will be continuously consumed while in effect.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="341" levels="1" name="Touch of Life">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Bestows a sacred blessing while sacrificing ones own HP. Regenerates HP significantly. Temporarily increases HP regeneration, resistance to buff canceling attack, resistance to debuff attack and the effect of one's own HP regeneration magic.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="342" levels="1" name="Touch of Death">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Casts a curse of dark magic to the enemy while sacrificing ones HP. Cancels all the buff magic of the enemy.  Significantly decreases maximum CP for a brief time period. Decreases resistance to debuff attack, and the effect of HP regeneration magic. Can be used while one's HP is 75% or below.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="343" levels="1" name="Lethal Shot">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Shoots an arrow on the enemy potentially deadly. Instant kill possible. Over-hit possible. Usable when one is equipped with a bow. Power 5132.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="344" levels="1" name="Lethal Blow">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Potentially deadly attack upon the enemy. Instant kill possible. Usable when one is equipped with a dagger. Power 5773.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="345" levels="1" name="Sonic Rage">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Dual Swords attack that emits a beam to strike a distant target while gathering force for use in other special attack skills. Force can be gathered up to level 7. Critical attack is possible. Usable when one is equipped with a dual-sword type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="346" levels="1" name="Force Rage">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Fists weapon attack that emits  energy to strike a distant target while gathering force for use in other special attack skills. Force can be gathered up to level 7. Critical attack is possible. Usable when one is equipped with a fist type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="347" levels="1" name="Earthquake">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: By brandishing a spear, strikes nearby enemies with a powerful force and cancels the target status.  Critical and over-hit are possible. Available when one is equipped with a spear type weapon.  Power 4040.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="348" levels="1" name="Spoil Crush">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: While attacking an enemy it changes the inside of the monster so that one can use a sweeper skill.  Critical can be used. This skill is available when one is equipped with a blunt type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="349" levels="1" name="Song of Renewal">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily decreases party members MP consumption and re-use time while using physical/magic skills. If one sings while sing/dance state is in effect, additional MP will be consumed.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="350" levels="1" name="Physical Mirror">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: A shield power that reflects back buffs/de-buffs one receives from physical skill attacks.  Available when one is equipped with a shield.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="351" levels="1" name="Magical Mirror">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: A shield power that reflects back buffs/de-buffs one receives from magic skill attacks.  Available when one is equipped with a shield.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="352" levels="1" name="Shield Bash">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: A shield attack that interrupts an enemy's attack action and disarms them.  Available when one is equipped with a shield.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="353" levels="1" name="Shield Slam">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: A shield attack that interrupts an enemy's physical skill attack and disarms them. Available when one is equipped with a shield.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="354" levels="1" name="Hamstring Shot">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Inflicts damage to a targeted enemy and slows the enemys speed at the same time. Critical attack is possible.  Available when one is equipped with a bow.  Power 1973. Effect 3.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="355" levels="1" name="Focus Death">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily reduces ones own critical attack rate and changes the success rate and power of ones own vital attack in different directions.  Available when one is equipped with a dagger type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="356" levels="1" name="Focus Chance">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily changes ones critical chance and attack rate of target's vital parts based upon ones direction of attack.  Available when one is equipped with a dagger type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="357" levels="1" name="Focus Power">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily changes ones critical chance and attack rate of target's vital parts based upon ones direction of attack.  Available when one is equipped with a dagger type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="358" levels="1" name="Bluff">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Tricks the enemy to show its back and cancels the target state. Instantly throws the enemy into a state of shock. Usable when one is equipped with a dagger.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="359" levels="1" name="Eye of Hunter">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases P. Atk against insects/plants/animals.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="360" levels="1" name="Eye of Slayer">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases P. Atk. against the beasts/magic creatures/giants/dragons.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="361" levels="1" name="Shock Blast">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Throws a shock wave at enemies at a long distance canceling their target status. Instantly throws them into a state of shock which reduces their P. Def. and M. Def. greatly. Critical attack and over-hit are possible.  Usable when one is equipped with a spear type weapon. Power 1973.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="362" levels="1" name="Armor Crush">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Inflicts  powerful damage and instantly throws the target into a state of shock with  greatly decreased P. Def. and M. Def.  Critical and over-hit are possible. Usable when one is equipped with a sword, blunt type weapon, two-handed sword, or two-handed blunt type weapon. Power 1973.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="363" levels="1" name="Song of Meditation">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases party members' MP regeneration rate and decreases MP consumption rate when using a magic skill. If one sings while sing/dance state is still in effect, additional MP will be consumed.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="364" levels="1" name="Song of Champion">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Greatly decreases party members' MP consumption/re-use time when using physical skills for a certain period of time. If one sings while sing/dance state is still in effect, additional MP will be consumed.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="365" levels="1" name="Dance of Siren">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases the party member's critical rate of magic attacks significantly. Continuous singing consumes additional MP. Usable when a dual-sword is equipped.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="366" levels="1" name="Song of Meditation">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily decreases party members' speed and bestows the ability to be protected from monsters' preemptive attacks. Additional song, while other songs/dances are in effect, will consume additional MP Usable when one is equipped with a two-sword type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="367" levels="1" name="Dance of Medusa">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Dances to summon the phantom of Medusa. Instantly throws the nearby enemies into a state of fossilization. Usable when one is equipped with a dual-sword type weapon.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="368" levels="1" name="Vengeance">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Instantly increases P. Def, M.Def and provokes nearby enemies' desire to attack. Transfers the target's status to oneself. Becomes immobile while skill is in effect. Available while one is being equipped with a shield.  Power 3994. Effect 3.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="369" levels="1" name="Evade Shot">
+  <set name="weaponsAllowed" val="32"/>
+  <set name="mpConsume" val="130"/>
+  <set name="power" val="2020"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="30000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+   <effect count="1" name="Buff" time="10" val="0">
+    <add order="0x40" stat="rEvas" val="10"/>
+   </effect>
+  <for>
+  </for>
+</skill>
+</list>

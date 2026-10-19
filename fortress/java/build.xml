@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2_Fortress" default="dist" basedir=".">
+    <property name="src" location="."/>
+	  <property name="lib" location="../lib"/>
+    <property name="build" location="build"/>
+    <property name="build.classes" location="${build}/classes"/>
+
+	    <path id="classpath">
+        <fileset dir="${lib}">
+            <include name="c3p0-0.9.0.4.jar"/>
+            <include name="bsf.jar"/>
+        	<include name="bsh-2.0.jar"/>
+        	<include name="jython.jar"/>
+        	<include name="javolution.jar"/>
+        	<include name="org.mortbay.jetty.jar"/>
+        	<include name="commons-logging.jar"/>
+        	<include name="javax.servlet.jar"/>
+        	<include name="jbforth.jar"/>
+        </fileset>
+    </path>
+
+
+    <target name="init"
+            description="Create the output directories.">
+
+        <mkdir dir="${build}"/>
+        <mkdir dir="${build.classes}"/>
+    </target>
+
+
+    <target name="compile"
+            depends="init"
+            description="Compile the source.">
+
+        <javac destdir="${build.classes}"
+               optimize="on"
+               debug="off"
+               source="1.5"
+               target="1.5"
+               nowarn="on">
+            <compilerarg value="-Xlint:all"></compilerarg>
+            <src path="${src}"/>
+            <classpath refid="classpath"/>
+        </javac>
+    </target>
+
+
+    <target name="jar"
+            depends="compile"
+            description="Create the jar file">
+
+        <jar destfile="${build}/l2jserver.jar">
+            <fileset dir="${build.classes}"/>
+            <manifest>
+                <attribute name="Main-Class" value="net.sf.l2j.Server"/>
+                <attribute name="Class-Path" value=". bsf.jar bsh-2.0.jar c3p0-0.9.0.4.jar jython.jar jbforth.jar mysql-connector-java-3.1.12-bin.jar"/>
+            </manifest>
+        </jar>
+	</target>
+
+    <target name="jetty"
+            depends="compile"
+            description="Create the jar file">
+
+        <jar destfile="${build}/l2j-jetty-servlets.jar">
+            <fileset dir="${build.classes}"/>
+            <manifest>
+                <attribute name="Main-Class" value="ru.balancer.jetty.applets"/>
+                <attribute name="Class-Path" value=". org.mortbay.jetty.jar"/>
+            </manifest>
+        </jar>
+	</target>
+
+    <target name="compile.gcj"
+            depends="jar"
+            description="Build machine executable binary">
+
+        <exec dir="." executable="gcj" failifexecutionfails="false" os="linux:Linux:freebsd:FreeBSD" >
+            <arg line="-O3 ${build.dist}/l2jserver.jar  -o ${build.dist}/l2jserver --main=net.sf.l2j.Server"/>
+        </exec>
+    </target>
+
+
+    <target name="dist" depends="jar">
+    	<exec dir="." executable="svnversion" outputproperty="l2j.revision"
+			  failifexecutionfails="false">
+    	  <arg line="-n ."/>
+    	</exec>
+    </target>
+
+
+    <target name="clean"
+            description="Remove the output directories">
+        <delete dir="${build}"/>
+    </target>
+</project>

@@ -1,0 +1,72 @@
+FIX_c4SPAWN PROJECT BY L2j-VN (GREENHOPE) 120 rev. TESTED
+REVISION 10.0 15/02/06 17:28 
+inside:
+Spawned Gogad castle town (part),
+Two outpost (Ketra orc and V)
+Flame patch (part)
+Cursed viliage (part) + Fix Radiboss and mions
+Hotspreng
+Valley of saints (south part)
+Added npc for 3-th profs quest (on Gogad,Hotspreeng,ImperialTob,)
+Added 3 Tablet of vision (Quest Stoun's)
+about this spawnpack
+[eng]
+(startlist give on http://www.desireland.ru = s4qspawnlist (VERY BUGGEST))
+ADD Gogad and verify two outposts spawn 
+REV 2.0 
+ADD Cursed viliage spawn (van hal. vampire RAID BOSS+ miions + vampire npc on viliage
+REV 3.0
+KILL OLD SPAWNLIST:)
+VERIFY AND REMOVED OLD BUGGED NPC 1.5k:)) (rabbit (1k), angels and spawn garbaje
+ALL Spawn verify 100% and clear100% off bugz
+ALL Spawn moved by 130000000+ id and do not replace original spawn
+ALL Spawn split on sql.file on AREA 
+FIXED Vanhelsen level = 70 and his minions aggr,level,sex change update metod REPLACE on UPDATE
+ADD fix_c4spawn = allinone.sql
+REV 4.0 
+ADD mobs for hot spring area 
+ADD 3 quest NPC (on 3-td proof quest need)
+ADD 2 AREA FOR ADMIN TP HTML (for revision spawn)
+REV 5.0
+ADD 3-td prof quest npc on gogad, imperial tomb (based on full quest_on_steps screenshots for c4 offserver by my people)
+ADD 4 Tablet of vision (npc need for 3-td prof quest) on his place
+ADD South path of valley of sain (angel warrior)
+REV 6.0
+ADD NEW raid boss for Ketra Outpost, add and fix his and his minions lvl,aggr (Ketra's Commander Tayr 84lvl,
+Ketra's Chief Brakki 87 lvl, Soul of Fire Nastron 87 lvl) (info about raid and his level take on http://www.l2center.com/chronicle4)
+ADD NEW raid boss for Hot Spring Area, add and fix his and his minions lvl,aggr (Guardian Deity of Hot Springs Hestia lvl 78)         
+(info about raid and his level take on http://www.l2center.com/chronicle4)
+ADD NEW raid boss for Varka Outpost (Shadis, Hero of Barka, Barka's Commander Mos)
+ADD NEW raid boss for Wall of Argos (White-eyed Deimon)
+ADD quest npc (for c4 quest Secret Meeting with the Ketra Orcs;Secret Meeting with the Barka Silenos
+Ketra Orc hunting quest and Barka Silenos hunting quest) npc name: Cadman Guard,
+Kadun Ze Ketra Elder, Ashas Barka Durai Elder. id= 8296,8307,8377)
+REV 7.0
+ADD NEW npc for C4 quest Light and Darkness and Sweet Wisper (quest npc for RUNE CT and valley)
+ADD NEW npc for TP on Goddard<->Rune and Rune->Aden castle towns (id 500,501,502)(gatekeeper iLyana and Tatjana on his palce) and his htm (inside) (all work and verify)
+just copy file 8275.htm, 8320.htm on his gameserver\data\html\teleport\
+REV 8.0 
+CORECT somebody stats by mobs for my knolege.
+NOTE FOR Fixed when i get info on my spawn list i verify it and i take when i get this info on my readme. readme.txt
+if you have real info about spawn,stats,or mobs on c4 - take me this info, links, and i verify and
+correct my spawn list for you.
+ADD spawn mobs for deadly forest
+REV 9.0
+Add npc for Rune town (warhouse, warguide, mehanic) Goddard (magic and weapon shop all + warguide)
+Add Monument of Heroes on Goddard and Rune
+Fix (Monument of Heroes not L2monster is L2npc)
+REV 10.0 
+Added comment on spawn list
+Global remove on cursed vilage!
+Add random spawn table on cursed (first 6 hour on viliage stay trader id=8386, 8387, 8388, 8389 second 6 hour on viliage remove trade (convert on vampires :) add raid boss and minion
+any another NPC removed (like off server) then 6 hour vampire change on trader 
+(if you game day <> 6 hour you must change parametr on random spawn)
+WARNING! Random time fix on start you server moning 6.00 but time on spawnlist = 
+realtime and set 6 real hour. (may game day = 6 real hour)
+(tnx for Slayer for his off screenshot)
+
+
+my verify links 
+http://www.lineage2.co.kr/gameinfoinside
+http://www.l2center.com/chronicle4
+NB!:FREE FOR ALL:)

@@ -1,0 +1,132 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+package net.sf.l2j.gameserver.ai;
+
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_CAST;
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW;
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_INTERACT;
+import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_PICK_UP;
+import net.sf.l2j.gameserver.model.L2Summon;
+import net.sf.l2j.gameserver.model.L2Character.AIAccessor;
+
+public class L2SummonAI extends L2CharacterAI {
+
+	private boolean thinking; // to prevent recursive thinking
+
+	public L2SummonAI(AIAccessor accessor) {
+		super(accessor);
+	}
+
+	protected void onIntentionIdle()
+	{
+		onIntentionActive();
+	}
+
+	protected void onIntentionActive()
+	{
+		L2Summon summon = (L2Summon)_actor;
+		if (summon.getFollowStatus())
+			setIntention(AI_INTENTION_FOLLOW, summon.getOwner(), null);
+		else
+			super.onIntentionActive();
+	}
+
+	private void thinkAttack() {
+		if (checkTargetLostOrDead(_attack_target))
+		{
+			_attack_target = null;
+			return;
+		}
+		stopFollow();
+		if (maybeMoveToPawn(_attack_target, _actor.getPhysicalAttackRange()))
+			return;
+		clientStopMoving(null);
+		clientStartAutoAttack();
+		_accessor.doAttack(_attack_target);
+		return;
+	}
+
+	private void thinkCast() {
+        L2Summon summon = (L2Summon)_actor;
+		if (checkTargetLost(_cast_target))
+		{
+			_cast_target = null;
+			return;
+		}
+        stopFollow();
+		if (maybeMoveToPawn(_cast_target, _actor.getMagicalAttackRange(_skill)))
+			return;
+        clientStopMoving(null);
+        summon.setFollowStatus(false);
+        setIntention(AI_INTENTION_IDLE, null, null);
+		_accessor.doCast(_skill);
+		return;
+	}
+
+	private void thinkPickUp() {
+		if (_actor.isAllSkillsDisabled())
+			return;
+		if (checkTargetLost(_target))
+			return;
+		if (maybeMoveToPawn(_target, 36))
+			return;
+		setIntention(AI_INTENTION_IDLE, null, null);
+		((L2Summon.AIAccessor)_accessor).doPickupItem(_target);
+		return;
+	}
+
+	private void thinkInteract() {
+		if (_actor.isAllSkillsDisabled())
+			return;
+		if (checkTargetLost(_target))
+			return;
+		if (maybeMoveToPawn(_target, 36))
+			return;
+		setIntention(AI_INTENTION_IDLE, null, null);
+		return;
+	}
+
+	protected void onEvtThink()
+	{
+//		if(getIntention() != AI_INTENTION_IDLE && (!_actor.isVisible() || !_actor.hasAI() || !_actor.isKnownPlayers()))
+//			setIntention(AI_INTENTION_IDLE);
+
+		if (thinking || _actor.isAllSkillsDisabled())
+			return;
+		
+		thinking = true;
+		
+		try
+		{
+			if (getIntention() == AI_INTENTION_ATTACK)
+				thinkAttack();
+			else if (getIntention() == AI_INTENTION_CAST)
+				thinkCast();
+			else if (getIntention() == AI_INTENTION_PICK_UP)
+				thinkPickUp();
+			else if (getIntention() == AI_INTENTION_INTERACT)
+				thinkInteract();
+		} finally {
+			thinking = false;
+		}
+	}
+
+}

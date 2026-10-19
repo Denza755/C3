@@ -1,0 +1,1205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<skill id="1300" levels="3" name="Servitor Cure">
+<table name="#mpConsume"> 35 44 55 </table>
+<table name="#power"> 3 7 9 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_PET"/>
+  <set name="skillTime" val="4000"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="skillType" val="NEGATE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="negateStats" val="POISON BLEED"/>
+  <for>
+  </for>
+</skill>
+<skill id="1301" levels="1" name="Servitor Blessing">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Cancels servitor's hold, paralysis and Atk. Spd. of effect 3 or below and reduces Speed.
+  created 2005-05-29 23:34:29
+-->
+  <set name="mpConsume" val="58"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="1303" levels="2" name="Wild Magic">
+<table name="#mpConsume">
+   58 65
+</table>
+<table name="#power">
+   1.0 2.0
+</table>
+<table name="#mCrit">
+   1.30 1.40
+</table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+   <effect name="Buff" time="1200" count="1" val="0">
+    <mul stat="mCritRate" val="#mCrit" order="0x50"/>
+   </effect>
+  </for>
+</skill>
+<skill id="1304" levels="3" name="Advanced Block">
+  <table name="#mpConsume"> 54 62 67 </table>
+  <table name="#Tab-rShld"> 1.1 1.3 1.5 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+<for>
+  <effect count="1" name="Buff" time="1200" val="0">
+    <mul order="0x50" stat="rShld" val="#Tab-rShld"/>
+  </effect>
+</for>>
+</skill>
+<skill id="1305" levels="5" name="Honor of Paagrio">
+  <table name="#rateCp"> 616 633 651 669 687 </table>
+  <table name="#mpConsume"> 214 222 228 233 239 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#rateCp"/>
+  <set name="target" val="TARGET_ALLY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="COMBATPOINTHEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1306" levels="6" name="Ritual of Life">
+  <table name="#rateCp"> 745 767 789 811 834 858 </table>
+  <table name="#mpConsume"> 104 108 112 114 117 120 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#rateCp"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillTime" val="5000"/>
+  <set name="skillType" val="COMBATPOINTHEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="1307" levels="3" name="Prayer">
+  <table name="#hpEff"> 20 35 50 </table>
+  <table name="#mpConsume">	244 259 272 </table>
+  <table name="#power">	1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+      <add order="0x40" stat="hpEff" val="#hpEff"/>
+    </effect>
+  </for>
+</skill>
+<skill id="1308" levels="3" name="Chant of Predator">
+<table name="#mpConsume"> 172 220 252 </table>
+<table name="#power"> 1.0 2.0 3.0 </table>
+<table name="#Tab-rCrit"> 1.15 1.30 1.45 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+<for>
+	<effect count="1" name="Buff" time="1200" val="0" stackOrder="#Tab-rCrit" stackType="rCrit">
+		<mul order="0x50" stat="rCrit" val="#Tab-rCrit"/>
+	</effect>
+</for>
+</skill>
+<skill id="1309" levels="3" name="Chant of Eagle">
+<table name="#mpConsume"> 172 213 237 </table>
+<table name="#power"> 1.0 2.0 3.0 </table>
+<table name="#Tab-accCombat"> 7 10 12 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+<for>
+	<effect count="1" name="Buff" time="1200" val="0" stackOrder="#Tab-accCombat" stackType="accuracyUp">
+		<add order="0x50" stat="accCombat" val="#Tab-accCombat"/>
+	</effect>
+</for>
+</skill>
+<skill id="1310" levels="4" name="Chant of Vampire">
+  <table name="#mpConsume"> 154 213 244 272 </table>
+  <table name="#Tab-absorbDam"> 4 6 8 10 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0" stackOrder="#Tab-absorbDam" stackType="vampRage">
+      <add order="0x40" stat="absorbDam" val="#Tab-absorbDam"/>
+    </effect>
+  </for>
+</skill>
+<skill id="1311" levels="6" name="Body Of Avatar">
+<!-- need to check mpComsume C4 -->
+  <table name="#mpConsume"> 353 477 583 690 795 900 </table>
+  <table name="#power"> 10 15 20 25 30 40 </table>
+  <table name="#Tab-maxHp"> 1.1 1.15 1.2 1.25 1.3 1.4 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="HEAL_PERCENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0" stackOrder="#Tab-maxHp" stackType="hp_up">
+      <mul order="0x50" stat="maxHp" val="#Tab-maxHp"/>
+    </effect>
+  </for>
+</skill>
+<skill id="1312" levels="1" name="Fishing">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Tries to catch fish at a fishing spot. One must be equipped with a fishing rod and a bait or lure to use this skill.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1313" levels="27" name="Pumping">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Pumping
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1314" levels="27" name="Reeling">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Reeling
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1315" levels="27" name="Fishing Expertise">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expertise skill for fishing.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1316" levels="1" name="Fishing Expertise - C Grade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: C-Grade Expertise skill for fishing.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1317" levels="1" name="Fishing Expertise - B Grade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: B-Grade Expertise skill for fishing.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1318" levels="1" name="Fishing Expertise - A Grade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: A-Grade Expertise skill for fishing.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1319" levels="1" name="Fishing Expertise - S Grade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: S-Grade Expertise skill for fishing.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1320" levels="9" name="Create Common Item">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates level 1 - 9 common items.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1321" levels="1" name="Dwarven Craft">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Can read dwarven recipes book.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1322" levels="1" name="Common Craft">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Can read common recipe book.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1323" levels="1" name="Blessing of Noblesse">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Enhancement spell effects are retained after death. Lucky Charms and Blessing of Noblesse are lost as normal.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1324" levels="1" name="Summon CP Potion">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons 20 Greater CP Potions. Requires 80 Soul Ores.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1325" levels="1" name="Fortune of Noblesse">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Blesses all party members by decreasing the chance of items being dropped upon death during a boss war or raid war. Requires 4 Lucky Charm: A Grade.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1326" levels="1" name="Harmony of Noblesse">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Borrows power from four energy forces and launches devastating non-elemental area attack. Power 250.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1327" levels="1" name="Symphony of Noblesse">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Borrows power from eight energy forces and launches devastating non-elemental area attack. Power 400.
+  created 06-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1328" levels="8" name="Mass Summon Storm Cubic">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons Storm Cubic for party members. Storm Cubic uses magic that damages a targeted enemy. Requires Crystals: D Grade.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1329" levels="9" name="Mass Summon Aqua Cubic">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons Aqua Cubic for party members. Aqua Cubic uses magic that damages a targeted enemy over time. Requires Crystals: D Grade.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1330" levels="8" name="Mass Summon Phantom Cubic">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons Phantom Cubic for party members. Phantom Cubic uses magic that decreases P. Atk, P. Def, and Atk. Spd. of a targeted enemy. Requires Crystals: D Grade.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1331" levels="14" name="Summon Queen of Cat">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons a Queen of Cat, a servitor. When summoning it, Crystal: C Grade are consumed. Afterwards, additional crystal is consumed at a regular interval for 4 times. 5% of one's acquired Exp will be consumed.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1332" levels="14" name="Summon Unicorn Seraphim">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons a Unicorn Seraphim, a servitor.  Requires Crystal: C Grade. Afterwards, additional crystal will be consumed at a regular interval for 4 times. 5% of acquired Exp will be consumed.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1333" levels="14" name="Summon Nightshade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons a Nightshade, a servitor.  Requires Crystal: C Grade. Afterwards, additional crystal will be consumed at a regular interval for 4 times. 5% of acquired Exp will be consumed.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1334" levels="7" name="Summon Cursed Man">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Summons Cursed Man from a corpse. Consumes 1 Crystal: Grade C during summoning, and 2 additional Crystals will be consumed at a regular interval for 4 times. Also, 15% of acquired Exp. will be consumed.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1335" levels="1" name="Balance Life">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Balances party members' HP.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1336" levels="1" name="Curse of Doom">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily prevent the use of enemy's physical skills and magic.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1337" levels="1" name="Curse of Abyss">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Significantly decreases an enemys Speed, P. Def., Evasion, M. Atk., Casting Spd, and critical chance of damage magic for a certain time period.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1338" levels="1" name="Arcane Chaos">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily decreases an enemys resistance to buff canceling attack and resistance to debuff attack.  Increases MP consumption of physical and magic skills. MP gets decreased continuously.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1339" levels="1" name="Fire Vortex">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates a vortex that connects to the dimension of fire. While launching a fire attack, it instantly decreases the enemys resistance to fire attack, Speed, Atk. Spd. And Casting Spd at the same time. Decreases MP continuously. Over-hit is possible. Power 140.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1340" levels="1" name="Ice Vortex">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates a vortex that connects to the dimension of water. While launching a water attack, it instantly decreases the enemys resistance to water attack, Speed, Atk. Spd. And Casting Spd at the same time. Decreases MP continuously. Over-hit is possible. Power 140.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1341" levels="1" name="Wind Vortex">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates a vortex that connects to the dimension of wind. While launching a wind attack, it instantly decreases the enemys resistance to wind attack, Speed, Atk. Spd. And Casting Spd at the same time. Decreases MP continuously. Over-hit is possible. Power 140.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1342" levels="1" name="Light Vortex">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates a vortex that connects to the dimension of light. While launching a light magic attack, it absorbs HP, instantly decreases the enemys resistance to light attack and decreases MP continuously. Over-hit is possible. Power 139.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1343" levels="1" name="Dark Vortex">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Creates a vortex that connects to the dimension of darkness. While launching a dark magic attack, it absorbs HP, instantly decreases the enemys resistance to dark attack and decreases MP continuously. Over-hit is possible. Power 139.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1344" levels="1" name="Mass Warrior Bane">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase Atk. Spd. and Speed from nearby enemies.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1345" levels="1" name="Mass Warrior Bane">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase M. Atk and Casting Spd. from nearby enemies.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1346" levels="1" name="Warrior Servitor">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient warrior takes possession of the servitor for a certain period of time. Consumes 10 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1347" levels="1" name="Wizard Servitor">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient wizard takes possession of the servitor for a certain period of time. Consumes 10 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1348" levels="1" name="Assassin Servitor">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient assassin takes possession of the servitor for a certain period of time. Consumes 10 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1349" levels="1" name="Final Servitor">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient hero takes possession of the servitor for a certain period of time. Consumes 20 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1350" levels="1" name="Warrior Bane">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase Atk. Spd. and Speed from an enemy.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1351" levels="1" name="Mage Bane">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase M. Atk and Casting Spd. from an enemy.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1352" levels="1" name="Elemental Protection">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to fire/water/wind/earth attack. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1353" levels="1" name="Divine Protection">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to dark attack. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1354" levels="1" name="Arcane Protection">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases resistance to buff cancel and de-buff attack. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1355" levels="1" name="Prophecy of Water">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient wizard temporarily possesses the user. Consumes 5 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1356" levels="1" name="Prophecy of Fire">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient warrior temporarily possesses the user. Consumes 5 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1357" levels="1" name="Prophecy of Wind">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirit of an ancient assassin temporarily possesses the user. Consumes 5 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1358" levels="1" name="Block Shield">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase P. Def from a targeted enemy. Temporarily decreases P. Def and prevents enemy from receiving the buff that will increase P. Def. again.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1359" levels="1" name="Block Wind Walk">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase Speed from a targeted enemy. Temporarily decreases Speed and prevents enemy from receiving removed buffs that will increase Speed again.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1360" levels="1" name="Mass Block Shield">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase P. Def from nearby enemies. Temporarily decreases P. Def and prevents enemies from receiving removed buffs that will increase their P. Def. again.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1361" levels="1" name="Mass Block Wind Walk">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Removes buffs that increase Speed from nearby enemies. Temporarily decreases Speed and prevents enemies from receiving removed buffs that will increase their Speed again.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1362" levels="1" name="Chant of Spirit">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases party members' resistance to buff cancel and de-buff attack. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1363" levels="1" name="Chant of Victory">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: The spirits of ancient heroes temporarily possess one's party members. Consumes 40 spirit ores.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1364" levels="1" name="Eye of Paagrio">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases alliance members' critical power. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1365" levels="1" name="Soul of Paagrio">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases alliance members' M.Atk. Effect 3.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1366" levels="1" name="Seal of Despair">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily decreases nearby enemies' Speed, M. Def., Accuracy, P. Atk., Atk. Spd, and also the success rate and power of critical attack.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1367" levels="1" name="Seal of Disease">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Temporarily increases party members' MP regeneration rate and decreases MP consumption rate when using a magic skill. If one sings while sing/dance state is still in effect, additional MP will be consumed.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1368" levels="8" name="Expand Dwarven Craft">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expands dwarven recipe book.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1369" levels="8" name="Expand Common Craft">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expands common recipe book.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1370" levels="8" name="Expand Trade">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expands trade slots.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1371" levels="8" name="Expand Storage">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expands warehouse slots.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1372" levels="8" name="Expand Inventory">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Expands inventory slots.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="1373" levels="8" name="Strider Mastery">
+<!---
+  Automatically generated from C4 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Increases P. Atk. and M. Atk. while the strider is on board.
+  created 07-02-2006
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+</list>

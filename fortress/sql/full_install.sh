@@ -1,0 +1,33 @@
+USER=root
+PASS=
+DBNAME=l2jdb
+DBHOST=localhost
+mysqldump --add-drop-table -h $DBHOST -u $USER --password=$PASS $DBNAME > l2jdb_full_backup.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/accounts.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_friends.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_hennas.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_macroses.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_quests.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_recipebook.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_shortcuts.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_skills.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_skills_save.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/character_variables.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/characters.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/clan_data.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/ally_data.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/clan_wars.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/items.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/pets.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/server_variables.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/seven_signs.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/seven_signs_festival.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/random_spawn.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/random_spawn_loc.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/siege_clans.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/killcount.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/dropcount.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/craftcount.sql
+mysql -h $DBHOST -u $USER --password=$PASS -D $DBNAME < common/banned_ips.sql
+
+./upgrade.sh

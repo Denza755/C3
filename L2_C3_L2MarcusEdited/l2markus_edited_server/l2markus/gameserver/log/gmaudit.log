@@ -1,0 +1,72 @@
+14/03/2013 19:29:01>dfgdfg>admin_show_moves>no-target>
+14/03/2013 19:29:05>dfgdfg>admin_move_to -20706 13484 -4901>no-target>
+14/03/2013 19:30:08>dfgdfg>admin_show_moves>Gatekeeper Ziggurat>
+14/03/2013 19:30:26>dfgdfg>admin_move_to -19000 13523 -4896>Gatekeeper Ziggurat>
+14/03/2013 19:30:35>dfgdfg>admin_kill>Nephilim Royal Guard>
+14/03/2013 19:30:40>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 19:30:40>dfgdfg>admin_character_list dfgdfg>dfgdfg>
+14/03/2013 19:30:50>dfgdfg>admin_show_skills>dfgdfg>
+14/03/2013 19:30:51>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 19:30:56>dfgdfg>admin_add_skill 4097 4>dfgdfg>
+14/03/2013 19:31:02>dfgdfg>admin_show_moves>Gatekeeper Ziggurat>
+14/03/2013 19:31:07>dfgdfg>admin_move_to 83400 147943 -3404>Gatekeeper Ziggurat>
+14/03/2013 20:30:46>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 20:31:04>dfgdfg>admin_character_list dfgdfg>dfgdfg>
+14/03/2013 20:31:06>dfgdfg>admin_show_skills>dfgdfg>
+14/03/2013 20:31:09>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 20:31:17>dfgdfg>admin_add_skill 4037 4>dfgdfg>
+14/03/2013 20:31:21>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 20:31:24>dfgdfg>admin_add_skill 4037 4>dfgdfg>
+14/03/2013 20:31:35>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 20:31:35>dfgdfg>admin_character_list dfgdfg>dfgdfg>
+14/03/2013 20:31:36>dfgdfg>admin_show_skills>dfgdfg>
+14/03/2013 20:31:37>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 20:31:39>dfgdfg>admin_add_skill 7029>dfgdfg>
+14/03/2013 20:31:41>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 20:31:44>dfgdfg>admin_add_skill 7029 1>dfgdfg>
+14/03/2013 20:31:45>dfgdfg>admin_skill_list>dfgdfg>
+14/03/2013 20:31:48>dfgdfg>admin_add_skill 7029 4>dfgdfg>
+14/03/2013 20:32:01>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 20:32:02>dfgdfg>admin_character_list dfgdfg>dfgdfg>
+14/03/2013 20:32:04>dfgdfg>admin_edit_character>dfgdfg>
+14/03/2013 20:32:10>dfgdfg>admin_add_exp_sp_to_character>dfgdfg>
+14/03/2013 20:32:12>dfgdfg>admin_show_skills>dfgdfg>
+14/03/2013 20:32:14>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 20:32:17>dfgdfg>admin_show_characters 0>no-target>
+14/03/2013 20:32:21>dfgdfg>admin_char_manage>dfgdfg>
+14/03/2013 20:32:33>dfgdfg>admin_itemcreate>dfgdfg>
+14/03/2013 20:32:36>dfgdfg>admin_create_item 57 78787878787>dfgdfg>
+14/03/2013 20:32:39>dfgdfg>admin_itemcreate>dfgdfg>
+14/03/2013 20:32:41>dfgdfg>admin_create_item 57 456456456>dfgdfg>
+14/03/2013 20:33:17>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:19>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:21>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:21>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:21>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:23>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:26>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:27>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:27>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:27>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:28>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:28>dfgdfg>admin_kill>Cave Maiden>
+14/03/2013 20:33:30>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:30>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:30>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:31>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:38>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:38>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:39>dfgdfg>admin_kill>Drake>
+14/03/2013 20:33:42>dfgdfg>admin_kill>Cave Keeper>
+14/03/2013 20:33:43>dfgdfg>admin_show_moves>Cave Keeper>
+14/03/2013 20:33:45>dfgdfg>admin_move_to 147450 26741 -2204>Cave Keeper>
+14/03/2013 20:37:30>dfgdfg>admin_kill>Marsh Stalker>
+14/03/2013 20:38:13>dfgdfg>admin_kill>Punishment of Undead>
+14/03/2013 20:38:15>dfgdfg>admin_kill>Punishment of Undead>
+14/03/2013 20:38:16>dfgdfg>admin_kill>Marsh Stalker>
+14/03/2013 20:38:21>dfgdfg>admin_res>Punishment of Undead>
+14/03/2013 20:38:28>dfgdfg>admin_kill>Punishment of Undead>
+14/03/2013 20:38:29>dfgdfg>admin_kill>Punishment of Undead>
+14/03/2013 20:38:29>dfgdfg>admin_kill>Punishment of Undead>
+14/03/2013 21:56:29>dfgdfg>admin_show_moves>no-target>
+14/03/2013 21:56:34>dfgdfg>admin_move_to 15670 142983 -2705>no-target>

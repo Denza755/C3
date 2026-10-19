@@ -1,0 +1,60 @@
+<html><body>
+<center><font color="LEVEL">
+	class [ "L2ClassShortName" obj-p@ ],
+	faction [ "FactionId" obj-p@ ]
+</font></center>
+
+<table border=0 width="100%">
+<tr><td>Target</td><td>[ "ObjectId" obj-p@ ]</td>
+	<td>NpcId/SpawnId</td><td>[ object npc.id@ ]/[ object npc>spawn_id ]</td>
+</tr>
+<tr><td>Level</td><td>[ "Level" obj-p@ ]</td>
+	<td>Aggro</td><td>[ object npc.aggro@ ]</td>
+</tr>
+</table>
+
+<table border=0 width="100%">
+<tr><td><font color="LEVEL">Combat</font></td><td></td></tr>
+<tr><td>Cur.HP</td><td>[ object "CurrentHp" p@ int ]</td>
+	<td>Cur.MP</td><td>[ object "CurrentMp" p@ int ]</td></tr>
+<tr><td>Max.HP</td><td>[ object "MaxHp" p@ object "Template" p@ "rateHp" field@	tuck / "*" s+ swap s+ ]</td>
+	<td>Max.MP</td><td>[ object "MaxMp" p@ ]</td></tr>
+<tr><td>P.Atk.</td><td>[ null object "getPAtk" { L2Character.class } jget ]</td>
+	<td>M.Atk.</td><td>[ null null object "getMAtk" { L2Character.class L2Skill.class } jget ]</td></tr>
+<tr><td>P.Def.</td><td>[ null object "getPDef" { L2Character.class } jget ]</td>
+	<td>M.Def.</td><td>[ null null object "getMDef" { L2Character.class L2Skill.class } jget ]</td></tr>
+<tr><td>Acc.</td><td>[ object "Accuracy" p@ ]</td>
+	<td>Evs.</td><td>[ null object "getEvasionRate" { L2Character.class } jget ]</td></tr>
+<tr><td>Crit.</td><td>[ null null object "getCriticalHit" { L2Character.class L2Skill.class } jget ]</td>
+	<td>Spd</td><td>[ object "RunSpeed" p@ ]</td></tr>
+<tr><td>Atk.Spd</td><td>[ object "PAtkSpd" p@ ]</td>
+	<td>Cst.Spd</td><td>[ object "MAtkSpd" p@ ]</td></tr>
+<tr><td>Race</td><td>[ object "Template" p@ "race" field@ ]</td>
+	<td>loc_id</td><td>[ object npc.spawn.location@ ]</td></tr>
+<tr><td>Dist.</td><td>[ object coords@ drop player@ "getDistance" { int.class int.class } jget int ]</td>
+	<td>Inten.</td><td>[ object "Intention" p@ ]</td></tr>
+<tr><td>Killed</td><td>[ "SELECT `value` FROM `server_variables` WHERE `type` = 'killcount' AND `index` = " object npc.id@ s+ query drop list> drop 'value' m@ ]</td>
+	<td></td><td></td></tr>
+</table>
+
+<table border=0 width="100%">
+<tr><td><font color="LEVEL">Basic</font></td><td></td></tr>
+<tr><td>STR</td><td>[ object "STR" p@ ]</td><td>DEX</td><td>[ object "DEX" p@ ]</td><td>CON</td><td>[ object "CON" p@ ]</td></tr>
+<tr><td>INT</td><td>[ object "INT" p@ ]</td><td>WIT</td><td>[ object "WIT" p@ ]</td><td>MEN</td><td>[ object "MEN" p@ ]</td></tr>
+</table>
+
+<table>
+<tr>
+  <td><button value="Edit NPC" action="bypass -h admin_edit_npc [ object npc.id@ ]" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+  <td><button value="Kill" action="bypass -h admin_kill" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+  <td><button value="Recall" action="bypass -h admin_rcl-tp" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+  <td><button value="Show DropList" action="bypass -h admin_show_droplist [ object npc.id@ ]" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+  <td><button value="Delete" action="bypass -h admin_delete" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+  <td><button value="Teleto" action="bypass -h forth object coords@ 50 coords-randomize jump" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+<br>
+<button value="User DropList" action="bypass -h forth show-user-droplist" width=80 height=15 back="sek.cbui94" fore="sek.cbui92">
+</body></html>

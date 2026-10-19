@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<!-- ID 4400 thru 4493 have NOT USED listed in the Skill Name file  -->
+<skill id="4494" levels="1" name="Raid Boss">
+<!--
+  1: If the level of the person who made the greatest contribution is 
+  higher than the level of the raid monster by 3 or more levels, 
+  then the probability of dropping an item or adena will decrease. 
+  If the level difference is nine or more levels, then, the monster 
+  will not drop any item or adena.-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4495" levels="12" name="BOSS Power Shot">
+  <table name="#mpConsume"> 36 50 69 93 118 143 166 175 182 186 189 192 </table>
+  <table name="#power"> 172.0 187.0 239.0 258.0 279.0 326.0 352.0 379.0 440.0 472.0 507.0 584.0 </table>
+  <set name="weaponsAllowed" val="32"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="4500"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <for>
+  </for>
+</skill>
+<skill id="4496" levels="12" name="Shock">
+  <table name="#mpConsume"> 36 50 69 93 118 143 166 175 182 186 189 192 </table>
+  <table name="#power"> 16.0 35.0 73.0 139.0 241.0 379.0 542.0 705.0 868.0 1031.0 1194.0 1357.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="1000"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="16000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="9000"/>
+  <set name="castRange" val="40"/>
+  <for>
+	<effect count="1" name="Stun" time="9" val="0"/>
+  </for>
+</skill>
+<skill id="4497" levels="1" name="Treasure Chest - Level 21">
+<!-- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4498" levels="1" name="Treasure Chest - Level 22">
+<!-- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4499" levels="1" name="Treasure Chest - Level 25">
+<!-- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+</list>

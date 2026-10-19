@@ -1,0 +1,4 @@
+ALTER TABLE `armor` ADD `icon` VARCHAR(255) NOT NULL;
+ALTER TABLE `weapon` ADD `icon` VARCHAR(255) NOT NULL;
+ALTER TABLE `etcitem` ADD `icon` VARCHAR(255) NOT NULL;
+ALTER TABLE `spawnlist` ADD `respawn_time` INT NOT NULL ;

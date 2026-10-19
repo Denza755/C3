@@ -1,0 +1,3 @@
+#the hexID to auth into login
+#Thu Dec 01 03:27:28 MSK 2005
+HexID=651de5d23464e255346a36d0bbb1966a

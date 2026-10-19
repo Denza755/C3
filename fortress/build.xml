@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2_Fortress" default="dist" basedir=".">
+    <description>
+        This script will build the L2J Fortress server.
+        
+        $Author: Balancer $
+        $Date: 2005-09-18 22:03:24 +0400 (Вск, 18 Сен 2005) $
+        $Revision: 1076 $  
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2, or (at your option)
+        any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+        02111-1307, USA.
+        
+        http://www.gnu.org/copyleft/gpl.html      
+        
+    </description>
+    
+    <property name="src" location="java"/>
+    <property name="lib" location="lib"/>
+    <property name="bin" location="bin"/>
+    <property name="build" location="build"/>
+    <property name="build.classes" location="${build}/classes"/>
+    <property name="build.dist" location="${build}/dist"/>
+    
+    <path id="classpath">
+        <fileset dir="${lib}">
+            <include name="c3p0-0.9.0.4.jar"/>
+            <include name="bsf.jar"/>
+        	<include name="bsh-2.0.jar"/>
+        	<include name="jython.jar"/>
+        	<include name="javolution.jar"/>
+        	<include name="org.mortbay.jetty.jar"/>
+        	<include name="commons-logging.jar"/>
+        	<include name="javax.servlet.jar"/>
+        	<include name="jbforth.jar"/>
+        </fileset>
+    </path>   
+    
+    <target name="init"
+            description="Create the output directories.">
+
+        <mkdir dir="${build}"/>
+        <mkdir dir="${build.classes}"/>
+        <mkdir dir="${build.dist}" />
+    </target>
+    
+    
+    <target name="compile"
+            depends="init"
+            description="Compile the source.">
+
+		<javac destdir="${build.classes}"
+				optimize="off"
+				debug="off"
+				source="1.7"
+				target="1.7"
+				nowarn="off">
+			<compilerarg value="-Xlint:all"></compilerarg>
+			<src path="${src}"/>
+			<classpath refid="classpath"/>
+		</javac>
+    </target>
+    
+    <target name="debug"
+            depends="init"
+            description="Compile the source with debug info.">
+
+        <javac destdir="${build.classes}"
+               optimize="off"
+               debug="on"
+               source="1.5"
+               target="1.5"
+               nowarn="off">
+            <compilerarg value="-Xlint:all"></compilerarg>
+            <src path="${src}"/>
+            <classpath refid="classpath"/>   
+        </javac>
+	</target>
+    
+    <target name="jar"
+            depends="compile"
+            description="Create the jar file">
+
+        <jar destfile="${build.dist}/l2jserver.jar">
+            <fileset dir="${build.classes}"/>
+            <manifest>
+                <attribute name="Main-Class" value="net.sf.l2j.Server"/>
+                <attribute name="Class-Path" value=". bsf.jar bsh-2.0.jar c3p0-0.9.0.4.jar jython.jar mysql-connector-java-3.1.12-bin.jar javolution.jar org.mortbay.jetty.jar commons-logging.jar javax.servlet.jar jbforth.jar"/>
+            </manifest>
+        </jar>
+
+    	<exec dir="." executable="svnversion" outputproperty="l2j.revision"
+			  failifexecutionfails="false">
+    	  <arg line="-n ."/>
+    	</exec>
+
+    	<tstamp>
+    	  <format property="build.tstamp"
+    	              pattern="yyyyMMdd_HHmm"/>
+    	</tstamp>
+    	
+    	<concat destfile="${build.dist}/config/l2j-version.properties">
+version=${l2j.revision}
+builddate=${build.tstamp}
+    	</concat>  
+        
+        <copy todir="${build.dist}">
+            <fileset dir="${src}">
+                <include name="log.cfg"/>
+                <include name="banned_ip.cfg"/>
+                <include name="console.cfg"/>
+            	<include name="mats.cfg"/>
+		    <include name="startSQLAccountManager.*"/>
+                <include name="server_loop.sh"/>
+                <include name="startServer.*"/>
+			</fileset>
+        </copy>
+	   	<copy todir="${build.dist}">
+			<fileset dir="${src}/../lib">
+				<include name="mysql-connector-java-3.1.12-bin.jar"/>
+				<include name="c3p0-0.9.0.4.jar"/>
+				<include name="bsf.jar"/>
+				<include name="bsh-2.0.jar"/>
+				<include name="jython.jar"/>
+				<include name="javolution.jar"/>
+	        	<include name="org.mortbay.jetty.jar"/>
+	        	<include name="commons-logging.jar"/>
+    	    	<include name="javax.servlet.jar"/>
+    	    	<include name="jbforth.jar"/>
+    	    	<include name="main.f"/>
+			</fileset>
+		</copy>
+	</target>
+    
+    <target name="compile.gcj"
+            depends="jar"
+            description="Build machine executable binary">  
+            
+        <exec dir="." executable="gcj" failifexecutionfails="false" os="linux:Linux:freebsd:FreeBSD" >
+            <arg line="-O3 ${build.dist}/l2jserver.jar  -o ${build.dist}/l2jserver --main=net.sf.l2j.Server jbforth.jar"/>
+        </exec>
+    </target>
+ 
+ 
+    <target name="dist" depends="jar">
+        
+        <copy todir="${build.dist}">
+            <fileset dir="${basedir}">
+                <include name="changes.txt"/>
+                <include name="LICENSE.txt"/>
+                <include name="README.txt"/>
+            </fileset>
+        </copy>
+        
+		<fixcrlf 	srcdir="${build.dist}"
+					eol="lf"
+					eof="remove"
+					includes="**/*.sh">
+		</fixcrlf>
+		
+		<fixcrlf 	srcdir="${build.dist}"
+					eol="crlf"
+					eof="remove"
+					includes="**/*.bat">
+		</fixcrlf>
+
+        
+        <mkdir dir="${build.dist}/log" />
+        
+        <mkdir dir="${build.dist}/config" />
+    	<copy todir="${build.dist}/config">
+           <fileset dir="java/config">
+    	      <include name="*.properties"/>
+    	      <include name="*.f"/>
+    	      <include name="*.cfg"/>
+    	      <include name="*.txt"/>
+       	   </fileset>
+        </copy>
+    	
+        <mkdir dir="${build.dist}/data" />
+        <copy todir="${build.dist}/data">
+            <fileset dir="data">
+				<include name="**/*.*"/>
+			</fileset>
+        </copy>
+        
+        <mkdir dir="${build.dist}/data/jbforth" />
+        <copy todir="${build.dist}/data/jbforth">
+            <fileset dir="data/jbforth">
+                <include name="**/*.f"/>
+            </fileset>
+        </copy>
+        <mkdir dir="${build.dist}/data/html" />
+        <copy todir="${build.dist}/data/html">
+            <fileset dir="data/html">
+                <include name="**/*.htm"/>
+                <include name="**/*.html"/>
+            </fileset>
+        </copy>
+    	
+        <mkdir dir="${build.dist}/data/script" />
+        <copy todir="${build.dist}/data/script">
+            <fileset dir="data/script">
+                <include name="**/*.zip"/>
+            </fileset>
+        </copy>
+           
+        <mkdir dir="${build.dist}/data/stats" />
+        <copy todir="${build.dist}/data/stats">
+            <fileset dir="data/stats">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+
+       	<mkdir dir="${build.dist}/sql"/>
+        <copy todir="${build.dist}/sql">
+            <fileset dir="sql">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+    	
+        <zip destfile="${build}/l2j-server.zip"
+             basedir="${build.dist}" />
+    </target>   
+    
+    
+    <target name="clean"
+            description="Remove the output directories">
+
+        <delete dir="${build}"/>
+        <delete dir="${bin}"/>
+    </target>
+</project>

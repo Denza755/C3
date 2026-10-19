@@ -1,0 +1,1204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<skill id="4300" levels="1" name="Race">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Giant
+  created 2005-05-29 23:34:33
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4301" levels="1" name="Race">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Bug
+  created 2005-05-29 23:34:33
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4302" levels="1" name="Race">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: Fairy
+  created 2005-05-29 23:34:33
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4303" levels="1" name="Strong Type">
+  <table name="#maxHp">2</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4304" levels="1" name="Strong Type">
+  <table name="#maxHp">3</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4305" levels="1" name="Strong Type">
+  <table name="#maxHp">4</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4306" levels="1" name="Strong Type">
+  <table name="#maxHp">5</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4307" levels="1" name="Strong Type">
+  <table name="#maxHp">6</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4308" levels="1" name="Strong Type">
+  <table name="#maxHp">7</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4309" levels="1" name="Strong Type">
+  <table name="#maxHp">8</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4310" levels="1" name="Strong Type">
+  <table name="#maxHp">9</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4311" levels="1" name="Feeble Type">
+  <table name="#maxHp">0.5</table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x40" stat="maxHp" val="#maxHp"/>
+  </for>
+</skill>
+<skill id="4312" levels="1" name="Heavy Armor">
+  <table name="#pDef"> 20 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+     <add order="0x40" stat="pDef" val="#pDef">
+   <and>
+     <using kind="Heavy"/>
+   <not>
+     <using kind="Magic,Light"/>
+   </not>
+   </and>
+  </add>
+</for>
+</skill>
+<skill id="4313" levels="1" name="Light Armor">
+  <table name="#pDef"> 20 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+     <add order="0x40" stat="pDef" val="#pDef">
+   <and>
+     <using kind="Light"/>
+   <not>
+     <using kind="Magic,Heavy"/>
+   </not>
+   </and>
+  </add>
+</for>
+</skill>
+<skill id="4314" levels="12" name="BOSS Holy Light Burst">
+  <table name="#power"> 128.0 156.0 138.0 152.0 198.0 235.0 272.0 309.0 346.0 383.0 420.0 457.0 </table>
+  <table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="2000"/>
+  <set name="element" val="1"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <for>
+  </for>
+</skill>
+<skill id="4315" levels="12" name="Hold">
+<!--- TODO -->
+  <table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="hitTime" val="2500"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <for>
+  </for>
+</skill>
+<skill id="4316" levels="12" name="Boss Lilim Drain">
+  <table name="#power"> 26.0 31.0 36.0 41.0 46.0 51.0 56.0 61.0 66.0 71.0 76.0 81.0 </table>
+  <table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
+  <set name="power" val="#power"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="hitTime" val="2500"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="element" val="6"/>
+  <set name="skillRadius" val="205"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isMagic" val="true"/>
+  <set name="castRange" val="750"/>
+  <set name="absorbPart" val="0.8"/>
+  <for>
+  </for>
+</skill>
+<skill id="4317" levels="5" name="Increase Rage Might">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="hitTime" val="1800"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="1800"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4318" levels="1" name="Ultimate Buff">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4319" levels="1" name="Paralysis">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1500"/>
+  <for>
+  </for>
+</skill>
+<skill id="4320" levels="12" name="Poison">
+<!--- TODO -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 77 78 83 </table>
+  <table name="#power"> 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 15.0 16.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1500"/>
+  <for>
+  </for>
+</skill>
+<skill id="4321" levels="1" name="Decrease P. Def.">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1500"/>
+  <for>
+  </for>
+</skill>
+<skill id="4322" levels="1" name="Wind Walk For Novice">
+<table name="#Tab-runSpd"> 20 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="21"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0" stackOrder="#Tab-runSpd" stackType="SpeedUp">
+    <add order="0x40" stat="runSpd" val="#Tab-runSpd"/>
+ </effect>
+</for>
+</skill>
+<skill id="4323" levels="1" name="Shield For Novice">
+  <table name="#rate"> 1.08  </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="8"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0" stackOrder="#rate" stackType="pDef">
+    <mul order="0x50" stat="pDef" val="#rate"/>
+  </effect>
+</for>
+</skill>
+<skill id="4324" levels="1" name="Bless the Body For Novice">
+  <table name="#Tab-maxHp"> 1.1 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="16"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0">
+    <mul order="0x50" stat="maxHp" val="#Tab-maxHp"/>
+ </effect>
+</for>
+</skill>
+<skill id="4325" levels="1" name="Vampiric Rage For Novice">
+ <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="14"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+ <table name="#abs"> 20 </table>
+<for>
+ <effect count="1" name="Buff" time="3600" val="0">
+    <add stat="absorbDam" val="#abs" order="0x50"/>
+ </effect>
+</for>
+
+</skill>
+<skill id="4326" levels="1" name="Regeneration For Novice">
+ <table name="#rate"> 1.15 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="13"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0">
+    <mul order="0x50" stat="regHp" val="#rate"/>
+  </effect>
+</for>
+</skill>
+<skill id="4327" levels="1" name="Haste For Novice">
+  <table name="#Tab-pAtkSpd"> 1.15 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="14"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0" stackOrder="#Tab-pAtkSpd" stackType="pAtkSpeedUp">
+    <mul order="0x50" stat="pAtkSpd" val="#Tab-pAtkSpd"/>
+ </effect>
+</for>
+</skill>
+<skill id="4328" levels="1" name="Bless the Soul For Novice">
+  <table name="#Tab-maxMp"> 1.1 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="12"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0">
+    <mul order="0x50" stat="maxMp" val="#Tab-maxMp"/>
+ </effect>
+</for>
+</skill>
+<skill id="4329" levels="1" name="Acumen For Novice">
+  <table name="#Tab-mAtkSpd"> 1.15 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="10"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0" stackOrder="#Tab-mAtkSpd" stackType="mAtkSpeedUp">
+    <mul order="0x50" stat="mAtkSpd" val="#Tab-mAtkSpd"/>
+  </effect>
+</for>
+</skill>
+<skill id="4330" levels="1" name="Concentration For Novice">
+  <table name="#cancel"> 18 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="10"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+    <effect count="1" name="Buff" time="3600" val="0">
+      <sub order='0x40' stat='cancel' val="#cancel"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4331" levels="1" name="Empower For Novice">
+  <table name="#Tab-mAtk"> 1.55 </table>
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="12"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="3600000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="3600" val="0" stackOrder="#Tab-mAtk" stackType="mAtk">
+    <mul order="0x50" stat="mAtk" val="#Tab-mAtk"/>
+  </effect>
+</for>
+</skill>
+<skill id="4332" levels="1" name="Mental Aegis">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4333" levels="6" name="Resist Dark Attack">
+<!--- TODO -->
+  <table name="#Tab-darkRes"> 1.1 1.15 1.2 1.25 1.3 1.35 </table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x50" stat="darkRes" val="#Tab-darkRes"/>
+  </for>
+</skill>
+<skill id="4334" levels="1" name="SSQ Cancel">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1000"/>
+  <for>
+  </for>
+</skill>
+<skill id="4335" levels="1" name="Sacred Attack">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4336" levels="5" name="Dark Attack Weak Point">
+<!--- TODO -->
+  <table name="#Tab-darkRes"> 10 15 20 25 30 </table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+     <sub order="0x50" stat="darkRes" val="#Tab-darkRes"/>
+  </for>
+</skill>
+<skill id="4337" levels="6" name="Resist Sacred Attack">
+<!--- TODO -->
+  <table name="#Tab-holyRes"> 1.1 1.15 1.2 1.25 1.3 1.35 </table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <mul order="0x50" stat="holyRes" val="#Tab-holyRes"/>
+  </for>
+</skill>
+<skill id="4338" levels="1" name="Life Cubic For Novice">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4339" levels="1" name="Mimir's Elixir">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4340" levels="1" name="Ultimate Buff, 2nd">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4341" levels="1" name="Ultimate Buff, 3rd">
+<!--- TODO -->
+  <set name="mpConsume" val="50"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4342" levels="2" name="Clan Hall Wind Walk">
+<!--- TODO -->
+  <table name="#mpConsume"> 50 100 </table>
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4343" levels="3" name="Clan Hall: Decrease Weight">
+<!--- TODO -->
+  <table name="#mpConsume"> 50 0 100 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4344" levels="3" name="Clan Hall: Shield">
+<!--- TODO -->
+  <table name="#mpConsume"> 50 0 100 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4345" levels="3" name="Clan Hall: Might">
+<!--- TODO -->
+  <table name="#mpConsume"> 50 0 100 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4346" levels="4" name="Clan Hall: Mental Shield">
+<!--- TODO -->
+  <table name="#mpConsume"> 50 0 0 100 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4347" levels="6" name="Clan Hall: Bless the Body">
+  <table name="#mpConsume"> 0 150 0 0 0 300 </table>
+  <table name="#Tab-maxHp"> 1.1 1.15 1.2 1.25 1.3 1.4 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <for>
+  <effect count="1" name="Buff" time="1200" val="0">
+    <mul order="0x50" stat="maxHp" val="#Tab-maxHp"/>
+  </effect>
+  </for>
+</skill>
+<skill id="4348" levels="6" name="Clan Hall: Bless the Soul">
+<!--- TODO -->
+  <table name="#mpConsume"> 0 150 0 0 0 300 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 </table>
+  <set name="power" val="#power"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4349" levels="2" name="Clan Hall: Magic Barrier">
+<!--- TODO -->
+  <table name="#mpConsume"> 150 300 </table>
+  <table name="#power"> 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4350" levels="4" name="Clan Hall: Resist Shock">
+<!--- TODO -->
+  <table name="#mpConsume"> 150 0 0 300 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4351" levels="6" name="Clan Hall: Concentration">
+<!--- TODO -->
+  <table name="#mpConsume"> 0 200 0 0 0 400 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 </table>
+  <set name="power" val="#power"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4352" levels="2" name="Clan Hall: Berserker Spirit">
+<!--- TODO -->
+  <table name="#mpConsume"> 200 400 </table>
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4353" levels="6" name="Clan Hall: Bless Shield">
+<!--- TODO -->
+  <table name="#mpConsume"> 0 200 0 0 0 400 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 </table>
+  <set name="power" val="#power"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4354" levels="4" name="Clan Hall: Vampiric Rage">
+<!--- TODO -->
+  <table name="#mpConsume"> 200 0 0 400 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4355" levels="3" name="Clan Hall: Acumen">
+<!--- TODO -->
+  <table name="#mpConsume"> 300 0 600 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4356" levels="3" name="Clan Hall: Empower">
+<!--- TODO -->
+  <table name="#mpConsume"> 300 0 600 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4357" levels="2" name="Clan Hall: Haste">
+<!--- TODO -->
+  <table name="#mpConsume"> 300 600 </table>
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4358" levels="3" name="Clan Hall: Guidance">
+<!--- TODO -->
+  <table name="#mpConsume"> 200 0 400 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4359" levels="3" name="Clan Hall: Focus">
+<!--- TODO -->
+  <table name="#mpConsume"> 300 0 600 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4360" levels="3" name="Clan Hall: Death Whisper">
+<!--- TODO -->
+  <table name="#mpConsume"> 300 0 600 </table>
+  <table name="#power"> 1.0 2.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4361" levels="2" name="Curse of Destruction">
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="600"/>
+  <for>
+   <effect count="1" name="Buff" time="1200" val="0">
+     <sub order="0x50" stat="accCombat" val="5"/>
+     <mul order="0x50" stat="sleepRes" val="0.75"/>
+     <mul order="0x50" stat="rootRes" val="0.75"/>
+     <mul order="0x50" stat="stunRes" val="0.75"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4362" levels="2" name="Curse of Destruction">
+<!--- TODO
+Curse of the Preacher of Doom. Temporarily decreases Casting Spd.
+and resistance to Sleep/Hold/Shock attacks. Effect 2. -->
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="600"/>
+  <for>
+   <effect count="1" name="Buff" time="1200" val="0">
+     <mul order="0x50" stat="mAtkSpd" val="0.75"/>
+     <mul order="0x50" stat="sleepRes" val="0.75"/>
+     <mul order="0x50" stat="rootRes" val="0.75"/>
+     <mul order="0x50" stat="stunRes" val="0.75"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4363" levels="1" name="Curse of Destruction">
+<!--- TODO
+Curse of the Preacher of Doom. Temporarily decreases Accuracy. Effect 1.
+-->
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4364" levels="2" name="Blessing of Prophecy">
+<!--- TODO
+Blessing of the Orator of Revelations. Temporarily decreases body 
+weight and increases resistance to Poison/Bleed/Hold/Shock/Paralysis attacks. 
+Effect 2.-->
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <for>
+   <effect count="1" name="Buff" time="1200" val="0">
+     <mul order="0x40" stat="maxLoad" val="1.25"/>
+     <mul order="0x50" stat="poisonRes" val="1.25"/>
+     <mul order="0x50" stat="bleedRes" val="1.25"/>
+     <mul order="0x50" stat="rootRes" val="1.25"/>
+     <mul order="0x50" stat="stunRes" val="1.25"/>
+     <mul order="0x50" stat="earthRes" val="1.25"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4365" levels="2" name="Blessing of Prophecy">
+<!--- TODO
+Blessing of the Orator of Revelations. Temporarily, the chance 
+to get one's magic canceled by damage is decreased and one's 
+resistance to Hold/Mental attack is increased. -->
+  <table name="#power"> 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <for>
+   <effect count="1" name="Buff" time="1200" val="0">
+     <sub order="0x40" stat="cancel" val="36"/>
+     <mul order="0x50" stat="poisonRes" val="1.25"/>
+     <mul order="0x50" stat="bleedRes" val="1.25"/>
+     <mul order="0x50" stat="rootRes" val="1.25"/>
+     <mul order="0x50" stat="stunRes" val="1.25"/>
+     <mul order="0x50" stat="earthRes" val="1.25"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4366" levels="1" name="Blessing of Prophecy">
+<!--- TODO
+Blessing of the Orator of Revelations. Temporarily decreases body 
+weight and increases resistance to Poison/Bleed attacks. Effect 1.
+-->
+  <set name="power" val="1.0"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4367" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4368" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4369" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4370" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4371" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4372" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4373" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4374" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4375" levels="1" name="Clan Hall Manager Buff">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4376" levels="1" name="Strong Resistance to P.Atk.">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4377" levels="12" name="Wield Temper">
+<!--- TODO -->
+  <table name="#mpConsume"> 14 22 31 43 55 68 79 84 89 92 94 95 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="hitTime" val="1000"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="4378" levels="12" name="Self Damage Shield">
+  <table name="#mpConsume"> 12 19 26 35 45 55 65 69 72 75 77 78 </table>
+  <table name="#power"> 10.0 15.0 20.0 25.0 30.0 35.0 40.0 45.0 50.0 55.0 60.0 65.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="1800"/>
+  <set name="reuseDelay" val="60000"/>
+  <set name="skillTime" val="1800"/>
+  <set name="skillType" val="REFLECT"/>
+  <set name="isMagic" val="false"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+   <effect count="1" name="Buff" time="1200" val="0">
+     <add order="0x50" stat="reflectDam" val="#power"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4379" levels="6" name="Resist Pole Arm">
+  <table name="#Tab-poleRes"> 40 50 60 70 80 90 </table>
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+	<add order="0x50" stat="poleWpnRes" val="#Tab-poleRes"/>
+  </for>
+</skill>
+<skill id="4380" levels="1" name="Arena CP Recovery">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4381" levels="1" name="Magic Skill Block">
+<!--- TODO
+Temporarily blocks the use of magic skills.
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4382" levels="12" name="Curse of Lake Ghost">
+<!--- TODO
+Being curse by Lake Ghost, the head is enlarged temporarily.-->
+  <table name="#mpConsume"> 14 22 31 43 55 68 79 84 89 92 94 95 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="hitTime" val="1000"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="skillTime" val="1000"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="4383" levels="1" name="NPC Hate Stone">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4384" levels="1" name="Scapegoat's Grace">
+<!--- TODO
+Temporarily provides protection against the de-buff that lowers one's P. Def.
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4385" levels="1" name="Scapegoat's Grace">
+<!--- TODO
+Temporarily provides protection against the de-buff that lowers one's P. Atk.
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4386" levels="1" name="Scapegoat's Grace">
+<!--- TODO
+Temporarily provides protection against the de-buff that poisons.-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4387" levels="1" name="Scapegoat's Grace">
+<!--- TODO
+Temporarily provides protection against the de-buff that 
+lowers the effectiveness of HP regeneration magic.-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4388" levels="6" name="Resist Paralysis">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4389" levels="6" name="Resist Mental Derangement">
+<!--- TODO
+1.Provides resistance against mental attack.
+2.Resist Mental Derangement
+3.Resist Mental Derangement
+4.Resist Mental Derangement
+5.Possesses strong resistance against mental attacks.
+6.Possesses strong resistance against mental attacks.
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4390" levels="1" name="NPC Abnormal Immunity">
+<!--- TODO -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<!--- ID 4391 thru 4399 have NONE listed for skill name -->
+</list>

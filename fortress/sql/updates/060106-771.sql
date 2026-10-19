@@ -1,0 +1,1 @@
+ALTER TABLE `clan_wars` ADD COLUMN `type` INT NOT NULL DEFAULT 1;

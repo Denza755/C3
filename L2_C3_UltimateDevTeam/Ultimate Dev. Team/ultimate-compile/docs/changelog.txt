@@ -1,0 +1,62 @@
+Работа проведёная в ядре:
+ Очищение и оптимизация кода
+ Суппорт с C3 и С4 Клиентами (Пакеты и прочее)
+ Суппорт Альянса Войны (С клиентом С4)
+ Рабочее Включение//Выключение авто изучения скиллов
+ Включение выключение наших копирайтов (возможно ваших если поменяете текст) при входе в игру и самой игры )
+ Support создания вещей крафтером на клиенте С4
+ HP gain skills
+ summon any monster as GM's pet
+ sending Vietnamese messages in server -> client
+ теперь можно вызвать виверну (Раньше нельзя было)
+ Fix Energy Stones
+ Support for TARGET_AREA_CORPSE_MOB type skills
+ Support for Signboard in town/arena
+ Support for UNHOLY/SACRED element
+ Fixed magic reuse delay now depend your cast speed
+ Fixed TARGET_UNDEAD now check target type is Undead and don't Dead
+ Fixed TARGET_AREA now work like retail
+ Fixed TARGET_ALLY if player don't have ally will apply to clan
+ Fixed FEAR skills now work
+И многое другое!
+
+Дополнения:
+ Added max player record (DisateR)
+ Добавлен журнал ГМ действий
+ Добавлена возможность изменения конфигурации 7 Печатей.
+ Добавлен фильтр запрещёных слов на сервере (Мат и прочее) (gameserver/config/sayfilter.txt)
+ Добавлен Сервер конфиг в самой игре. (комманда: //config_server)
+ Добавлена возможность просматривать статы/дроп с мобов shift кликом. ( THX L2JF)
+ Выведена опция в конфиги для запрещения Deatch Penalty
+ Added option for disable server restart player recommendation point
+ Cделана новая, более удобная админ-Панель
+ Добавлена опция в меню администратора установить уровень игрока 
+ Добавлена возможность настроить GM / VIP имена определёный цветом (Например гм зелёный а вип фиолетовый) 
+ Добавлен конфиг для телепорта всех игроков без проверки на 7 печатей в Necro/Catacomb (True//False)
+ Добавлен конфиг для включения или выключения clan penalty
+ Added config for maximum amount when buy/sell items
+и многое другое! 
+
+ДатаПак:
+ Catacomb Apostate/Branded/Forbiden Path/Witch
+ Добавлен C4 spawnlist (Только для С4)
+ Корректный droplist для catacomb и necropolis
+ Корректные статы для суммонов
+ Полный C3 Droplist
+ Полные исправления для Necropolis и Sacrifice
+ Фикс Punch of Doom (Stun) как на оффе!
+ Добавлены C4 Скиллы
+ Html файл для Innadril chamberlain
+ Full C3 NPC stats from l2db.ru
+ фикс квеста 231_TestOfMaestro (ещё на тесте)
+ Fixed Servitor Ultimate Defense
+ Data_fix фиксы для ToI NPC статов
+ Фикс Всех скиллов осад.
+ Фикс многих скиллов
+ Support с C4 оружий и S grade армором и сетов (нужен специальный патч если будете использовать на С3)
+ Tattoo Магазин
+ Добавлены миньоны
+ Correct reflectDam and absorbDam stacking for nomore 110% reflect dmg
+ Spawnlist как на офф C3 для Catacomb/Necropolis
+
+И многое другое!

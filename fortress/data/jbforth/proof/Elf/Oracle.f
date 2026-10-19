@@ -1,0 +1,15 @@
+1235 CONSTANT Leaf_of_oracle
+29 CONSTANT eOracle_ClassId
+
+: bypass_to_eOracle
+    player@ x.level 20 < if
+        "You have not enough level" .
+        exit
+    then
+  Leaf_of_oracle player@ inventory? 0 > if
+		Leaf_of_oracle 1 player@ inventory-! drop
+		eOracle_ClassId player@ class!
+		2025 st
+		exit
+	then
+;

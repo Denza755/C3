@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<item id='6408' name="Formal Wear">
+  <for />
+</item>
+<item id='6656' name="Earring of Antharas">
+  <for>
+    <add val='71' order='0x10' stat='mDef' />
+    <add val='31' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6657' name="Necklace of Valakas">
+  <for>
+    <add val='95' order='0x10' stat='mDef' />
+    <add val='42' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6658' name="Ring of Baium">
+  <for>
+    <add val='48' order='0x10' stat='mDef' />
+    <add val='21' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6659' name="Zaken`s Earring">
+  <for>
+    <add val='71' order='0x10' stat='mDef' />
+    <add val='31' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6660' name="Ring of Queen Ant">
+  <for>
+    <add val='48' order='0x10' stat='mDef' />
+    <add val='21' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6661' name="Earring of Orfen">
+  <for>
+    <add val='71' order='0x10' stat='mDef' />
+    <add val='31' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6662' name="Ring of Core">
+  <for>
+    <add val='48' order='0x10' stat='mDef' />
+    <add val='21' order='0x10' stat='maxMp' />
+    <enchant val='0' order='0x0C' stat='mDef' />
+  </for>
+</item>
+<item id='6674' name="Sealed Imperial Crusader Breastplate">
+  <for>
+    <add val='193' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6675' name="Sealed Imperial Crusader Gaiters">
+  <for>
+    <add val='121' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6676' name="Sealed Imperial Crusader Gauntlet">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6677' name="Sealed Imperial Crusader Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6679' name="Sealed Imperial Crusader Helmet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6680' name="Sealed Draconic Leather Armor">
+  <for>
+    <add val='236' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6681' name="Sealed Draconic Leather Glove">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6682' name="Sealed Draconic Leather Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6683' name="Sealed Draconic Leather Helmet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6684' name="Sealed Major Arcana Robe">
+  <for>
+    <add val='157' order='0x10' stat='pDef' />
+    <add val='866' order='0x10' stat='maxMp' />
+  </for>
+</item>
+<item id='6685' name="Sealed Major Arcana Glove">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6686' name="Sealed Major Arcana Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6687' name="Sealed Major Arcana Circlet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6724' name="Sealed Tateossian Earring">
+  <for>
+    <add val='68' order='0x10' stat='mDef' />
+  </for>
+</item>
+<item id='6725' name="Sealed Tateossian Ring">
+  <for>
+    <add val='46' order='0x10' stat='mDef' />
+  </for>
+</item>
+<item id='6726' name="Sealed Tateossian Necklace">
+  <for>
+    <add val='91' order='0x10' stat='mDef' />
+  </for>
+</item>
+<item id='6834' name="Circlet of Innadrill">
+  <for />
+</item>
+<item id='6835' name="Circlet of Dion">
+  <for />
+</item>
+<item id='6836' name="Circlet of Goddard">
+  <for />
+</item>
+<item id='6837' name="Circlet of Oren">
+  <for />
+</item>
+<item id='6838' name="Circlet of Gludio">
+  <for />
+</item>
+<item id='6839' name="Circlet of Giran">
+  <for />
+</item>
+<item id='6840' name="Circlet of Aden">
+  <for />
+</item>
+<item id='6841' name="Crown of Lord">
+  <for />
+</item>
+<item id='6842' name="Wings of Destiny Circlet">
+  <for />
+</item>
+<item id='6843' name="Cat Ear">
+  <for />
+</item>
+<item id='6844' name="Lady`s Hair Pin">
+  <for />
+</item>
+<item id='6845' name="Pirate`s Eye Patch">
+  <for />
+</item>
+<item id='6846' name="Monocle">
+  <for />
+</item>
+<item id='7059' name="Hair Accessory for Events">
+  <for />
+</item>
+<item id='7060' name="Tateossian Hairband">
+  <for />
+</item>
+<item id='7680' name="Raccoon Ear">
+  <for />
+</item>
+<item id='7681' name="Outlaw`s Eyepatch">
+  <for />
+</item>
+<item id='7682' name="Maiden`s Hairpin">
+  <for />
+</item>
+<item id='7683' name="Rabbit Ear">
+  <for />
+</item>
+<item id='7694' name="Noblesse Tiara">
+  <for />
+</item>
+<item id='7695' name="Forget-me-not Hairpin">
+  <for />
+</item>
+<item id='7696' name="Daisy Hairpin">
+  <for />
+</item>
+<item id='7836' name="Santa`s Hat">
+  <for />
+</item>
+<item id='7837' name="Gold-line Mask">
+  <for />
+</item>
+</list>

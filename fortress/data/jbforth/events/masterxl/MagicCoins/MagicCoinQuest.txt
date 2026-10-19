@@ -1,0 +1,118 @@
+Бал это тот квест ради которого стоит жить на рейтах в 1:) Да думаю и тут он пригодится:)
+
+
+"Coin of Magic" 
+
+Хобби Warehouse Keeper Sorint's - коллекционирование монет. Он желает собрать редкие монеты, называемые Golden Dragon of Kaldis, которыми владеет Union President Bernard. Он обещает великую награду любому, кто может доставать для него монеты. 
+
+Описание квеста: 
+Level 3 Member 
+1. Поговорите с Warehouse Keeper Sorint. 
+2. Поговорите с Hunters Union President Benard. 
+3. Идите охотиться на Harit Lizardman пока не получите Kaldis Gold Dragon (появится в квестовых вещах). Они появляются южнее Forest of Mirrors. (Убивать можно любых Lizardmen’ов из семейства Harit). 
+
+Примечание: (Важно!!!) Монетка Golden Dragon of Kaldis выпадает в 90% случаев из Harit Lizardman Matriarch 
+
+4. Возвращайтесь к Warehouse Keeper Sorint и вступите в Coin Collecting Guild. Вы будете членом гильдии 3го уровня. 
+5. Собирайте монеты с монстров. Монетами, которые вы будете получать с монстров, можно обмениваться, торговать, в общем, делать все что угодно. Чтобы вы могли получать более ценные монеты, и получать более ценные вещи вам нужно повысить ваш уровень в гильдии. 
+
+Level 2 Member 
+1. Поговорите с Warehouse Keeper Sorint. 
+2. Соберите нижеперечисленные монеты: 
+1 Blood Werewolf, 1 Gold Drake, 1 Silver Fairy, 1 Blood Drevanul, 1 Gold Knight, 1 Silver Golem 
+3. Поговорите с Warehouse Keeper Sorint. 
+
+Level 1 Member 
+1. Поговорите с Warehouse Keeper Sorint. 
+2. Соберите нижеперечисленные монеты: 
+1 Silver Dryad, 1 Blood Basilisk, 1 Gold Giant, 1 Silver Undine, 1 Blood Succubus, 1 Gold Wyrm. 
+3. Поговорите с Warehouse Keeper Sorint. 
+
+Монетки и монстры, из которых они падают: 
+
+Blood Medusa выбиваются из следующих монстров: Lakin, Timak Orc, Timak Orc Soldier, Timak Orc Archer, Punishment of Undead. 
+
+Silver Unicorn выбиваются из следующих монстров: Formor, Formor Elder, Vanor Silenos Shaman, Oel Mahum, Oel Mahum Warrior, Tarlk Bugbear High Warrior. 
+
+Gold Wyvern выбиваются из следующих монстров: Timak Orc Shaman, Hatar Hanishee, Royal Cave Servant, Shackle, Malruk Succubus Turen, Headless Knight. 
+
+Обмен монет у NPC: 
+
+Magister Page (Hunter Village) будет торговаться со всеми членами гильдии: 
+1 Gold Knight - 10 Blood Medusa 
+1 Silver Fairy - 10 Blood Medusa 
+1 Blood Werewolf - 10 Blood Medusa 
+1 Nia's Blood Medusa - 20 Blood Medusa. 
+
+Researcher Lorain (Cruma Tower) будет торговаться со всеми членами гильдии: 
+1 Gold Knight - 10 Gold Wyvern 
+1 Silver Golem - 10 Gold Wyvern 
+1 Blood Drevanul- 10 Gold Wyvern 
+1 Nia's Gold Wyvern - 20 Gold Wyvern 
+
+Warehouse Keeper Hagger_(Oren) будет торговаться со всеми членами гильдии: 
+1 Gold Drake - 10 Silver Unicorn 
+1 Blood Werewolf - 10 Silver Unicorn 
+1 Nia's Silver Fairy - 20 Silver Unicorn. 
+
+Guard Stan (Oren) будет торговаться членами гильдии Level 2 или 1: 
+1 Gold Giant - 5 Gold Knight и 10 Blood Medusa 
+1 Blood Basilisk - 5 Gold Knight и 10 Blood Medusa 
+1 Silver Dryad - 5 Gold Knight и 10 Blood Medusa 
+1 Manak's Silver Dryad - 10 Gold Knight и 20 Blood Medusa 
+
+Trader Ralford (Ivory Tower) будет торговаться членами гильдии Level 2 или 1: 
+1 Gold Wyrm - 5 Silver Golem и 10 Silver Unicorn 
+1 Silver Dryad - 5 Silver Golem и 10 Silver Unicorn 
+1 Silver Undine - 5 Silver Golem и 10 Silver Unicorn 
+1 Manak's Blood Werewolf - 10 Silver Golem и 20 Silver Unicorn 
+
+
+Blacksmith Duning (Hunters Village) будет торговаться членами гильдии Level 2 или 1: 
+1 Gold Giant - 5 Blood Drevanul, 5 Silver Fairy и 10 Gold Wyvern 
+1 Blood Succubus - 5 Blood Drevanul, 5 Silver Fairy и 10 Gold Wyvern 
+1 Silver Undine - 5 Blood Drevanul, 5 Silver Fairy и 10 Gold Wyvern 
+1 Manak's Gold Giant - 10 Blood Drevanul, 10 Silver Fairy и 20 Gold Wyvern 
+
+Head Blacksmith Ferris (Aden) будет торговаться членами гильдии Level 1: 
+1 Blood Dragon - 5 Blood Basilisk и 5 Silver Dryad и 10 Gold Knight 
+1 Silver Dragon - 5 Blood Basilisk и 5 Silver Dryad и 10 Gold Knight 
+1 Gold Dragon - 5 Blood Basilisk и 5 Silver Dryad и 10 Gold Knight 
+1 Beleth's Blood Dragon - 10 Blood Basilisk и 10 a href="http://l2db.ru/item.php?id=3492">Silver Dryad и 20 Gold Knight 
+
+Warehouse Keeper Collob (Giran) будет торговаться членами гильдии Level 1: 
+1 Blood Dragon - 5 Blood Succubus и 5 Gold Giant и 10 Gold Drake 
+1 Silver Dragon - 5 Blood Succubus и 5 Gold Giant и 10 Gold Drake 
+1 Gold Dragon - 5 Blood Succubus и 5 Gold Giant и 10 Gold Drake 
+1 Beleth's Gold Dragon - 10 Blood Succubus и 10 Gold Giant и 20 Gold Drake 
+
+Grocer Pano (Floran): 
+1 Blood Dragon - 5 Gold Wyrm и 5 Silver Undine и 10 Silver Fairy 
+1 Silver Dragon - 5 Gold Wyrm и 5 Silver Undine и 10 Silver Fairy 
+1 Gold Dragon - 5 Gold Wyrm и 5 Silver Undine и 10 Silver Fairy 
+1 Beleth's Silver Dragon - 10 Gold Wyrm и 10 Silver Undine 20 Silver Fairy 
+
+Вещи, которые можно получить за монетки: 
+
+Член гильдии 3го уровня: 
+
+Moonstone Earring = 1 Nia's Blood Medusa, 6 Blood Werewolf, 6 Silver Golem 
+Earring of Protection = 1 Nia's Gold Wyvern, 8 Blood Drevanul, 7 Silver Fairy 
+Ring of Protection = 1 Nia's Silver Fairy, 5 Gold Knight, 4 Gold Drake 
+Necklace of Protection = 3 Nia's Blood Medusa, 4 Nia's Gold Wyvern, 3 Nia's Silver Fairy 
+
+
+Член гильдии 2го уровня: 
+
+Boots of Seal = 1 Blood Basilisk, 1 Silver Undine 
+Knight Shield = 1 Gold Wyrm, 1 Blood Succubus, 1 Nia's Silver Fairy 
+Dwarven Chain Gloves = 1 Gold Giant, 1 Silver Dryad, 1 Nia's Gold Wyvern 
+Shining Circlet = 1 Manak's Blood Werewolf, 1 Manak's Gold Giant, 1 Manak's Silver Dryad 
+
+
+Член гильдии 1го уровня: 
+
+Inferno Staff = 1 Beleth's Blood Dragon, 2 Gold Dragon, 2 Silver Undine 
+Wolverine Needle = 1 Beleth's Silver Dragon, 2 Manak's Blood Werewolf, 1 Manak's Silver Dryad 
+Poleaxe = 1 Beleth's Silver Dragon, 2 Blood Dragon, 2 Silver Dragon 
+Sword of Limit = 1 Beleth's Blood Dragon, 1 Beleth's Silver Dragon, 1 Beleth's Gold Dragon 

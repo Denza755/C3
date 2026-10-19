@@ -1,0 +1,38 @@
+package net.sf.l2j.gameserver.handler.itemhandlers;
+
+import net.sf.l2j.gameserver.handler.IItemHandler;
+import net.sf.l2j.gameserver.model.L2ItemInstance;
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.model.actor.instance.L2PlayableInstance;
+import net.sf.l2j.gameserver.serverpackets.ChooseInventoryItem;
+import net.sf.l2j.gameserver.serverpackets.SystemMessage;
+
+public class EnchantScrolls implements IItemHandler
+{
+    
+	private static int[] _itemIds = 
+	{
+        729, 730, 731, 732, // a grade
+        947, 948, 949, 950, // b grade
+        951, 952, 953, 954, // c grade
+        955, 956, 957, 958, // d grade
+        959, 960, 961, 962  // s grade
+	};
+
+    
+	public void useItem(L2PlayableInstance playable, L2ItemInstance item)
+	{
+		if (!(playable instanceof L2PcInstance)) return;
+		L2PcInstance activeChar = (L2PcInstance)playable;
+		
+		activeChar.setActiveEnchantItem(item);
+		activeChar.sendPacket(new SystemMessage(SystemMessage.SELECT_ITEM_TO_ENCHANT));
+		activeChar.sendPacket(new ChooseInventoryItem());
+		return;
+	}
+	
+	public int[] getItemIds()
+	{
+		return _itemIds;
+	}
+}

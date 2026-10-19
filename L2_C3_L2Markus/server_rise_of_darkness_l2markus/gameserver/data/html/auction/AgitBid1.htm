@@ -1,0 +1,14 @@
+﻿?<html>
+<body>
+<font color="LEVEL">Торговаться разрешено только за один клан-холл.</font> Когда заявка принята, соответствующее количество адены,<font color="LEVEL"> предварительно внесенной</font> снимается со счета клан-банка.<font color="LEVEL"> 10% заяевленной суммы составляет налог</font>, его нельзя вернуть, даже если заявка отменена.<br><font color="LEVEL"> Сумма заявки</font> должна быть больше минимального предложения (или вашей предыдущей заявки) и клан, который заявит большую цену на аукционе, выигрывает.<br> В настоящий момент <font color="aaccff">%PLEDGE_ADENA%</font> аден в складе клана. Минимальная предложенная цена составляет <font color="aaccff">%AGIT_AUCTION_MINBID%</font> аден.<br> Какую цену вы хотите предложить?
+<table width=270 border=0><tr><td width=220 align=right><edit var=bidprice width=230 align=right type=number></td><td width=40 align=right>аден</td></tr></table>
+<img src="L2UI.SquareBlank" width=270 height=10> <img src="L2UI.SquareWhite" width=270 height=1> <img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=130></td>
+<td width=70 align=center><button action="%AGIT_LINK_BACK%" value="Back" width=70 height=21 back="L2UI.DefaultButton_click" fore="L2UI.DefaultButton"></td>
+<td width=70 align=center><button action="bypass -h npc_%objectId%_bid $bidprice" value="Confirm" width=70 height=21 back="L2UI.DefaultButton_click" fore="L2UI.DefaultButton"></td>
+</tr>
+</table>
+<br>
+</body></html>

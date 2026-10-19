@@ -1,0 +1,110 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+package net.sf.l2j.gameserver.clientpackets;
+
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.ClientThread;
+import net.sf.l2j.gameserver.model.L2TradeList;
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.packets.serverpackets.SendTradeDone;
+import net.sf.l2j.gameserver.packets.serverpackets.SystemMessage;
+import net.sf.l2j.gameserver.packets.serverpackets.TradeStart;
+
+import java.nio.ByteBuffer;
+
+/**
+ * This class ...
+ * 
+ * @version $Revision: 1.5.4.2 $ $Date: 2005/03/27 15:29:30 $
+ */
+public class AnswerTradeRequest extends ClientBasePacket{
+	private static final String _C__40_ANSWERTRADEREQUEST = "[C] 40 AnswerTradeRequest";
+	
+	private final int _response;
+	
+	public AnswerTradeRequest(ByteBuffer buf, ClientThread client)
+	{
+		super(buf, client);
+		_response = readD();
+	}
+
+	void runImpl()
+	{
+		L2PcInstance player = getClient().getActiveChar();
+
+        if (player == null)
+            return;
+
+        // Alt game - Karma punishment
+        if (!Config.ALT_GAME_KARMA_PLAYER_CAN_TRADE && player.getKarma() > 0)
+            return;
+
+        L2PcInstance requestor = player.getTransactionRequester();
+
+		if (requestor.getTransactionRequester() != null)
+		{
+			if (_response == 1)
+			{
+				SystemMessage msg = new SystemMessage(SystemMessage.BEGIN_TRADE_WITH_S1);
+				msg.addString(player.getName());
+				requestor.sendPacket(msg);
+				requestor.sendPacket(new TradeStart(requestor));
+				if (requestor.getTradeList() == null)
+				{
+					requestor.setTradeList(new L2TradeList(0));
+				}
+				msg = new SystemMessage(SystemMessage.BEGIN_TRADE_WITH_S1);
+				msg.addString(requestor.getName());
+				player.sendPacket(msg);
+				player.sendPacket(new TradeStart(player));
+				if (player.getTradeList() == null)
+				{
+					player.setTradeList(new L2TradeList(0));
+				}
+			}
+			else
+			{
+				SystemMessage msg = new SystemMessage(SystemMessage.S1_DENIED_TRADE_REQUEST);
+				msg.addString(player.getName());
+				requestor.sendPacket(msg);
+				requestor.setTransactionRequester(null);
+				player.setTransactionRequester(null);
+			}
+		}
+		else 
+		{
+			if (_response != 0)
+			{
+				// trade partner logged off. trade is canceld
+				player.sendPacket(new SendTradeDone(0));
+				SystemMessage msg = new SystemMessage(SystemMessage.TARGET_IS_NOT_FOUND_IN_THE_GAME);
+				player.sendPacket(msg);
+				player.setTransactionRequester(null);
+			}
+		}
+	}
+	
+	/* (non-Javadoc)
+	 * @see net.sf.l2j.gameserver.clientpackets.ClientBasePacket#getType()
+	 */
+	public String getType()
+	{
+		return _C__40_ANSWERTRADEREQUEST;
+	}
+}

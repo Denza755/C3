@@ -1,0 +1,19 @@
+2013.03.15 12:27:58,718	INFO	10	net.sf.l2j.Config	loading login config
+2013.03.15 12:27:59,687	INFO	10	com.mchange.v2.log.MLog	MLog clients using java 1.4+ standard logging.
+2013.03.15 12:28:01,078	INFO	10	com.mchange.v2.c3p0.C3P0Registry	Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2013.03.15 12:28:01,187	INFO	10	com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource	Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7544fc49 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@807bab82 [ acquireIncrement -> 5, acquireRetryAttempts -> 0, acquireRetryDelay -> 500, autoCommitOnClose -> true, automaticTestTable -> connection_test_table, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1378tueolbh1fcqkgt|100ab23, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2000, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2a26730b [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge1378tueolbh1fcqkgt|1ac04e8, jdbcUrl -> jdbc:mysql://localhost/l2markus_db, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge1378tueolbh1fcqkgt|15b9e68, numHelperThreads -> 3 ]
+2013.03.15 12:28:03,015	INFO	10	net.sf.l2j.loginserver.GameServerTable	Loaded 127 server names
+2013.03.15 12:28:03,109	INFO	10	net.sf.l2j.loginserver.GameServerTable	GameServerTable: Loaded 1 servers (max id:0)
+2013.03.15 12:28:03,671	INFO	10	net.sf.l2j.loginserver.GameServerTable	Stored 10 Keypairs for gameserver communication
+2013.03.15 12:28:03,671	CONFIG	10	net.sf.l2j.loginserver.LoginServer	Hostname for external connections is: 37.46.230.18
+2013.03.15 12:28:03,671	CONFIG	10	net.sf.l2j.loginserver.LoginServer	Hostname for internal connections is: 192.168.1.3
+2013.03.15 12:28:03,906	INFO	10	net.sf.l2j.loginserver.LoginController	LoginContoller initating
+2013.03.15 12:28:07,500	INFO	10	net.sf.l2j.loginserver.LoginController	Stored 10 KeyPair for RSA communication
+2013.03.15 12:28:07,515	INFO	10	net.sf.l2j.loginserver.LoginServer	Ok, Listening for gameServer on port 9014
+2013.03.15 12:28:07,609	INFO	10	net.sf.l2j.loginserver.LoginServer	2 banned IPs defined
+2013.03.15 12:28:07,609	CONFIG	10	net.sf.l2j.loginserver.LoginServer	Stand Alone LoginServer Listening on port 2106
+2013.03.15 12:29:06,453	INFO	11	net.sf.l2j.loginserver.GameServerThread	Auth request received
+2013.03.15 12:29:06,453	INFO	11	net.sf.l2j.loginserver.GameServerThread	Updated Gameserver Bartz IP's:
+2013.03.15 12:29:06,468	INFO	11	net.sf.l2j.loginserver.GameServerThread	InternalIP: 192.168.1.3
+2013.03.15 12:29:06,468	INFO	11	net.sf.l2j.loginserver.GameServerThread	ExternalIP: 37.46.230.18
+2013.03.15 12:29:06,468	INFO	11	net.sf.l2j.loginserver.GameServerThread	Authed: id:0

@@ -1,0 +1,227 @@
+/*
+ * $Header: MinionList.java, 25/10/2005 18:42:48 luisantonioa Exp $
+ *
+ * $Author: luisantonioa $
+ * $Date: 25/10/2005 18:42:48 $
+ * $Revision: 1 $
+ * $Log: MinionList.java,v $
+ * Revision 1  25/10/2005 18:42:48  luisantonioa
+ * Added copyright notice
+ *
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+package net.sf.l2j.gameserver.util;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.logging.Logger;
+
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.NpcTable;
+import net.sf.l2j.gameserver.idfactory.IdFactory;
+import net.sf.l2j.gameserver.model.L2CharPosition;
+import net.sf.l2j.gameserver.model.L2MinionData;
+import net.sf.l2j.gameserver.model.L2MinionInstance;
+import net.sf.l2j.gameserver.model.L2MonsterInstance;
+import net.sf.l2j.gameserver.model.L2NpcInstance;
+import net.sf.l2j.gameserver.templates.L2NpcTemplate;
+
+/**
+ * This class ...
+ * 
+ * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
+ */
+
+public class MinionList
+{
+    private static Logger _log = Logger.getLogger(L2MonsterInstance.class.getName());
+    
+    /** List containing the current spawned minions for this L2MonsterInstance */
+    private final List<L2MinionInstance>    minionReferences;
+    private final L2MonsterInstance         master;
+    private int _minion_current,_minion_count;
+    
+    public MinionList(L2MonsterInstance master)
+    {
+        minionReferences    = new LinkedList<L2MinionInstance>();
+        this.master         = master;
+        this._minion_current = 0;
+        this._minion_count = 0;
+    }
+        
+    public int countSpawnedMinions()
+    {
+        synchronized (minionReferences)
+        {
+            return minionReferences.size(); 
+        }
+    }
+    
+    public int countSpawnedMinionsById(int minionId)
+    {
+        int count = 0;
+        synchronized (minionReferences)
+        {
+            for (L2MinionInstance minion : getSpawnedMinions())
+            {
+                if (minion.getNpcId() == minionId)
+                {
+                    count++;
+                }
+            } 
+        }
+        return count;
+    }
+    
+    public boolean hasMinions()
+    {
+        return getSpawnedMinions().size() > 0;
+    }
+    
+    public L2MonsterInstance getMaster()
+    {
+        return master;
+    }
+    public List<L2MinionInstance> getSpawnedMinions()
+    {
+        return Collections.unmodifiableList(minionReferences);
+    }
+    
+    public void addSpawnedMinion(L2MinionInstance minion)
+    {
+        synchronized (minionReferences)
+        {
+            minionReferences.add(minion);
+        }
+    }
+    
+    public int lazyCountSpawnedMinionsGroups()
+    {
+        Set<Integer> seenGroups = new HashSet<Integer>(); 
+        for (L2MinionInstance minion : getSpawnedMinions())
+        {
+            seenGroups.add(minion.getNpcId());
+        }
+        return seenGroups.size();
+    }
+    
+    public void removeSpawnedMinion(L2MinionInstance minion)
+    {
+        synchronized (minionReferences)
+        {
+            minionReferences.remove(minion);
+        }
+    }
+    
+    /**
+     * Manage the spawn of all Minions of this RaidBoss.<BR><BR>
+     * 
+     * <B><U> Actions</U> :</B><BR><BR>
+     * <li>Get the Minion data of all Minions that must be spawn </li>
+     * <li>For each Minion type, spawn the amount of Minion needed </li><BR><BR>
+     * 
+     * @param player The L2PcInstance to attack
+     * 
+     */
+    public void maintainMinions()
+    {
+        List<L2MinionData> minions = master.getTemplate().getMinionData();
+        
+        synchronized (minionReferences)
+        {
+            int minionCount, minionId, minionsToSpawn;
+            for (L2MinionData minion : minions)
+            {
+                minionCount = minion.getAmount();
+                minionId    = minion.getMinionId();
+                
+                minionsToSpawn  = minionCount - countSpawnedMinionsById(minionId);
+                
+                for (int i = 0; i < minionsToSpawn; i++)
+                {
+                    spawnSingleMinion(minionId);
+                }
+            }
+        }
+    }
+    
+    /**
+     * Init a Minion and add it in the world as a visible object.<BR><BR>
+     * 
+     * <B><U> Actions</U> :</B><BR><BR>
+     * <li>Get the template of the Minion to spawn </li>
+     * <li>Create and Init the Minion and generate its Identifier </li>
+     * <li>Set the Minion HP, MP and Heading </li>
+     * <li>Set the Minion leader to this RaidBoss </li>
+     * <li>Init the position of the Minion and add it in the world as a visible object </li><BR><BR>
+     * 
+     * @param minionid The I2NpcTemplate Identifier of the Minion to spawn
+     * 
+     */
+    public void spawnSingleMinion(int minionid)
+    {
+        // Get the template of the Minion to spawn
+        L2NpcTemplate minionTemplate = NpcTable.getInstance().getTemplate(minionid);
+        
+        // Create and Init the Minion and generate its Identifier
+        L2MinionInstance monster = new L2MinionInstance(IdFactory.getInstance().getNextId(), minionTemplate);
+        
+        // Set the Minion HP, MP and Heading
+        monster.setCurrentHpMp(monster.getMaxHp(), monster.getMaxMp());
+        monster.setHeading(master.getHeading());
+        
+        // Set the Minion leader to this RaidBoss
+        monster.setLeader(master);
+        
+        // Add a new Minion to the list of minions of this L2MonsterInstance
+        addSpawnedMinion(monster);
+        
+        // Get position for new Minion
+        L2CharPosition pos = getMinionPosition();
+	
+        // Init the position of the Minion and add it in the world as a visibleobject
+        monster.spawnMe(pos.x,pos.y,pos.z);
+        
+        if (Config.DEBUG)
+            _log.finest("Spawned minion template " + minionTemplate.npcId + " with objid: " + monster.getObjectId() + " to boss " + master.getObjectId() + " ,at: " +monster.getX()+" x, "+monster.getY()+" y, "+monster.getZ()+" z");
+    }
+
+    public L2CharPosition getMinionPosition()
+    {
+        L2CharPosition pos;
+        double x,y,angle;
+
+        int radiusBoss = ((L2NpcInstance)master).getTemplate().collisionRadius;
+        this._minion_count = countSpawnedMinions();
+
+        if(this._minion_current>=this._minion_count) {this._minion_current=0;}
+
+        angle = (this._minion_current-this._minion_count/2)*(360/this._minion_count);
+
+        x = master.getX() + 3*this._minion_count*radiusBoss*Math.sin(angle);
+        y = master.getY() + 3*this._minion_count*radiusBoss*Math.cos(angle);
+
+        this._minion_current++;
+        pos = new L2CharPosition((int)x,(int)y,master.getZ(),0);
+        return pos;
+    }
+}

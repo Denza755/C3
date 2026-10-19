@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="content-language" content="ru" />
+	<meta name="generator" content="NGCMS 0.9.3 Release [SVN880+FIX01]" />
+	<meta name="document-state" content="dynamic" />
+	<meta name="description" content="Создание игровых серверов lineage, aion, cs, tera - всё о сборках серверов, дизайнах" />
+<meta name="keywords" content="Lineage2, frozen, asterios, phoenix, фри, la2, l2, java, j, lin2, l2j, ява, сервер, сборка, emu, server, free, jfree, c4, interlude, IL, Интерлюди, Kamael, hellbound, gracia, part, mysql, sql, мускул, запрос, инструкция, компиляция, la2base, matrix, archid, rev, vip, rt, umbrella, платная, бесплатно, скачать, защита, установка, настройка, патч, клиент, крылья, шоп, гм, шаблон, дизайн, гео, дата, web, веб, дополнение, vesper, сет, армор, оружее, евент, event, l2.ini, редактирование, программа, informer, информер, текстуры, decompiller, anti, kill, key, RT, РТ, русс, тим, Team, game, guard, убивалка, kill, file, edit, xml, donate, донат, windows, DataLife engine, dle, 2z, модули, ucoz, mw, moy, web, диз, teon, open, linux, debian, ubuntu, клиент" />
+
+	<link href="http://100nt.ru/templates/nt_bootstrap/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="http://100nt.ru/rss.xml" rel="alternate" type="application/rss+xml" title="RSS" />
+	<script type="text/javascript" src="http://100nt.ru/engine/includes/js/functions.js"></script>
+	<script type="text/javascript" src="http://100nt.ru/engine/includes/js/ajax.js"></script>
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: 1982184, onlyWidgets: true});
+	</script>
+	<meta property="fb:admins" content="{100001267600801}"/>
+	<meta property="fb:app_id" content="195668433838900"/>
+	<title>100NT - создание сервера lineage, aion, cs, tera - сборки и эмуляторы : Страница не найдена</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="http://100nt.ru/templates/nt_bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="http://100nt.ru/templates/nt_bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 130px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+  </head>
+
+  <body style="background: url(http://100nt.ru/templates/nt_bootstrap/bg.jpg) no-repeat top center fixed;">
+  <div id="Auth" class="modal hide fade">
+<form name="login" method="post" action="/login/" id="login" class="form-horizontal">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal" >&times;</a>
+              <h3>Авторизация</h3>
+            </div>
+            <div class="modal-body">
+					  <fieldset>
+						<div class="control-group">
+						  <label class="control-label" for="input01"><h4>Логин</h4></label>
+						  <div class="controls">
+							<input type="text" class="input-xlarge" name="username">
+						  </div>
+						</div>
+						<div class="control-group">
+						  <label class="control-label" for="input02"><h4>Пароль</h4></label>
+						  <div class="controls">
+							<input type="password" class="input-xlarge" name="password">
+						  </div>
+						</div>
+					  </fieldset>
+				
+            <div>Если вы забыли ваш пароль вы можете воспользоватся формой <a href="/lostpassword/">восстановления пароля</a>. Если у вас еще нет аккаунта - <a href="/register/">зарегистрируйте</a> его.<br />
+			</div>
+			</div>
+            <div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Войти"> 
+              <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+            </div>
+			<hr size="3px" color="black">
+						<div style="text-align: center;"><script src="http://loginza.ru/js/widget.js" type="text/javascript"></script>
+					  <a rel="nofollow" href="http://loginza.ru/api/widget?token_url=http://loginza.ru/api/widget?token_url=http://100nt.ru/plugin/auth_loginza/&providers_set=vkontakte,twitter,google,yandex,mailru,facebook,openid" class="loginza"><img src="http://100nt.ru/engine/plugins/auth_loginza/tpl/img/sign_in_button_gray.gif" alt="Войти через loginza"/></a></div>
+</form>
+</div>
+  
+	<div style="position: absolute; top: 40px;padding-left: 35px;"><a href="http://100nt.ru" rel="tooltip" title="Приветствую тебя на 100NT!"><img src="http://100nt.ru/templates/nt_bootstrap/logo.png" title="100NT - сообщество администраторов" /></a></div>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://100nt.ru">100NT</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="http://100nt.ru/">Главная</a></li>
+              <li><a href="/board/">Форум</a></li>
+              <li><a href="/search/">Поиск</a></li>
+            </ul>
+			
+<script language="javascript">
+var set_login = 0;
+var set_pass  = 0;
+</script>
+			<ul class="nav pull-right">
+			<li><a data-toggle="modal" href="#Auth">Войти</a></li>
+			<li class="divider-vertical"></li>
+            <li><a href="/register/">Регистрация</a></li>
+          </ul>
+
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row-fluid">
+		<div class="span2" style="background:#EEEEEE;border-radius: 5px;">
+			<ul class="nav nav-list">
+			  <li class="nav-header">
+				<i class="icon-plus"></i>Навигация
+			  </li>
+			  <li>
+				<a href="http://100nt.ru">Главная</a>
+			  </li>
+			  <li>Lineage 2
+				  <ul class="nav nav-list">
+					  <li><a href="http://100nt.ru/l2server_manaul.html" rel="tooltip" title="[Lineage2]Категория: Инструкции">Инструкции</a></li>
+					  <li><a href="http://100nt.ru/l2server_java.html" rel="tooltip" title="[Lineage2]Категория: Java эмулятор">Java эмулятор</a></li>
+					  <li><a href="http://100nt.ru/l2server_pts.html" rel="tooltip" title="[Lineage2]Категория: PTS платформа">PTS платформа</a></li>
+					  <li><a href="http://100nt.ru/l2server_source.html" rel="tooltip" title="[Lineage2]Категория: Исходные коды">Исходные коды</a></li>
+					  <li><a href="http://100nt.ru/l2server_geodata.html" rel="tooltip" title="[Lineage2]Категория: Geodata и pathnode">Geodata и pathnode</a></li>
+					  <li><a href="http://100nt.ru/l2server_protection.html" rel="tooltip" title="[Lineage2]Категория: Защита сервера">Защита сервера</a></li>
+					  <li><a href="http://100nt.ru/l2server_webtemplate.html" rel="tooltip" title="[Lineage2]Категория: Веб шаблоны">Веб шаблоны</a></li>
+					  <li><a href="http://100nt.ru/l2server_webphp.html" rel="tooltip" title="[Lineage2]Категория: Веб скрипты">Веб скрипты</a></li>
+					  <li><a href="http://100nt.ru/l2server_add.html" rel="tooltip" title="[Lineage2]Категория: Дополнения">Дополнения</a></li>
+					  <li><a href="http://100nt.ru/l2server_soft.html" rel="tooltip" title="[Lineage2]Категория: Программы">Программы</a></li>
+				  </ul>
+			  </li>
+			  <li>Aion
+				  <ul class="nav nav-list">
+					  <li><a href="http://100nt.ru/aion_manaul.html" rel="tooltip" title="[Aion]Категория: Инструкции">Инструкции</a></li>
+					  <li><a href="http://100nt.ru/aion_java.html" rel="tooltip" title="[Aion]Категория: Java эмулятор">Java эмулятор</a></li>
+					  <li><a href="http://100nt.ru/aion_template.html" rel="tooltip" title="[Aion]Категория: Веб шаблоны">Веб шаблоны</a></li>
+					  <li><a href="http://100nt.ru/aion_webphp.html" rel="tooltip" title="[Aion]Категория: Веб скрипты">Веб скрипты</a></li>
+					  <li><a href="http://100nt.ru/aion_soft.html" rel="tooltip" title="[Aion]Категория: Программы">Программы</a></li>
+				  </ul>
+			  </li>
+			  <li>Tera
+				  <ul class="nav nav-list">
+					  <li><a href="http://100nt.ru/tera_manaul.html" rel="tooltip" title="[Tera]Категория: Инструкции">Инструкции</a></li>
+					  <li><a href="http://100nt.ru/tera_java.html" rel="tooltip" title="[Tera]Категория: Java эмулятор">Java эмулятор</a></li>
+					  <li><a href="http://100nt.ru/tera_template.html" rel="tooltip" title="[Tera]Категория: Веб шаблоны">Веб шаблоны</a></li>
+					  <li><a href="http://100nt.ru/tera_webphp.html" rel="tooltip" title="[Tera]Категория: Веб скрипты">Веб скрипты</a></li>
+					  <li><a href="http://100nt.ru/tera_add.html" rel="tooltip" title="[Tera]Категория: Программы">Программы</a></li>
+				  </ul>
+			  </li>
+			  <li>Counter Strike 1.6
+				  <ul class="nav nav-list">
+					  <li><a href="http://100nt.ru/cs16_server.html" rel="tooltip" title="[CS]Категория: Готовые сервера">Готовые сервера</a></li>
+					  <li><a href="http://100nt.ru/cs16_plugins.html" rel="tooltip" title="[CS]Категория: Плагины">Плагины</a></li>
+					  <li><a href="http://100nt.ru/cs16_mods.html" rel="tooltip" title="[CS]Категория: Моды">Моды</a></li>
+					  <li><a href="http://100nt.ru/cs16_maps.html" rel="tooltip" title="[CS]Категория: Карты">Карты</a></li>
+					  <li><a href="http://100nt.ru/cs16_protetct.html" rel="tooltip" title="[CS]Категория: Анти Читы">Анти Чит</a></li>
+				  </ul>
+			  </li>
+			</ul>
+					<hr color="black" height="2px" width="15px">
+		</div>
+		<div class="span8" style="background:#EEEEEE;border-radius: 5px;min-height: 800px;padding: 5px 10px;">
+			<table class="table table-striped table-bordered table-condensed">
+			  <thead>
+				<tr>
+				  <th style="text-align: center;">Последние темы на форуме</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  		<script src="http://100nt.ru/board/boardapi/js_echo.php"></script>
+			  </tbody>
+			</table>
+			<ul class="breadcrumb">
+			  <li><a href='http://100nt.ru' title='Главная страница'>Главная страница</a><span class="divider">/</span></li> <li class="active">Страница не найдена</li>
+			</ul>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><img border="0" src="http://100nt.ru/templates/nt_bootstrap/images/2z_40.gif" width="7" height="36" /></td>
+				<td style="background-image:url('http://100nt.ru/templates/nt_bootstrap/images/2z_41.gif');" width="100%">&nbsp;<img border="0" src="http://100nt.ru/templates/nt_bootstrap/images/bib.gif" />&nbsp;<b><font color="#FFFFFF">Страница не найдена</font></b></td>
+				<td><img border="0" src="http://100nt.ru/templates/nt_bootstrap/images/2z_44.gif" width="7" height="36" /></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="background-image:url('http://100nt.ru/templates/nt_bootstrap/images/2z_54.gif');" width="7">&nbsp;</td>
+				<td bgcolor="#FFFFFF">
+				Запрашиваемая вами страница не найдена.<br/><br/>Вы обращаетесь к WEB странице которая не найдена на нашем сайте.<br/>Возможно, адрес искомой страницы изменился. Попробуйте воспользоваться поиском.<br/><br/>
+				</td>
+				<td style="background-image:url('http://100nt.ru/templates/nt_bootstrap/images/2z_59.gif');" width="7">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><img border="0" src="http://100nt.ru/templates/nt_bootstrap/images/2z_68.gif" width="7" height="4" /></td>
+				<td style="background-image:url('http://100nt.ru/templates/nt_bootstrap/images/2z_69.gif');" width="100%"></td>
+				<td><img border="0" src="http://100nt.ru/templates/nt_bootstrap/images/2z_70.gif" width="7" height="4" /></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+		</div>
+			<div class="span2" style="background:#EEEEEE;border-radius: 5px;min-height: 800px;padding: 5px 10px;">
+				<ul class="nav nav-list">
+			  <li class="nav-header">
+				<i class="icon-volume-up"></i>Комментарии
+			  </li>
+			  </ul>
+			  <ul><li><a target="_blank" href="/users/adRastaman1994.html">adRastaman1994</a> <i class="icon-pencil"></i> в новости <a href="/l2server_soft/menedzher-neobhodimyh-sql-zaprosov-sql-manager.html" title="Менеджер необходимых SQL запросов - SQL Manager">Менеджер необходимых SQL запросов - SQL Manager</a> "Что-то не получается...."</li><li><a target="_blank" href="/users/andrik16.html">andrik16</a> <i class="icon-pencil"></i> в новости <a href="/l2server_add-lineage2/skachat-decendant-nablatof-for-interlude.html" title="Скачать Decendant nablatof for interlude">Скачать Decendant nablatof for interlude</a> "npcgrp   Ошибка"</li><li><a target="_blank" href="/users/nelemir.html">nelemir</a> <i class="icon-pencil"></i> в новости <a href="/l2server_webphp/skript-bazy-znanii.html" title="Скрипт базы знаний">Скрипт базы знаний</a> "Только под ГФ ?"</li><li><a target="_blank" href="/users/nelemir.html">nelemir</a> <i class="icon-pencil"></i> в новости <a href="/lineage2-l2server_webphp/scoria-cms-4.html" title="Веб обвязка scoria cms 4">Веб обвязка scoria cms 4</a> "пару рев и стресс рядом не стоял !!)"</li><li><a target="_blank" href="/users/nelemir.html">nelemir</a> <i class="icon-pencil"></i> в новости <a href="/lineage2-l2server_webphp/scoria-cms-4.html" title="Веб обвязка scoria cms 4">Веб обвязка scoria cms 4</a> "в инсталлере указа версия 3.0, так нужно..."</li></ul>
+			  <hr size="3px" color="black">
+			  <ul class="nav nav-list">
+			  <li class="nav-header">
+				<i class="icon-fire"></i>Популярное
+			  </li>
+			  </ul>
+			  <ul>
+<li><a href="/l2server_webphp/nakrutka-onlaina-na-forume-ipb-3-2-x-by-lihoy-zenn.html">Накрутка онлайна на форуме ipb 3.2.x by lihoy, zenn </a></li><li><a href="/l2server_soft/skachat-target-plus.html">Скачать Target Plus </a></li><li><a href="/l2server_webtemplate/skachat-shablon-dlja-ipb-3-2-2.html">Скачать Шаблон для ipb 3.2.2 </a></li><li><a href="/l2server_java/skachat-java-server-lineage2-god-ot-komandy-l2wt-revizija-0-1.html">Скачать ява сервер Lineage2 GoD от команды L2WT - ревизия 0.1 </a></li><li><a href="/l2server_webphp/vzlom-stressweb-11-null-ot-zero.html">Взлом stressweb 11 null от Zero </a></li><li><a href="/other/ahtung-koreici-parabaschayut-mir-ili-novaja-lineage-eternal-twilight-resistance.html">Ахтунг. Корейци парабащают мир или новая Lineage Eternal: Twilight Resistance </a></li><li><a href="/tera_java/skachat-ishodnyi-kod-java-servera-tera-ot-komandy-atracer-revizija-0-0-9-19.html">Скачать исходный код ява сервера Tera от команды ATracer - ревизия 0.0.9-19 </a></li><li><a href="/other/klient-lineage-2-goddess-of-destruction-ruof-pts.html">Клиент Lineage 2 Goddess of Destruction руофф ПТС </a></li><li><a href="/l2server_manaul/nakrutka-statistiki-poseschaemosti-smf-2-0.html">Накрутка статистики посещаемости SMF 2.0 </a></li><li><a href="/l2server_webtemplate/shablon-dlja-ipb-3-2-2.html">Шаблон для ipb 3.2.2 </a></li>
+</ul>
+
+			  <hr size="3px" color="black">
+			  <ul class="nav nav-list">
+			  <li class="nav-header">
+				<i class="icon-tag"></i>Метки
+			  </li>
+			  </ul>
+			  <a href='/plugin/tags/tag/?tag=lineage2' style ="font-size: 200%;" title='Количество новостей: 68'>lineage2</a><sup><small> <font color='red'>68</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=l2' style ="font-size: 176%;" title='Количество новостей: 52'>l2</a><sup><small> <font color='red'>52</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=interlude' style ="font-size: 176%;" title='Количество новостей: 52'>interlude</a><sup><small> <font color='red'>52</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=l2j' style ="font-size: 174%;" title='Количество новостей: 50'>l2j</a><sup><small> <font color='red'>50</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%EA%EE%EC%E0%ED%E4%FB' style ="font-size: 171%;" title='Количество новостей: 48'>команды</a><sup><small> <font color='red'>48</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=lin2' style ="font-size: 159%;" title='Количество новостей: 40'>lin2</a><sup><small> <font color='red'>40</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=freya' style ="font-size: 144%;" title='Количество новостей: 30'>freya</a><sup><small> <font color='red'>30</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F0%E5%E2%E8%E7%E8%FF' style ="font-size: 140%;" title='Количество новостей: 27'>ревизия</a><sup><small> <font color='red'>27</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F1%E5%F0%E2%E5%F0' style ="font-size: 134%;" title='Количество новостей: 23'>сервер</a><sup><small> <font color='red'>23</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=High+Five+5' style ="font-size: 126%;" title='Количество новостей: 18'>High Five 5</a><sup><small> <font color='red'>18</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F1%EA%E0%F7%E0%F2%FC' style ="font-size: 125%;" title='Количество новостей: 17'>скачать</a><sup><small> <font color='red'>17</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=la2' style ="font-size: 124%;" title='Количество новостей: 16'>la2</a><sup><small> <font color='red'>16</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=lineage' style ="font-size: 119%;" title='Количество новостей: 13'>lineage</a><sup><small> <font color='red'>13</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F1%E5%F0%E2%E5%F0%E0' style ="font-size: 115%;" title='Количество новостей: 10'>сервера</a><sup><small> <font color='red'>10</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%E4%EE%E1%E0%E2%EB%E5%ED' style ="font-size: 113%;" title='Количество новостей: 9'>добавлен</a><sup><small> <font color='red'>9</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=ct3' style ="font-size: 113%;" title='Количество новостей: 9'>ct3</a><sup><small> <font color='red'>9</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%EF%EB%E0%E3%E8%ED' style ="font-size: 112%;" title='Количество новостей: 8'>плагин</a><sup><small> <font color='red'>8</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F2%E5%EF%E5%F0%FC' style ="font-size: 110%;" title='Количество новостей: 7'>теперь</a><sup><small> <font color='red'>7</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%EA%EE%ED%F4%E8%E3' style ="font-size: 110%;" title='Количество новостей: 7'>конфиг</a><sup><small> <font color='red'>7</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=l2jserver' style ="font-size: 110%;" title='Количество новостей: 7'>l2jserver</a><sup><small> <font color='red'>7</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F5%F0%EE%ED%E8%EA' style ="font-size: 109%;" title='Количество новостей: 6'>хроник</a><sup><small> <font color='red'>6</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=armor' style ="font-size: 109%;" title='Количество новостей: 6'>armor</a><sup><small> <font color='red'>6</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=epilogue' style ="font-size: 109%;" title='Количество новостей: 6'>epilogue</a><sup><small> <font color='red'>6</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=tauti' style ="font-size: 109%;" title='Количество новостей: 6'>tauti</a><sup><small> <font color='red'>6</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%E4%E8%E7%E0%E9%ED' style ="font-size: 109%;" title='Количество новостей: 6'>дизайн</a><sup><small> <font color='red'>6</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F1%E1%EE%F0%EA%E0' style ="font-size: 107%;" title='Количество новостей: 5'>сборка</a><sup><small> <font color='red'>5</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=god' style ="font-size: 107%;" title='Количество новостей: 5'>god</a><sup><small> <font color='red'>5</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=aion' style ="font-size: 107%;" title='Количество новостей: 5'>aion</a><sup><small> <font color='red'>5</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=l2jfrozen' style ="font-size: 107%;" title='Количество новостей: 5'>l2jfrozen</a><sup><small> <font color='red'>5</font></small></sup>, 
+<a href='/plugin/tags/tag/?tag=%F0%E5%E0%EB%E8%E7%E0%F6%E8%FF' style ="font-size: 107%;" title='Количество новостей: 5'>реализация</a><sup><small> <font color='red'>5</font></small></sup>
+
+			  <p style="text-align: center;"><a href="http://100nt.ru/plugin/tags/">Все метки</a></p>
+			  			  <hr size="3px" color="black">
+			  <ul class="nav nav-list">
+			  <li class="nav-header">
+				<i class="icon-tag"></i>Счетчики
+			  </li>
+			  </ul>
+			  <p style="text-align: center;">
+			  				<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t11.10;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet--><br />
+<!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=12225697&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/12225697/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:12225697,type:0,lang:'ru'});return false}catch(e){}"/></a><!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter --><div style="display:none;"><script type="text/javascript">(function(w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter12225697 = new Ya.Metrika({id:12225697, enableAll: true}); } catch(e) { } }); })(window, "yandex_metrika_callbacks");</script></div><script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script><noscript><div><img src="//mc.yandex.ru/watch/12225697" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --><br />
+
+			  </p>
+			</div>
+		</div>
+	<footer>&nbsp;</footer>
+    </div>
+	<script type="text/javascript" src="http://100nt.ru/templates/nt_bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="http://100nt.ru/templates/nt_bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+	</script>
+	<div style="background-color: black;color: #555;">
+    <div class="container" style="padding: 2em;">
+      <div class="row">
+        <div class="span6" style="color: #555;">
+          100NT - сообщество администраторов игровых серверов.
+        </div>
+        <div class="span6" style="color: #555;">
+          All rights reserved. Все ТМ принадлежат их владельцам.
+        </div>
+      </div>
+    </div>
+  </div>
+		
+  </body>
+</html>

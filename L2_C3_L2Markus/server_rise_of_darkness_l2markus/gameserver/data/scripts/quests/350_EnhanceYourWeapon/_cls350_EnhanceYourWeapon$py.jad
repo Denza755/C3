@@ -1,0 +1,515 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   D:\server\L2Server\data\jscript\quests\350_EnhanceYourWeapon\__init__.py
+
+package data.jscript.quests;
+
+import org.python.core.*;
+
+public class _cls350_EnhanceYourWeapon$py extends PyFunctionTable
+    implements PyRunnable
+{
+
+    public PyObject f$0(PyFrame pyframe)
+    {
+        pyframe.setglobal("__file__", _0);
+        pyframe.setline(3);
+        Object obj = imp.importOne("sys", pyframe);
+        pyframe.setlocal("sys", ((PyObject) (obj)));
+        obj = null;
+        pyframe.setline(4);
+        Object aobj[] = new String[1];
+        aobj[0] = "State";
+        aobj = imp.importFrom("net.sf.l2j.gameserver.model.quest", ((String []) (aobj)), pyframe);
+        PyObject pyobject = aobj[0];
+        pyframe.setlocal("State", pyobject);
+        pyobject = null;
+        pyframe.setline(5);
+        aobj = new String[1];
+        aobj[0] = "QuestState";
+        aobj = imp.importFrom("net.sf.l2j.gameserver.model.quest", ((String []) (aobj)), pyframe);
+        pyobject = aobj[0];
+        pyframe.setlocal("QuestState", pyobject);
+        pyobject = null;
+        pyframe.setline(6);
+        aobj = new String[1];
+        aobj[0] = "QuestJython";
+        aobj = imp.importFrom("net.sf.l2j.gameserver.model.quest.jython", ((String []) (aobj)), pyframe);
+        pyobject = aobj[0];
+        pyframe.setlocal("JQuest", pyobject);
+        pyobject = null;
+        pyframe.setline(8);
+        aobj = new PyObject[3];
+        aobj[0] = _1;
+        aobj[1] = _2;
+        aobj[2] = _3;
+        aobj = new PyList(((PyObject []) (aobj)));
+        pyframe.setlocal("NPC", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(18);
+        aobj = pyframe.getname("range").__call__(_4, _5);
+        PyObject apyobject[] = Py.unpackSequence(((PyObject) (aobj)), 36);
+        PyObject pyobject2 = apyobject[0];
+        pyframe.setlocal("RED_SOUL_CRYSTAL0_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[1];
+        pyframe.setlocal("RED_SOUL_CRYSTAL1_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[2];
+        pyframe.setlocal("RED_SOUL_CRYSTAL2_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[3];
+        pyframe.setlocal("RED_SOUL_CRYSTAL3_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[4];
+        pyframe.setlocal("RED_SOUL_CRYSTAL4_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[5];
+        pyframe.setlocal("RED_SOUL_CRYSTAL5_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[6];
+        pyframe.setlocal("RED_SOUL_CRYSTAL6_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[7];
+        pyframe.setlocal("RED_SOUL_CRYSTAL7_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[8];
+        pyframe.setlocal("RED_SOUL_CRYSTAL8_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[9];
+        pyframe.setlocal("RED_SOUL_CRYSTAL9_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[10];
+        pyframe.setlocal("RED_SOUL_CRYSTAL10_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[11];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL0_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[12];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL1_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[13];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL2_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[14];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL3_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[15];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL4_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[16];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL5_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[17];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL6_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[18];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL7_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[19];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL8_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[20];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL9_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[21];
+        pyframe.setlocal("GREEN_SOUL_CRYSTAL10_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[22];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL0_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[23];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL1_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[24];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL2_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[25];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL3_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[26];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL4_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[27];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL5_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[28];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL6_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[29];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL7_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[30];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL8_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[31];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL9_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[32];
+        pyframe.setlocal("BLUE_SOUL_CRYSTAL10_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[33];
+        pyframe.setlocal("RED_SOUL_CRYSTALX_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[34];
+        pyframe.setlocal("GREEN_SOUL_CRYSTALX_ID", pyobject2);
+        pyobject2 = null;
+        pyobject2 = apyobject[35];
+        pyframe.setlocal("BLUE_SOUL_CRYSTALX_ID", pyobject2);
+        pyobject2 = null;
+        aobj = null;
+        pyframe.setline(20);
+        aobj = new PyFunction(pyframe.f_globals, Py.EmptyObjects, check$1, null);
+        pyframe.setlocal("check", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(26);
+        aobj = new PyObject[1];
+        aobj[0] = pyframe.getname("JQuest");
+        aobj = Py.makeClass("Quest", ((PyObject []) (aobj)), Quest$2, null);
+        pyframe.setlocal("Quest", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(60);
+        aobj = pyframe.getname("Quest").__call__(_29, _30, _31);
+        pyframe.setlocal("QUEST", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(61);
+        aobj = pyframe.getname("State").__call__(_32, pyframe.getname("QUEST"));
+        pyframe.setlocal("CREATED", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(62);
+        aobj = pyframe.getname("State").__call__(_33, pyframe.getname("QUEST"));
+        pyframe.setlocal("STARTING", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(63);
+        aobj = pyframe.getname("State").__call__(_34, pyframe.getname("QUEST"));
+        pyframe.setlocal("STARTED", ((PyObject) (aobj)));
+        aobj = null;
+        pyframe.setline(65);
+        pyframe.getname("QUEST").__getattr__("setInitialState").__call__(pyframe.getname("CREATED"));
+        pyframe.setline(67);
+        aobj = pyframe.getname("NPC").__iter__();
+        do
+        {
+            pyframe.setline(67);
+            pyobject1 = ((PyObject) (aobj)).__iternext__();
+            if(pyobject1 != null)
+            {
+                pyframe.setlocal("npcId", pyobject1);
+                pyframe.setline(68);
+                pyframe.getname("QUEST").__getattr__("addStartNpc").__call__(pyframe.getname("npcId"));
+                pyframe.setline(69);
+                pyframe.getname("CREATED").__getattr__("addTalkId").__call__(pyframe.getname("npcId"));
+                pyframe.setline(70);
+                pyframe.getname("STARTING").__getattr__("addTalkId").__call__(pyframe.getname("npcId"));
+                pyframe.setline(71);
+                pyframe.getname("STARTED").__getattr__("addTalkId").__call__(pyframe.getname("npcId"));
+            } else
+            {
+                pyframe.setline(73);
+                pyframe.getname("STARTED").__getattr__("addQuestDrop").__call__(_4, pyframe.getname("RED_SOUL_CRYSTAL0_ID"), _16);
+                pyframe.setline(74);
+                pyframe.getname("STARTED").__getattr__("addQuestDrop").__call__(_35, pyframe.getname("GREEN_SOUL_CRYSTAL0_ID"), _16);
+                pyframe.setline(75);
+                pyframe.getname("STARTED").__getattr__("addQuestDrop").__call__(_36, pyframe.getname("BLUE_SOUL_CRYSTAL0_ID"), _16);
+                pyframe.setline(77);
+                Py.println(_37);
+                pyframe.f_lasti = -1;
+                return Py.None;
+            }
+        } while(true);
+    }
+
+    public PyObject check$1(PyFrame pyframe)
+    {
+        pyframe.setline(21);
+        PyObject pyobject = pyframe.getglobal("range").__call__(_4, _5).__iter__();
+        do
+        {
+            pyframe.setline(21);
+            pyobject1 = pyobject.__iternext__();
+            if(pyobject1 != null)
+            {
+                pyframe.setlocal(1, pyobject1);
+                pyframe.setline(22);
+                if(pyframe.getlocal(0).__getattr__("getQuestItemsCount").__call__(pyframe.getlocal(1))._gt(_6).__nonzero__())
+                {
+                    pyframe.setline(23);
+                    PyObject pyobject2 = pyframe.getglobal("True");
+                    pyframe.f_lasti = -1;
+                    return pyobject2;
+                }
+            } else
+            {
+                pyframe.setline(24);
+                PyObject pyobject3 = pyframe.getglobal("False");
+                pyframe.f_lasti = -1;
+                return pyobject3;
+            }
+        } while(true);
+    }
+
+    public PyObject Quest$2(PyFrame pyframe)
+    {
+        pyframe.setline(28);
+        PyFunction pyfunction = new PyFunction(pyframe.f_globals, Py.EmptyObjects, __init__$3, null);
+        pyframe.setlocal("__init__", pyfunction);
+        pyfunction = null;
+        pyframe.setline(30);
+        pyfunction = new PyFunction(pyframe.f_globals, Py.EmptyObjects, onEvent$4, null);
+        pyframe.setlocal("onEvent", pyfunction);
+        pyfunction = null;
+        pyframe.setline(46);
+        pyfunction = new PyFunction(pyframe.f_globals, Py.EmptyObjects, onTalk$5, null);
+        pyframe.setlocal("onTalk", pyfunction);
+        pyfunction = null;
+        return pyframe.getf_locals();
+    }
+
+    public PyObject __init__$3(PyFrame pyframe)
+    {
+        pyframe.setline(28);
+        pyframe.getglobal("JQuest").__getattr__("__init__").__call__(pyframe.getlocal(0), pyframe.getlocal(1), pyframe.getlocal(2), pyframe.getlocal(3));
+        pyframe.f_lasti = -1;
+        return Py.None;
+    }
+
+    public PyObject onEvent$4(PyFrame pyframe)
+    {
+        pyframe.setline(31);
+        PyObject pyobject = pyframe.getlocal(1);
+        pyframe.setlocal(3, pyobject);
+        pyobject = null;
+        pyframe.setline(32);
+        PyObject apyobject[] = new PyObject[3];
+        apyobject[0] = _7;
+        apyobject[1] = _8;
+        apyobject[2] = _9;
+        if(pyframe.getlocal(1)._in(new PyList(apyobject)).__nonzero__())
+        {
+            pyframe.setline(33);
+            pyframe.getlocal(2).__getattr__("set").__call__(_10, _11);
+            pyframe.setline(34);
+            pyframe.getlocal(2).__getattr__("setState").__call__(pyframe.getglobal("STARTED"));
+            pyframe.setline(35);
+            pyframe.getlocal(2).__getattr__("playSound").__call__(_12);
+        } else
+        {
+            pyframe.setline(36);
+            PyObject apyobject1[] = new PyObject[3];
+            apyobject1[0] = _13;
+            apyobject1[1] = _14;
+            apyobject1[2] = _15;
+            if(pyframe.getlocal(1)._in(new PyList(apyobject1)).__nonzero__())
+            {
+                pyframe.setline(37);
+                pyframe.getlocal(2).__getattr__("giveItems").__call__(pyframe.getglobal("RED_SOUL_CRYSTAL0_ID"), _16);
+            } else
+            {
+                pyframe.setline(38);
+                PyObject apyobject2[] = new PyObject[3];
+                apyobject2[0] = _17;
+                apyobject2[1] = _18;
+                apyobject2[2] = _19;
+                if(pyframe.getlocal(1)._in(new PyList(apyobject2)).__nonzero__())
+                {
+                    pyframe.setline(39);
+                    pyframe.getlocal(2).__getattr__("giveItems").__call__(pyframe.getglobal("GREEN_SOUL_CRYSTAL0_ID"), _16);
+                } else
+                {
+                    pyframe.setline(40);
+                    PyObject apyobject3[] = new PyObject[3];
+                    apyobject3[0] = _20;
+                    apyobject3[1] = _21;
+                    apyobject3[2] = _22;
+                    if(pyframe.getlocal(1)._in(new PyList(apyobject3)).__nonzero__())
+                    {
+                        pyframe.setline(41);
+                        pyframe.getlocal(2).__getattr__("giveItems").__call__(pyframe.getglobal("BLUE_SOUL_CRYSTAL0_ID"), _16);
+                    } else
+                    {
+                        pyframe.setline(42);
+                        if(pyframe.getlocal(1)._eq(_23).__nonzero__())
+                        {
+                            pyframe.setline(43);
+                            pyframe.getlocal(2).__getattr__("exitQuest").__call__(_16);
+                        }
+                    }
+                }
+            }
+        }
+        pyframe.setline(44);
+        pyobject = pyframe.getlocal(3);
+        pyframe.f_lasti = -1;
+        return pyobject;
+    }
+
+    public PyObject onTalk$5(PyFrame pyframe)
+    {
+        pyframe.setline(47);
+        Object obj = pyframe.getglobal("str").__call__(pyframe.getlocal(1).__getattr__("getNpcId").__call__());
+        pyframe.setlocal(5, ((PyObject) (obj)));
+        obj = null;
+        pyframe.setline(48);
+        obj = _24;
+        pyframe.setlocal(4, ((PyObject) (obj)));
+        obj = null;
+        pyframe.setline(49);
+        obj = pyframe.getlocal(2).__getattr__("getState").__call__();
+        pyframe.setlocal(3, ((PyObject) (obj)));
+        obj = null;
+        pyframe.setline(50);
+        if(pyframe.getlocal(3)._eq(pyframe.getglobal("CREATED")).__nonzero__())
+        {
+            pyframe.setline(51);
+            pyframe.getlocal(2).__getattr__("set").__call__(_10, _25);
+        }
+        pyframe.setline(52);
+        if(pyframe.getglobal("int").__call__(pyframe.getlocal(2).__getattr__("get").__call__(_10))._eq(_6).__nonzero__())
+        {
+            pyframe.setline(53);
+            obj = pyframe.getlocal(5)._add(_26);
+            pyframe.setlocal(4, ((PyObject) (obj)));
+            obj = null;
+        } else
+        {
+            pyframe.setline(54);
+            if(pyframe.getglobal("check").__call__(pyframe.getlocal(2)).__nonzero__())
+            {
+                pyframe.setline(55);
+                obj = pyframe.getlocal(5)._add(_27);
+                pyframe.setlocal(4, ((PyObject) (obj)));
+                obj = null;
+            } else
+            {
+                pyframe.setline(56);
+                PyObject pyobject;
+                if((pyobject = pyframe.getlocal(2).__getattr__("getQuestItemsCount").__call__(pyframe.getglobal("RED_SOUL_CRYSTAL0_ID"))._eq(((PyObject) (obj = pyframe.getlocal(2).__getattr__("getQuestItemsCount").__call__(pyframe.getglobal("GREEN_SOUL_CRYSTAL0_ID")))))).__nonzero__() && (pyobject = ((PyObject) (obj))._eq(((PyObject) (obj = pyframe.getlocal(2).__getattr__("getQuestItemsCount").__call__(pyframe.getglobal("BLUE_SOUL_CRYSTAL0_ID")))))).__nonzero__())
+                    pyobject = ((PyObject) (obj))._eq(_6);
+                if(pyobject.__nonzero__())
+                {
+                    pyframe.setline(57);
+                    obj = pyframe.getlocal(5)._add(_28);
+                    pyframe.setlocal(4, ((PyObject) (obj)));
+                    obj = null;
+                }
+            }
+        }
+        pyframe.setline(58);
+        obj = pyframe.getlocal(4);
+        pyframe.f_lasti = -1;
+        return ((PyObject) (obj));
+    }
+
+    public PyCode getMain()
+    {
+        return f$0;
+    }
+
+    public PyObject call_function(int i, PyFrame pyframe)
+    {
+        switch(i)
+        {
+        case 0: // '\0'
+            return f$0(pyframe);
+
+        case 1: // '\001'
+            return check$1(pyframe);
+
+        case 2: // '\002'
+            return Quest$2(pyframe);
+
+        case 3: // '\003'
+            return __init__$3(pyframe);
+
+        case 4: // '\004'
+            return onEvent$4(pyframe);
+
+        case 5: // '\005'
+            return onTalk$5(pyframe);
+        }
+        return null;
+    }
+
+    static final _cls350_EnhanceYourWeapon$py self;
+    static final PyString _9 = Py.newString("7194-04.htm");
+    static final PyInteger _36 = Py.newInteger(4651);
+    static final PyString _20 = Py.newString("7115-11.htm");
+    static final PyInteger _1 = Py.newInteger(7115);
+    static final PyString _33 = Py.newString("Starting");
+    static final PyString _37 = Py.newString("importing quests: 350: Enhance Your Weapon");
+    static final PyInteger _35 = Py.newInteger(4640);
+    static final PyString _31 = Py.newString("Enhance Your Weapon");
+    static final PyString _32 = Py.newString("Start");
+    static final PyInteger _3 = Py.newInteger(7194);
+    static final PyInteger _4 = Py.newInteger(4629);
+    static final PyString _0 = Py.newString("D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py");
+    static final PyString _21 = Py.newString("7856-11.htm");
+    static final PyInteger _2 = Py.newInteger(7856);
+    static final PyInteger _29 = Py.newInteger(350);
+    static final PyString _26 = Py.newString("-01.htm");
+    static final PyString _17 = Py.newString("7115-10.htm");
+    static final PyString _13 = Py.newString("7115-09.htm");
+    static final PyString _28 = Py.newString("-21.htm");
+    static final PyString _22 = Py.newString("7194-11.htm");
+    static final PyString _12 = Py.newString("ItemSound.quest_accept");
+    static final PyString _30 = Py.newString("350_EnhanceYourWeapon");
+    static final PyString _11 = Py.newString("1");
+    static final PyString _25 = Py.newString("0");
+    static final PyString _23 = Py.newString("exit.htm");
+    static final PyString _24 = Py.newString("<html><head><body>I have nothing to say to you</body></html>");
+    static final PyString _18 = Py.newString("7856-10.htm");
+    static final PyString _14 = Py.newString("7856-09.htm");
+    static final PyString _19 = Py.newString("7194-10.htm");
+    static final PyString _15 = Py.newString("7194-09.htm");
+    static final PyString _7 = Py.newString("7115-04.htm");
+    static final PyString _27 = Py.newString("-03.htm");
+    static final PyString _10 = Py.newString("cond");
+    static final PyString _34 = Py.newString("Started");
+    static final PyInteger _5 = Py.newInteger(4665);
+    static final PyString _8 = Py.newString("7856-04.htm");
+    static final PyInteger _16 = Py.newInteger(1);
+    static final PyInteger _6 = Py.newInteger(0);
+    static final PyCode f$0;
+    static final PyCode check$1;
+    static final PyCode Quest$2;
+    static final PyCode __init__$3;
+    static final PyCode onEvent$4;
+    static final PyCode onTalk$5;
+
+    static 
+    {
+        self = new _cls350_EnhanceYourWeapon$py();
+        String as[];
+        f$0 = Py.newCode(0, as = new String[0], "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "?", 0, false, false, self, 0, null, null, 0, 0);
+        as = new String[2];
+        as[0] = "st";
+        as[1] = "i";
+        check$1 = Py.newCode(1, as, "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "check", 20, false, false, self, 1, null, null, 0, 1);
+        Quest$2 = Py.newCode(0, as = new String[0], "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "Quest", 26, false, false, self, 2, null, null, 0, 0);
+        as = new String[4];
+        as[0] = "self";
+        as[1] = "id";
+        as[2] = "name";
+        as[3] = "descr";
+        __init__$3 = Py.newCode(4, as, "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "__init__", 28, false, false, self, 3, null, null, 0, 1);
+        as = new String[4];
+        as[0] = "self";
+        as[1] = "event";
+        as[2] = "st";
+        as[3] = "htmltext";
+        onEvent$4 = Py.newCode(3, as, "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "onEvent", 30, false, false, self, 4, null, null, 0, 1);
+        as = new String[6];
+        as[0] = "Self";
+        as[1] = "npc";
+        as[2] = "st";
+        as[3] = "id";
+        as[4] = "htmltext";
+        as[5] = "npcId";
+        onTalk$5 = Py.newCode(3, as, "D:\\server\\L2Server\\data\\jscript\\quests\\350_EnhanceYourWeapon\\__init__.py", "onTalk", 46, false, false, self, 5, null, null, 0, 1);
+    }
+
+    public _cls350_EnhanceYourWeapon$py()
+    {
+    }
+}

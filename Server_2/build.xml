@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2_Gameserver" default="dist" basedir=".">
+    <description>
+        This script will build the L2J server.
+        
+        $Author$
+        $Date$
+        $Revision$  
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2, or (at your option)
+        any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+        02111-1307, USA.
+        
+        http://www.gnu.org/copyleft/gpl.html      
+        
+    </description>
+    
+    <property name="src" location="java"/>
+    <property name="lib" location="lib"/>
+    <property name="build" location="build"/>
+    <property name="build.classes" location="${build}/classes"/>
+    <property name="build.dist" location="${build}/dist"/>
+    
+    <path id="classpath">
+        <fileset dir="${lib}">
+            <include name="c3p0-0.8.4.5.jar"/>
+            <include name="bsf.jar"/>
+        	<include name="bsh-2.0.jar"/>
+        	<include name="jython.jar"/>
+        </fileset>
+    </path>   
+    
+    <target name="init"
+            description="Create the output directories.">
+
+        <mkdir dir="${build}"/>
+        <mkdir dir="${build.classes}"/>
+        <mkdir dir="${build.dist}" />
+    </target>
+    
+    
+    <target name="compile"
+            depends="init"
+            description="Compile the source.">
+
+        <javac destdir="${build.classes}"
+               optimize="off"
+               debug="on"
+               source="1.5"
+               target="1.5"
+               nowarn="off">
+            <src path="${src}"/>
+            <classpath refid="classpath"/>   
+        </javac>
+    </target>
+    
+    
+    <target name="jar"
+            depends="compile"
+            description="Create the jar file">
+
+        <jar destfile="${build.dist}/l2jserver.jar">
+            <fileset dir="${build.classes}"/>
+            <manifest>
+                <attribute name="Main-Class" value="net.sf.l2j.Server"/>
+                <attribute name="Class-Path" value=". mysql-connector-java-3.0.16-ga-bin.jar c3p0-0.8.4.5.jar bsf.jar bsh-2.0.jar jython.jar"/>
+            </manifest>
+        </jar>
+        
+        <copy todir="${build.dist}">
+            <fileset dir="${src}">
+                <include name="log.cfg"/>
+                <include name="server.cfg"/>
+                <include name="banned_ip.cfg"/>
+			</fileset>
+        </copy>
+	   	<copy todir="${build.dist}">
+			<fileset dir="${src}/../lib">
+				<include name="mysql-connector-java-3.0.16-ga-bin.jar"/>
+				<include name="c3p0-0.8.4.5.jar"/>
+				<include name="bsf.jar"/>
+				<include name="bsh-2.0.jar"/>
+				<include name="jython.jar"/>
+			</fileset>
+		</copy>
+	</target>
+    
+
+    <target name="compile.gcj"
+            depends="jar"
+            description="Build machine executable binary">  
+            
+        <exec dir="." executable="gcj" failifexecutionfails="false" os="linux:Linux:freebsd:FreeBSD" >
+            <arg line="-O3 ${build.dist}/l2jserver.jar  -o ${build.dist}/l2jserver --main=net.sf.l2j.Server"/>
+        </exec>
+    </target>
+ 
+ 
+    <target name="dist" depends="jar">
+        
+        <copy todir="${build.dist}">
+            <fileset dir="${basedir}">
+                <include name="LICENSE.txt"/>
+            </fileset>
+        </copy>
+        
+         <copy todir="${build.dist}">
+            <fileset dir="dist">
+                <include name="startAccountManager.*"/>
+                <include name="startServer.*"/>
+            </fileset>
+        </copy>
+        
+        <mkdir dir="${build.dist}/log" />
+        
+        <mkdir dir="${build.dist}/data" />
+        <copy todir="${build.dist}/data">
+            <fileset dir="data">
+                <include name="*.csv"/>
+            	<include name="*.txt"/>
+        </fileset>
+        </copy>
+        
+        <mkdir dir="${build.dist}/data/html" />
+        <copy todir="${build.dist}/data/html">
+            <fileset dir="data/html">
+                <include name="**/*.htm"/>
+                <include name="**/*.html"/>
+            </fileset>
+        </copy>
+    	
+        <mkdir dir="${build.dist}/data/script" />
+        <copy todir="${build.dist}/data/script">
+            <fileset dir="data/script">
+                <include name="**/*.zip"/>
+            </fileset>
+        </copy>
+           
+        <mkdir dir="${build.dist}/data/stats" />
+        <copy todir="${build.dist}/data/stats">
+            <fileset dir="data/stats">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+               	
+        <zip destfile="${build}/l2j-server.zip"
+             basedir="${build.dist}" />
+    </target>   
+    
+    
+    <target name="clean"
+            description="Remove the output directories">
+
+        <delete dir="${build}"/>
+    </target>
+</project>

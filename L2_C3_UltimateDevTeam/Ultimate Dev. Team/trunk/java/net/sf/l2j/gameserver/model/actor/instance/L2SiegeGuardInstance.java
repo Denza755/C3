@@ -1,0 +1,195 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+package net.sf.l2j.gameserver.model.actor.instance;
+
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.ai.CtrlIntention;
+import net.sf.l2j.gameserver.ai.L2CharacterAI;
+import net.sf.l2j.gameserver.ai.L2SiegeGuardAI;
+import net.sf.l2j.gameserver.model.L2Attackable;
+import net.sf.l2j.gameserver.model.L2CharPosition;
+import net.sf.l2j.gameserver.model.L2Character;
+import net.sf.l2j.gameserver.model.actor.knownlist.SiegeGuardKnownList;
+import net.sf.l2j.gameserver.packets.serverpackets.*;
+import net.sf.l2j.gameserver.templates.L2NpcTemplate;
+
+import java.util.Random;
+
+/**
+ * This class represents all guards in the world. It inherits all methods from
+ * L2Attackable and adds some more such as tracking PK's or custom interactions.
+ * 
+ * @version $Revision: 1.11.2.1.2.7 $ $Date: 2005/04/06 16:13:40 $
+ */
+public final class L2SiegeGuardInstance extends L2Attackable
+{
+	private final Random _rnd = new Random();
+
+    private int _homeX;
+    private int _homeY;
+    private int _homeZ;
+    
+    public L2SiegeGuardInstance(int objectId, L2NpcTemplate template)
+    {
+        super(objectId, template);
+        super.setKnownList(new SiegeGuardKnownList(new L2SiegeGuardInstance[] {this}));
+    }
+
+    public final SiegeGuardKnownList getKnownList() { return (SiegeGuardKnownList)super.getKnownList(); }
+
+	public L2CharacterAI getAI() 
+	{
+		synchronized(this)
+		{
+			if (_ai == null)
+				_ai = new L2SiegeGuardAI(new AIAccessor());
+		}
+		return _ai;
+	}    
+    
+	/**
+	 * Return True if a siege is in progress and the L2Character attacker isn't a Defender.<BR><BR>
+	 * 
+	 * @param attacker The L2Character that the L2SiegeGuardInstance try to attack
+	 * 
+	 */
+    public boolean isAutoAttackable(L2Character attacker) 
+	{
+		// Attackable during siege by attacker only
+		return (attacker != null 
+		        && attacker instanceof L2PcInstance 
+		        && getCastle() != null
+		        && getCastle().getCastleId() > 0
+		        && getCastle().getSiege().getIsInProgress()
+		        && getCastle().getSiege().checkIsAttacker(((L2PcInstance)attacker).getClan()));
+    }
+    
+    /**
+     * Sets home location of guard. Guard will always try to return to this location after
+     * it has killed all PK's in range.
+     *
+     */
+    public void getHomeLocation()
+    {
+        _homeX = getX();
+        _homeY = getY();
+        _homeZ = getZ();
+        
+        if (Config.DEBUG)
+            _log.finer(getObjectId()+": Home location set to"+
+                    " X:" + _homeX + " Y:" + _homeY + " Z:" + _homeZ);
+    }
+    
+    public int getHomeX()
+    {
+    	return _homeX;
+    }
+    
+    public int getHomeY()
+    {
+    	return _homeY;
+    }
+    
+    /**
+     * This method forces guard to return to home location previously set
+     *
+     */
+    public void returnHome()
+    {
+        if (getDistance(_homeX, _homeY) > 40) {
+            if (Config.DEBUG) _log.fine(getObjectId()+": moving home");
+            clearAggroList();
+            if (hasAI())
+            {
+                getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO,
+                                     new L2CharPosition(_homeX, _homeY, _homeZ, 0));
+            }
+        }
+    }
+    
+    /**
+     * Custom onAction behaviour. Note that super() is not called because guards need
+     * extra check to see if a player should interract ot ATTACK them when clicked.
+     * 
+     */
+    public void onAction(L2PcInstance player)
+    {
+      //  if (player == null)
+      //      return;
+        
+		if (this != player.getTarget())
+		{
+			if (Config.DEBUG) _log.fine("new target selected:"+getObjectId());
+			//player.setNewTarget(this);
+			
+			player.sendPacket(new NpcInfo(this, player));
+			
+			player.setTarget(this);
+			player.sendPacket(new MyTargetSelected(getObjectId(), player.getLevel() - getLevel()));
+			
+			StatusUpdate su = new StatusUpdate(getObjectId());
+			su.addAttribute(StatusUpdate.CUR_HP, (int)getCurrentHp() );
+			su.addAttribute(StatusUpdate.MAX_HP, getMaxHp() );
+			player.sendPacket(su);
+			
+			// correct location
+			player.sendPacket(new ValidateLocation(this));
+		}
+		else
+		{
+			player.sendPacket(new MyTargetSelected(getObjectId(), player.getLevel() - getLevel()));
+			
+			if (isAutoAttackable(player) && !isAlikeDead())
+			{
+				if (Math.abs(player.getZ() - getZ()) < 600) // this max heigth difference might need some tweaking
+				{
+					player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, this);
+				}
+				else
+				{
+					player.sendPacket(new ActionFailed());
+				}
+			}
+			if(!isAutoAttackable(player))
+			{
+				player.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, this);
+				double distance = getDistance(player.getX(), player.getY());
+				if (distance <= INTERACTION_DISTANCE)
+				{
+					broadcastPacket(new SocialAction(getObjectId(), _rnd.nextInt(8)));
+					sendPacket(new SocialAction(getObjectId(), _rnd.nextInt(8)));
+					showChatWindow(player, 0);
+					player.sendPacket(new ActionFailed());					
+				}
+			}
+		}
+		//super.onAction(player);
+    }
+    
+    public void addDamageHate(L2Character attacker, int damage, int aggro)
+    {
+        if (attacker == null)
+            return;
+        
+        if (!(attacker instanceof L2SiegeGuardInstance))
+        {
+            super.addDamageHate(attacker, damage, aggro);
+        }
+    }
+}

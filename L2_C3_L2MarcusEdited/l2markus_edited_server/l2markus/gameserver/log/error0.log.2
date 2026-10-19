@@ -1,0 +1,11 @@
+14.03.2013 20:30:41 net.sf.l2j.gameserver.clientpackets.L2GameClientPacket run
+SEVERE: error handling client message [C] 03 EnterWorld
+java.lang.NullPointerException
+	at net.sf.l2j.gameserver.model.actor.instance.L2PcInstance.lostAioSkills(L2PcInstance.java:8810)
+	at net.sf.l2j.gameserver.clientpackets.EnterWorld.onEnterAio(EnterWorld.java:391)
+	at net.sf.l2j.gameserver.clientpackets.EnterWorld.runImpl(EnterWorld.java:222)
+	at net.sf.l2j.gameserver.clientpackets.L2GameClientPacket.run(L2GameClientPacket.java:59)
+	at net.sf.l2j.gameserver.Connection.addReceivedMsg(Connection.java:99)
+	at net.sf.l2j.gameserver.SelectorThread.parse(SelectorThread.java:514)
+	at net.sf.l2j.gameserver.SelectorThread.readData(SelectorThread.java:441)
+	at net.sf.l2j.gameserver.SelectorThread.run(SelectorThread.java:296)

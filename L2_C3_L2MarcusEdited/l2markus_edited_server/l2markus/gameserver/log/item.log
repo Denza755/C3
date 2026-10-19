@@ -1,0 +1,55 @@
+[14 мар 19:27:46] CREATE:Init, item 268468527:Squire`s Pants(1), player dfgdfg
+[14 мар 19:27:46] CREATE:Init, item 268468530:Squire`s Shirt(1), player dfgdfg
+[14 мар 19:27:46] CREATE:Init, item 268468532:Dagger(1), player dfgdfg
+[14 мар 19:27:46] CREATE:Init, item 268468533:Squire's Sword(1), player dfgdfg
+[14 мар 19:30:35] CREATE:Loot, item 268468534:Green Seal Stone(3743), player dfgdfg, Nephilim Royal Guard
+[14 мар 19:30:35] CREATE:Loot, item 268468561:Red Seal Stone(60), player dfgdfg, Nephilim Royal Guard
+[14 мар 19:30:35] CREATE:Loot, item 268468571:Metallic Fiber(1), player dfgdfg, Nephilim Royal Guard
+[14 мар 19:30:44] CHANGE:Pickup, item 268468561:Red Seal Stone(60), player dfgdfg
+[14 мар 19:30:46] CHANGE:Pickup, item 268468534:Green Seal Stone(3743), player dfgdfg
+[14 мар 19:30:47] CHANGE:Pickup, item 268468571:Metallic Fiber(1), player dfgdfg
+[14 мар 20:32:41] CREATE:Admin, item 268468654:Adena(456456456), player dfgdfg
+[14 мар 20:32:45] CHANGE:Teleport, item 268468654:Adena(456450056), player dfgdfg, Clarissa
+[14 мар 20:33:17] CREATE:Loot, item 268468655:Adena(4659), player dfgdfg, Cave Keeper
+[14 мар 20:33:17] CREATE:Loot, item 268468656:Nassen's Earring Gemstone(1), player dfgdfg, Cave Keeper
+[14 мар 20:33:17] CREATE:Loot, item 268468657:Iron Ore(2), player dfgdfg, Cave Keeper
+[14 мар 20:33:19] CREATE:Loot, item 268468658:Adena(4590), player dfgdfg, Cave Keeper
+[14 мар 20:33:21] CREATE:Loot, item 268468659:Adena(4608), player dfgdfg, Drake
+[14 мар 20:33:21] CREATE:Loot, item 268468660:Varnish(1), player dfgdfg, Drake
+[14 мар 20:33:21] CREATE:Loot, item 268468662:Adena(3920), player dfgdfg, Cave Maiden
+[14 мар 20:33:23] CREATE:Loot, item 268468663:Adena(4020), player dfgdfg, Drake
+[14 мар 20:33:23] CREATE:Loot, item 268468664:Animal Bone(1), player dfgdfg, Drake
+[14 мар 20:33:26] CREATE:Loot, item 268468665:Adena(5439), player dfgdfg, Cave Keeper
+[14 мар 20:33:27] CREATE:Loot, item 268468666:Adena(4830), player dfgdfg, Cave Maiden
+[14 мар 20:33:27] CREATE:Loot, item 268468667:Iron Ore(1), player dfgdfg, Cave Maiden
+[14 мар 20:33:28] CREATE:Loot, item 268468669:Adena(5045), player dfgdfg, Cave Maiden
+[14 мар 20:33:28] CREATE:Loot, item 268468670:Iron Ore(1), player dfgdfg, Cave Maiden
+[14 мар 20:33:30] CREATE:Loot, item 268468672:Adena(5022), player dfgdfg, Cave Keeper
+[14 мар 20:33:30] CREATE:Loot, item 268468674:Ring of Binding Gemstone(1), player dfgdfg, Cave Keeper
+[14 мар 20:33:30] CREATE:Loot, item 268468675:Iron Ore(1), player dfgdfg, Cave Keeper
+[14 мар 20:33:31] CREATE:Loot, item 268468677:Adena(2828), player dfgdfg, Drake
+[14 мар 20:33:31] CREATE:Loot, item 268468678:Varnish(1), player dfgdfg, Drake
+[14 мар 20:33:38] CREATE:Loot, item 268468682:Adena(4408), player dfgdfg, Drake
+[14 мар 20:33:38] CREATE:Loot, item 268468685:Varnish(2), player dfgdfg, Drake
+[14 мар 20:33:38] CREATE:Loot, item 268468686:Adena(3944), player dfgdfg, Drake
+[14 мар 20:33:38] CREATE:Loot, item 268468687:Animal Bone(2), player dfgdfg, Drake
+[14 мар 20:33:39] CREATE:Loot, item 268468691:Adena(4204), player dfgdfg, Drake
+[14 мар 20:33:39] CREATE:Loot, item 268468692:Varnish(3), player dfgdfg, Drake
+[14 мар 20:33:42] CREATE:Loot, item 268468693:Adena(5235), player dfgdfg, Cave Keeper
+[14 мар 20:33:42] CREATE:Loot, item 268468694:Iron Ore(1), player dfgdfg, Cave Keeper
+[14 мар 20:36:26] CHANGE:Teleport, item 268468654:Adena(456444356), player dfgdfg, Elisa
+[14 мар 20:37:30] CREATE:Loot, item 268468743:Adena(3700), player dfgdfg, Marsh Stalker
+[14 мар 20:38:13] CREATE:Loot, item 268468744:Adena(2270), player dfgdfg, Punishment of Undead
+[14 мар 20:38:13] CREATE:Loot, item 268468745:Iron Ore(1), player dfgdfg, Punishment of Undead
+[14 мар 20:38:15] CREATE:Loot, item 268468746:Adena(2882), player dfgdfg, Punishment of Undead
+[14 мар 20:38:15] CREATE:Loot, item 268468748:Iron Ore(1), player dfgdfg, Punishment of Undead
+[14 мар 20:38:16] CREATE:Loot, item 268468756:Adena(4141), player dfgdfg, Marsh Stalker
+[14 мар 20:38:28] CREATE:Loot, item 268468758:Adena(2574), player dfgdfg, Punishment of Undead
+[14 мар 20:38:28] CREATE:Loot, item 268468761:Iron Ore(1), player dfgdfg, Punishment of Undead
+[14 мар 20:38:31] CHANGE:Pickup, item 268468748:Iron Ore(1), player dfgdfg
+[14 мар 20:38:31] CHANGE:Pickup, item 268468654:Adena(456447238), player dfgdfg
+[14 мар 20:38:31] DELETE:Pickup, item 268468746:Adena(0), player dfgdfg
+[14 мар 20:38:32] CHANGE:Pickup, item 268468654:Adena(456449812), player dfgdfg
+[14 мар 20:38:32] DELETE:Pickup, item 268468758:Adena(0), player dfgdfg
+[14 мар 20:38:32] CHANGE:Pickup, item 268468748:Iron Ore(2), player dfgdfg
+[14 мар 20:38:32] DELETE:Pickup, item 268468761:Iron Ore(0), player dfgdfg

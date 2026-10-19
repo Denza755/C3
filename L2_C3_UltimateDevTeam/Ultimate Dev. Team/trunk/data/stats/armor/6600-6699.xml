@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<item id='6656' name="The_Earing_of_Antharas"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<add val='31' order='0x50' stat='maxMp' /> 
+<mul val='1.6' order='0x50' stat='stunRes'/> 
+<mul val='1.6' order='0x50' stat='sleepRes'/> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6657' name="The_Necklace_of_Valakas"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<mul val='1.2' order='0x50' stat='fireRes'/> 
+<add val='42' order='0x50' stat='maxMp' /> 
+<add val='445' order='0x50' stat='maxHp' /> 
+<mul val='1.8' order='0x50' stat='sleepRes'/> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6658' name="The_Ring_of_Baium"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<add val='21' order='0x50' stat='maxMp' /> 
+<mul val='1.8' order='0x50' stat='poisonRes'/> 
+<mul val='1.6' order='0x50' stat='rootRes'/> 
+<mul val='1.15' order='0x50' stat='mAtkSpd'/> 
+<mul val='1.15' order='0x50' stat='pAtkSpd'/> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6659' name="The_Earing_of_Zaken"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<mul val='1.6' order='0x50' stat='stunRes'/> 
+<div val='1.25' order='0x50' stat='cancel'/> 
+<mul val='1.25' order='0x50' stat='regHp'/> 
+<add val='31' order='0x50' stat='maxMp' /> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6660' name="The_Ring_of_Queen_Ant"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<mul val='1.15' order='0x50' stat='accCombat'/> 
+<mul val='1.4' order='0x50' stat='rootRes'/> 
+<mul val='1.6' order='0x50' stat='poisonRes'/> 
+<add val='21' order='0x50' stat='maxMp' /> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6661' name="The_Earing_of_Orfen"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='0' order='0x10' stat='mDef' /> 
+<add val='31' order='0x50' stat='maxMp' /> 
+<mul val='1.4' order='0x50' stat='bleedRes'/> 
+<mul val='1.3' order='0x50' stat='regHp'/> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item> 
+<item id='6662' name="The_ring_of_Core"> 
+<for> 
+<add val='0' order='0x10' stat='pDef' /> 
+<add val='48' order='0x10' stat='mDef' /> 
+<add val='21' order='0x50' stat='maxMp' /> 
+<mul val='1.4' order='0x50' stat='poisonRes'/> 
+<mul val='1.1' order='0x50' stat='accCombat'/> 
+<enchant val='0' order='0x0C' stat='mDef' /> 
+</for> 
+</item>
+<item id='6674' name="Sealed Imperial Crusader Breastplate">
+  <for>
+    <add val='193' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6675' name="Sealed Imperial Crusader Gaiters">
+  <for>
+    <add val='121' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6676' name="Sealed Imperial Crusader Gauntlet">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6677' name="Sealed Imperial Crusader Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6679' name="Sealed Imperial Crusader Helmet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6680' name="Sealed Draconic Leather Armor">
+  <for>
+    <add val='236' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6681' name="Sealed Draconic Leather Glove">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6682' name="Sealed Draconic Leather Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6683' name="Sealed Draconic Leather Helmet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6684' name="Sealed Major Arcana Robe">
+  <for>
+    <add val='157' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6685' name="Sealed Major Arcana Glove">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6686' name="Sealed Major Arcana Boots">
+  <for>
+    <add val='55' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6687' name="Sealed Major Arcana Circlet">
+  <for>
+    <add val='83' order='0x10' stat='pDef' />
+  </for>
+</item>
+<item id='6724' name="Sealed Tateossian Earring">
+  <for>
+    <add val='68' order='0x10' stat='mDef' />
+  <enchant val='0' order='0x0C' stat='mDef' />
+</for>
+</item>
+<item id='6725' name="Sealed Tateossian Ring">
+  <for>
+    <add val='46' order='0x10' stat='mDef' />
+  <enchant val='0' order='0x0C' stat='mDef' />
+</for>
+</item>
+<item id='6726' name="Sealed Tateossian Necklace">
+  <for>
+    <add val='91' order='0x10' stat='mDef' />
+  <enchant val='0' order='0x0C' stat='mDef' />
+</for>
+</item>
+</list>

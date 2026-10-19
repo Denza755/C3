@@ -1,0 +1,3 @@
+#the hexID to auth into login
+#Fri Mar 15 12:29:06 EET 2013
+HexID=33d9476247831b080fae1f1320db1db1

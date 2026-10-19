@@ -1,0 +1,54 @@
+<html><body>
+<center>L2J Панель управления</center><br1>
+<center><table width=200>
+<tr><td>
+<button value="Список игроков" action="bypass -h admin_show_characters 0" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Игроки" action="bypass -h admin_char_manage" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Сервер" action="bypass -h admin_server" width=90 height=15 back="sek.cbui94" fore="sek.cbui92"> 
+<button value="Анонсы" action="bypass -h admin_list_announcements" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<br>
+<button value="Ride" action="bypass -h admin_ride" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Time" action="bypass -h admin_time" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Мероприятия" action="bypass -h admin_events" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<br>
+<button value="Find Mammon" action="bypass -h admin_find_mammon" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="List Spawns" action="bypass -h admin_list_spawns $menu_command" width=90 height=15 back="sek.cbui94" fore="sek.cbui92"> 
+<button value="Mob Ctrl Menu" action="bypass -h admin_mobmenu" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+</td><td>
+<button value="GM Shop" action="bypass -h admin_gmshop" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Npc Spawn" action="bypass -h admin_show_spawns" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Create Item" action="bypass -h admin_itemcreate" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Teleport Menu" action="bypass -h admin_show_moves" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<br>
+<button value="Siege Menu" action="bypass -h admin_siege" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Set Karma" action="bypass -h admin_setkarma $menu_command" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Clear Karma" action="bypass -h admin_nokarma" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<br>
+<button value="Enchant Weapon" action="bypass -h admin_setew $menu_command" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Misc" action="bypass -h admin_misc" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<button value="Help & Info" action="bypass -h admin_help admhelp.htm" width=90 height=15 back="sek.cbui94" fore="sek.cbui92">
+<br>
+</td></tr></table><br>
+Name / Karma / Ench 0-65535:
+<edit var="menu_command" width=100 height=15><br>
+<table>
+<tr>
+<td><button value="Invis" action="bypass -h admin_invis" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Kill" action="bypass -h admin_kill" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Kick" action="bypass -h admin_kick $menu_command" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr><tr>
+<td><button value="Revis" action="bypass -h admin_vis" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Delete" action="bypass -h admin_delete" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Ban" action="bypass -h admin_ban $menu_command" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr></table>
+<br>
+<table width=200>
+<tr>
+<td><button value="Chat Ban"   action="bypass -h admin_banchat   $menu_command" width=90 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Chat UnBan" action="bypass -h admin_unbanchat $menu_command" width=90 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+<br>
+</center><br>
+<tr><td>Server Software: Server software running L2J Fortress created by Balancer and the L2J Fortress team. Server site is http://la2.balancer.ru </td></tr>
+</body></html>

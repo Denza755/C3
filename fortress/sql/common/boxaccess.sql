@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS `boxaccess`;
+
+CREATE TABLE IF NOT EXISTS boxaccess (
+  spawn INT DEFAULT NULL,
+  charname VARCHAR(32) DEFAULT NULL
+);

@@ -1,0 +1,97 @@
+<html><body>
+
+<table width=90%><tr>
+<td><button value="Главная" action="bypass -h admin_admin" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><center><font color="LEVEL">Свойства игрока [ object p.name@ ]</font></center></td>
+<td><button value="Назад" action="bypass -h admin_show_characters [ 0 ]" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr></table>
+
+<table width=90%>
+<tr>
+	<td>Name: <font color="LEVEL">[ object p.name@ ]</font></td>
+	<td>Lv: [ object "Level" p@ ]
+	[ object "Template" p@ "className" field@ ];
+	Access: [ object "AccessLevel" p@ ]
+	</td>
+</tr>
+<tr>
+	<td>Clan: <font color="LEVEL">[ object "ClanId" p@ "ClanTable" server-stat-instance "getClan" { int.class } jget ]</font></td>
+	<td>Exp/Sp: [ object "Exp" p@ "/" s+ object "Sp" p@ s+ ]</td></tr>
+</table>
+
+<table width=90%>
+<tr><td>Class Template Id: [ object "ClassId" p@ ]</td></tr>
+<tr><td>Character Coordinates: [ object coords@ rot ", " s+ rot s+ ", " s+ swap s+ ]</td></tr>
+<tr><td><table><tr>
+	<td><button value="Вызвать" action="bypass -h admin_recall [ object p.name@ ]" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="Перейти" action="bypass -h admin_to_char [ object p.name@ ]" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	</tr></table>
+</td></tr>
+</table>
+<br>
+	
+<table width=90%>
+<tr>
+	<td></td>
+	<td>Curent/Max</td>
+	<td></td>
+</tr>
+<tr>
+	<td>HP:</td>
+	<td>[ object "CurrentHp" p@ int "/" s+ object "MaxHp" p@ int s+ ]</td>
+	<td><font color="LEVEL">Karma:</font> [ object "Karma" p@ ]</td>
+</tr>
+<tr>
+	<td>MP:</td>
+	<td>[ object "CurrentMp" p@ int "/" s+ object "MaxMp" p@ int s+ ]</td>
+	<td>Pvp Kills: [ object "PvpKills" p@ ]</td>
+</tr>
+<tr>
+	<td>Load:</td>
+	<td>[ object "CurrentLoad" p@ int "/" s+ object "MaxLoad" p@ int s+ ]</td>
+	<td>Pvp Flag: [ object "PvpFlag" p@ ]</td>
+</tr>
+</table>
+<br>
+<table width=90%>
+<tr>
+	<td>P.ATK: [ null object "getPAtk" { L2Character.class } jget ]</td>
+	<td>M.ATK: [ null null object "getMAtk" { L2Character.class L2Skill.class } jget ]</td>
+	<td>Manage:</td>
+</tr>
+<tr>
+	<td>P.DEF: [ null object "getPDef" { L2Character.class } jget ]</td>
+	<td>M.DEF: [ null null object "getMDef" { L2Character.class L2Skill.class } jget ]</td>
+	<td><button value="Переимен." action="bypass -h admin_rename" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+	<td>Accuracy: [ object "Accuracy" p@ ]</td>
+	<td>Evasion: [ null object "getEvasionRate" { L2Character.class } jget ]</td>
+	<td><button value="Умения" action="bypass -h admin_show_skills" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+	<td>Critical: [ null null object "getCriticalHit" { L2Character.class L2Skill.class } jget ]</td>
+	<td>Speed: [ object "RunSpeed" p@ ]</td>
+	<td><button value="Параметры" action="bypass -h admin_edit_character" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+	<td>ATK Spd: [ object "PAtkSpd" p@ ]</td>
+	<td>Casting Spd: [ object "MAtkSpd" p@ ]</td>
+	<td><button value="Опыт и SP" action="bypass -h admin_add_exp_sp_to_character" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>		
+</table>
+<table>
+<tr>
+	<td><button value="БанЧат" action="bypass -h admin_banchat" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="РазБанЧат" action="bypass -h admin_unbanchat" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="В тюрьму" action="bypass -h admin_jail" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="Из тюрьмы" action="bypass -h admin_unjail" width=60 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+<table width=90%>
+<tr>
+	<td>БанЧат: [ object p.no-channel@ ] минут</td>
+</tr>
+</table>
+
+</body></html>

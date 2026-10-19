@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<skill id="4100" levels="7" name="NPC Prominence">
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4101" levels="7" name="NPC Whirlwind">
+  <table name="#mpConsume"> 14 22 31 43 55 68 79 </table>
+  <table name="#power"> 46.0 105.0 219.0 417.0 722.0 1136.0 1626.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="80"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="4102" levels="2" name="Become weak against line of fire.">
+  <!-- Done by Magister -->
+  <table name="#Tab-fireRes"> 15 20 </table>
+  <table name="#mpConsume"> 35 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1083"/>
+  <for>
+   <effect count="1" name="Buff" time="120" val="0" stackOrder="2" stackType="surrender">
+      <add order="0x40" stat="fireRes" val="#Tab-fireRes"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4103" levels="2" name="NPC Ultimate Evasion">
+  <table name="#Tab-rEvas"> 20 25 </table>
+  <table name="#mpConsume"> 28 52 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="-1"/>
+  <set name="displayId" val="111"/>
+  <for>
+   <effect name="Buff" time="30" count="1" val="0">
+     <add  order='0x40' stat='rEvas' val="#Tab-rEvas"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4104" levels="7" name="Flame">
+  <!-- Done by Magister -->
+  <table name="#dmg"> 7 11 15 20 26 31 34 </table>
+  <table name="#mpConsume"> 17 31 45 60 75 90 105 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 7.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="2"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="90000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1220"/>
+  <for>
+    <effect count="90" name="DamOverTime" time="1" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4105" levels="7" name="Direct Beam Canon">
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4106" levels="1" name="Antharas Jump">
+  <!-- Done by Magister -->
+  <set name="power" val="11000.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="1100"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="6000"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="9000"/>
+  <set name="castRange" val="60"/>
+  <for>
+  </for>
+</skill>
+<skill id="4107" levels="1" name="Antharas Tail">
+  <set name="power" val="11000.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="400"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="castRange" val="200"/>
+  <for>
+  </for>
+</skill>
+<skill id="4108" levels="1" name="Fear">
+  <set name="save" val="2"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="5000"/>
+  <set name="skillType" val="FEAR"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4109" levels="1" name="Curse of Antharas">
+  <table name="#Tab-mAtk"> 1.15 </table>
+  <table name="#Tab-rCrit"> 1.9 </table>
+  <table name="#Tab-mDef"> 1.4 </table>
+  <table name="#Tab-pAtkSpd"> 1.25 </table>
+  <table name="#Tab-rEvas"> 19 </table>
+  <table name="#Tab-runSpd"> 1.5 </table>
+  <table name="#Tab-accCombat"> 19 </table>
+  <table name="#Tab-pAtk"> 1.15 </table>
+  <table name="#Tab-pDef"> 1.4 </table>
+  <table name="#Tab-mAtkSpd"> 1.25 </table>
+  <set name="save" val="2"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="205"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="reuseDelay" val="6000000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="1000"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+   <effect name="Buff" time="120" count="1" val="0">
+    <div  order='0x50' stat='mAtk' val="#Tab-mAtk"/>
+    <div  order='0x50' stat='rCrit' val="#Tab-rCrit"/>
+    <div  order='0x50' stat='mDef' val="#Tab-mDef"/>
+    <div  order='0x50' stat='pAtkSpd' val="#Tab-pAtkSpd"/>
+    <sub  order='0x40' stat='rEvas' val="#Tab-rEvas"/>
+    <div  order='0x50' stat='runSpd' val="#Tab-runSpd"/>
+    <sub  order='0x40' stat='accCombat' val="#Tab-accCombat"/>
+    <div  order='0x50' stat='pAtk' val="#Tab-pAtk"/>
+    <div  order='0x50' stat='pDef' val="#Tab-pDef"/>
+    <div  order='0x50' stat='mAtkSpd' val="#Tab-mAtkSpd"/>
+   </effect>
+ </for>
+</skill>
+<skill id="4110" levels="1" name="Mouth Odor Attack">
+  <!-- Done by Magister -->
+  <set name="power" val="250.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <for>
+  </for>
+</skill>
+<skill id="4111" levels="1" name="Fossilization">
+  <!-- Done by Magister -->
+  <set name="save" val="4"/>
+  <set name="power" val="10.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="700"/>
+  <set name="element" val="4"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="5000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="1000"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4112" levels="1" name="Ordinary Attack">
+  <!-- Done by Magister -->
+  <set name="power" val="22000.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="400"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <for>
+  </for>
+</skill>
+<skill id="4113" levels="1" name="Animal doing ordinary attack">
+  <!-- Done by Magister -->
+  <set name="power" val="22000.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="400"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="2200"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <for>
+  </for>
+</skill>
+<skill id="4114" levels="1" name="Aden Flame">
+  <set name="mpConsume" val="90"/>
+  <set name="power" val="47.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="15000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1100"/>
+  <for>
+  </for>
+</skill>
+<skill id="4115" levels="1" name="Aden Heal">
+  <set name="mpConsume" val="105"/>
+  <set name="power" val="689.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillTime" val="5000"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4116" levels="1" name="I am strong against magical attacks.">
+  <table name="#Tab-mDef"> 1.2 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <set name="displayId" val="1071"/>
+  <for>
+   <effect name="Buff" time="120" count="1" val="0">
+    <mul  order='0x50' stat='mDef' val="#Tab-mDef"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4117" levels="7" name="Paralysis">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="400"/>
+  <set name="displayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4118" levels="7" name="Paralysis">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 18 29 40 53 68 83 98 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="300"/>
+  <set name="displayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4119" levels="3" name="Fall in accuracy">
+  <!-- Done by Magister -->
+  <table name="#Tab-accCombat"> 6 8 10 </table>
+  <table name="#mpConsume"> 20 35 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+   <effect name="Buff" time="120" count="1" val="0">
+    <sub order='0x40' stat='accCombat' val="#Tab-accCombat"/>
+   </effect>
+  </for>
+</skill>
+<skill id="4120" levels="7" name="NPC Stun Shot">
+  <table name="#mpConsume"> 27 44 62 85 109 135 157 </table>
+  <table name="#power"> 46.0 105.0 219.0 417.0 722.0 1136.0 1626.0 </table>
+  <table name="#mLevel"> 18 24 32 46 54 60 68 </table>
+  <set name="activateRate" val="50"/>
+  <set name="magicLevel" val="#mLevel"/>
+  <set name="weaponsAllowed" val="32"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="stat" val="STUN"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="9000"/>
+  <set name="castRange" val="700"/>
+  <set name="displayId" val="101"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Stun" time="9" val="0"/>
+  </for>
+</skill>
+<skill id="4121" levels="1" name="Summoned Monster Magic Protection">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4122" levels="1" name="Body of Antharas">
+  <!-- Done by Magister -->
+  <table name="#Tab-windRes"> 50 </table>
+  <table name="#Tab-earthRes"> 95 </table>
+  <table name="#stunRes"> 80 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <add order="0x40" stat="windRes" val="#Tab-windRes"/>
+    <sub order="0x40" stat="earthRes" val="#Tab-earthRes"/>
+    <sub order="0x40" stat="stunRes" val="#stunRes"/>
+  </for>
+</skill>
+<skill id="4123" levels="7" name="Please hate me.">
+  <table name="#mpConsume"> 12 19 26 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <for>
+  </for>
+</skill>
+<skill id="4124" levels="7" name="NPC Spear">
+  <table name="#mpConsume"> 27 44 62 85 109 135 157 </table>
+  <table name="#power"> 122.0 279.0 584.0 1110.0 1923.0 3030.0 4336.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="17000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <for>
+  </for>
+</skill>
+<skill id="4125" levels="1" name="Antharas Regeneration">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="buffDuration" val="1800000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect name="Buff" time="1800" count="1" val="0">
+      <mul order='0x50' stat='regHp' val="1.95"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4126" levels="1" name="Reduction in recovery time">
+  <set name="save" val="2"/>
+  <set name="power" val="250.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillTime" val="0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="0"/>
+  <set name="castRange" val="800"/>
+  <for>
+  </for>
+</skill>
+<skill id="4127" levels="1" name="Baium: General Attack">
+  <!-- Done by Magister -->
+  <set name="power" val="22000.0"/>
+  <set name="skillRadius" val="150"/>
+  <set name="overHit" val="true"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillTime" val="1500"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="100"/>
+  <for>
+  </for>
+</skill>
+<skill id="4128" levels="1" name="Wind Of Force">
+  <set name="save" val="2"/>
+  <set name="power" val="1200.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="2"/>
+  <set name="skillTime" val="2300"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4129" levels="1" name="Earthquake">
+  <!-- Done by Magister -->
+  <set name="power" val="1000.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="4"/>
+  <set name="skillTime" val="1500"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4130" levels="1" name="Striking of Thunderbolt">
+  <!-- Done by Magister -->
+  <set name="save" val="2"/>
+  <set name="power" val="800.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="skillTime" val="1500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="element" val="2"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <for>
+  </for>
+</skill>
+<skill id="4131" levels="1" name="Paralyze">
+  <!-- Done by Magister -->
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="skillTime" val="2200"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="900"/>
+  <set name="displayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4132" levels="1" name="Spear: Pound the Ground">
+  <!-- Done by Magister -->
+  <set name="power" val="2000.0"/>
+  <set name="skillRadius" val="400"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="2800"/>
+  <set name="overHit" val="true"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <for>
+  </for>
+</skill>
+<skill id="4133" levels="1" name="Angel Heal">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 228 </table>
+  <table name="#power"> 155.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4134" levels="1" name="Seal Skill">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  created 2005-05-29 23:34:32
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="20000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <for>
+  </for>
+</skill>
+<skill id="4135" levels="1" name="Baium Heal">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 228 </table>
+  <table name="#power"> 155.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4136" levels="1" name="Baium's Gift">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  created 2005-05-29 23:34:32
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1000"/>
+  <for>
+  </for>
+</skill>
+<skill id="4137" levels="7" name="Hydro Screw">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 18 29 40 53 68 83 98 </table>
+  <table name="#power"> 123.0 126.0 129.0 132.0 135.0 138.0 142.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="3"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <for>
+  </for>
+</skill>
+<skill id="4138" levels="7" name="Parasite Burst">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 42 44 45 48 49 52 54 </table>
+  <table name="#power"> 123.0 126.0 129.0 132.0 135.0 138.0 142.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <for>
+  </for>
+</skill>
+<skill id="4139" levels="7" name="Boom Attack">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 18 20 22 23 25 27 29 </table>
+  <table name="#power"> 123.0 126.0 129.0 132.0 135.0 138.0 142.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="400"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1750"/>
+  <for>
+  </for>
+</skill>
+<skill id="4140" levels="7" name="Contract Payment">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  Descriptions:
+  1: As a result of summoning a devil, one's MP will be consumed.  Effect 1.
+  7: As a result of summoning a devil, one's MP will be consumed.  Effect 7.
+  created 2005-05-29 23:34:32
+-->
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 7.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4141" levels="7" name="Monster Wind of Force">
+<!---
+   or <set name="displayId" val="1181"/> ???
+-->
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4142" levels="7" name="Monster Wind of Force: Has A Little More Speed">
+<!---
+  or <set name="displayId" val="1181"/> ???
+-->
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4143" levels="8" name="Explosion of Treasure Trove">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  created 2005-05-29 23:34:32
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="500"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="-1"/>
+  <for>
+  </for>
+</skill>
+<skill id="4144" levels="80" name="Mimic Strong Attack">
+ <!-- Done by Magister -->
+ <table name="#mpConsume">
+    10 10 11 13 13 14 17 18 19 10 10 10 11 13 13 14 17 18 19 10
+    10 10 11 13 13 14 17 18 19 10 10 10 11 13 13 14 17 18 19 10
+    10 10 11 13 13 14 17 18 19 10 10 10 11 13 13 14 17 18 19 10
+    10 10 11 13 13 14 17 18 19 10 10 10 11 13 13 14 17 18 19 10
+  </table>
+  <table name="#power">
+    10.0 20.0 30.0 40.0 50.0 60.0 70.0 80.0 90.0 100.0 110.0 120.0
+    130.0 140.0 150.0 160.0 170.0 180.0 190.0 200.0 210.0 220.0 230.0
+    240.0 250.0 260.0 270.0 280.0 290.0 300.0 310.0 320.0 330.0 340.0
+    350.0 360.0 370.0 380.0 390.0 400.0 410.0 420.0 430.0 440.0 450.0
+    460.0 470.0 480.0 490.0 500.0 510.0 520.0 530.0 540.0 550.0 560.0
+    570.0 580.0 590.0 600.0 610.0 620.0 630.0 640.0 650.0 660.0 670.0
+    680.0 690.0 700.0 710.0 720.0 730.0 740.0 750.0 760.0 770.0 780.0
+    790.0 800.0
+  </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+</skill>
+<skill id="4145" levels="3" name="Decrease P. Atk.">
+  <!-- Done by Magister -->
+  <table name="#Tab-pAtk"> 1.15 1.25 1.3 </table>
+  <table name="#power"> 1.0 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="save" val="6"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+      <div order="0x50" stat="pAtk" val="#Tab-pAtk"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4146" levels="3" name="Decrease P. Atk.">
+  <!-- Done by Magister -->
+  <table name="#Tab-pAtk"> 1.35 1.4 1.45 </table>
+  <table name="#power"> 1.0 1.0 2.0 </table>
+  <set name="power" val="#power"/>
+  <set name="save" val="6"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+      <div order="0x50" stat="pAtk" val="#Tab-pAtk"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4147" levels="7" name="Area Dispel">
+  <!-- Done by Magister -->
+  <table name="#Tab-pDef"> 15.0 20.0 25.0 30.0 35.0 40.0 45.0 </table>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+      <sub order="0x50" stat="pDef" val="#Tab-pDef"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4148" levels="7" name="Poison">
+  <!-- Done by Magister -->
+  <table name="#dmg">
+    30 50 60 80 110 130 140
+  </table>
+  <table name="#mpConsume">
+    13 20 27 35 45 55 65
+  </table>
+  <table name="#power">
+    2.0 3.0 4.0 5.0 6.0 7.0 8.0
+  </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3000"/>
+  <set name="skillType" val="POISON"/>
+  <set name="stat" val="POISON"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="180000"/>
+  <set name="castRange" val="600"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="6" name="DamOverTime" time="5" val="#dmg" abnormal="poison"/>
+  </for>
+</skill>
+<skill id="4149" levels="7" name="Bleed">
+  <!-- Done by Magister -->
+  <table name="#dmg">
+    2 3 5 6 8 9 10
+  </table>
+  <table name="#mpConsume">
+    14 22 31 43 55 68 79
+  </table>
+  <table name="#power">
+    1.0 2.0 3.0 4.0 5.0 6.0 7.0
+  </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="BLEED"/>
+  <set name="stat" val="BLEED"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="50"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="4" name="DamOverTime" time="5" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4150" levels="7" name="Flame">
+  <!-- Done by Magister -->
+  <table name="#dmg"> 7 11 15 20 26 31 34 </table>
+  <table name="#mpConsume"> 17 31 45 60 75 90 105 </table>
+  <table name="#power"> 1.0 2.0 3.0 4.0 5.0 6.0 7.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="2"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="90000"/>
+  <set name="castRange" val="600"/>
+  <for>
+    <effect count="15" name="DamOverTime" time="1" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4151" levels="7" name="DD Wind">
+  <!-- Done by Magister -->
+  <table name="#power"> 18 26 38 52 68 85 102 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillTime" val="4000"/>
+  <set name="element" val="2"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4152" levels="7" name="Absorb HP">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 18 29 40 53 68 83 98 </table>
+  <table name="#power"> 49.0 52.0 55.0 58.0 61.0 65.0 68.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="element" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <set name="absorbPart" val="0.4" /> <!-- absorbs 40% of damage -->
+  <for>
+  </for>
+</skill>
+<skill id="4153" levels="7" name="Decrease Speed">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 2.0 2.0 2.0 2.0 2.0 2.0 2.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+   <effect count="1" name="Buff" time="120" val="0">
+     <div order="0x50" stat="runSpd" val="1.3"/>
+   </effect>
+</for>
+</skill>
+<skill id="4154" levels="7" name="Absorb MP">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 2.0 3.0 4.0 5.0 6.0 7.0 8.0 </table>
+  <table name="#dmg"> 3 5 6 8 11 13 14 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="skillTime" val="3500"/>
+  <set name="skillType" val="MDOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="180000"/>
+  <set name="castRange" val="600"/>
+  <for>
+    <effect count="15" name="ManaDamOverTime" time="5" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4155" levels="7" name="NPC Twister">
+  <!-- Done by Magister -->
+  <table name="#power"> 23.0 26.0 29.0 32.0 35.0 38.0 42.0 </table>
+  <table name="#mpConsume"> 18 20 22 23 25 27 29 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="1"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <set name="displayId" val="1178"/>
+  <for>
+  </for>
+</skill>
+<skill id="4156" levels="7" name="Beam Cannon: Curving Shot">
+  <!-- Done by Magister -->
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4157" levels="7" name="NPC Blaze">
+  <!-- Done by Magister -->
+  <table name="#power"> 23.0 26.0 29.0 32.0 35.0 38.0 42.0 </table>
+  <table name="#mpConsume"> 18 20 22 23 25 27 29 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <for>
+  </for>
+</skill>
+<skill id="4158" levels="7" name="NPC Prominence">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+<for>
+</for>
+</skill>
+<skill id="4159" levels="7" name="Beam Cannon: Straight Shot">
+  <!-- Done by Magister -->
+  <table name="#power"> 18.0 26.0 38.0 52.0 68.0 85.0 102.0 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4160" levels="7" name="NPC Aura Burn">
+  <!-- Done by Magister -->
+  <table name="#power"> 14.0 21.0 30.0 42.0 55.0 68.0 82.0 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="1500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="150"/>
+  <set name="displayId" val="1172"/>
+  <for>
+  </for>
+</skill>
+<skill id="4161" levels="1" name="Summon PC">
+<!---
+  Automatically generated from C3 client files.
+  Need to be checked/fixed.
+  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+  created 2005-05-29 23:34:32
+-->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <for>
+  </for>
+</skill>
+<skill id="4162" levels="3" name="Decrease P. Atk.">
+  <!-- Done by Magister -->
+  <table name="#power"> 1.0 3.0 5.0 </table>
+  <table name="#Tab-pAtkSpd"> 1.1 1.3 1.5 </table>
+  <set name="save" val="5"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+       <div order='0x50' stat='pAtkSpd' val="#Tab-pAtkSpd"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4163" levels="7" name="Self Shield">
+  <!-- Done by Magister -->
+  <table name="#rate"> 1.1 1.13 1.16 1.19 1.22 1.25 1.28 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="skillTime" val="100"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+      <mul order="0x50" stat="pDef" val="#rate"/>
+    </effect>
+</for>
+</skill>
+<skill id="4164" levels="9" name="Paralyze">
+  <!-- Done by Magister -->
+  <table name="#power"> 18 26 38 52 68 85 102 119 136 </table>
+  <table name="#mLevel"> 40 44 48 52 56 62 66 70 74 </table>
+  <set name="activateRate" val="20"/>
+  <set name="magicLevel" val="#mLevel"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="900"/>
+  <for>
+	<effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4165" levels="9" name="Icy Air">
+  <!-- Done by Magister -->
+  <table name="#power"> 18 26 38 52 68 85 102 119 136 </table>
+  <table name="#mLevel"> 40 44 48 52 56 62 66 70 74 </table>
+  <set name="activateRate" val="50"/>
+  <set name="magicLevel" val="#mLevel"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="900"/>
+  <for>
+    <effect count="6" name="DamOverTime" time="5" val="#power" abnormal="poison"/>
+  </for>
+</skill>
+<skill id="4166" levels="9" name="Shock">
+  <table name="#mpConsume"> 39 44 48 52 54 55 58 60 62 </table>
+  <table name="#mLevel"> 40 44 48 52 56 62 66 70 74 </table>
+  <set name="activateRate" val="20"/>
+  <set name="magicLevel" val="#mLevel"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="STUN"/>
+  <set name="stat" val="STUN"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="9000"/>
+  <set name="castRange" val="900"/>
+  <set name="DisplayId" val="1170"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Stun" time="9" val="0"/>
+  </for>
+</skill>
+<skill id="4167" levels="1" name="Curse of Fairy Mymyu">
+  <!---  Done by Magister! -->
+  <table name="#Tab-pAtkSpd"> 1.1 </table>
+  <table name="#Tab-runSpd"> 1.3 </table>
+  <set name="mpConsume" val="13"/>
+  <set name="save" val="5"/>
+  <set name="power" val="11.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="skillTime" val="3100"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1235"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+       <div order='0x50' stat='pAtkSpd' val="#Tab-pAtkSpd"/>
+       <div order='0x50' stat='runSpd' val="#Tab-runSpd"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4168" levels="7" name="BOSS Power Strike">
+  <!---  Done by Magister! -->
+  <table name="#power"> 10.0 20.0 30.0 40.0 50.0 60.0 70.0 </table>
+  <table name="#mpConsume"> 10 10 11 13 13 14 17 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <set name="displayId" val="0003"/>
+  <for>
+  </for>
+</skill>
+<skill id="4169" levels="7" name="Shock">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 39 44 48 52 54 55 58 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="400"/>
+  <set name="DisplayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4170" levels="7" name="BOSS Mortal Blow">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 10 10 11 13 13 14 17 </table>
+  <table name="#power"> 73.0 80.0 88.0 115.0 126.0 137.0 178.0 </table>
+  <set name="weaponsAllowed" val="16"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="reuseDelay" val="11000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+    <add order="0x10" stat="rCrit" val="200">
+      <using kind="Dagger" skill="0016"/>
+    </add>
+  </for>
+</skill>
+<skill id="4171" levels="7" name="BOSS Spinning Slasher">
+  <!---  Done by Magister! -->
+  <table name="#power"> 46.0 105.0 219.0 417.0 722.0 1136.0 1626.0 </table>
+  <table name="#mpConsume"> 14 22 31 43 55 68 79 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="overHit" val="true"/>
+  <set name="skillTime" val="1000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <for>
+  </for>
+</skill>
+<skill id="4172" levels="7" name="Shock">
+  <!-- Done by Magister -->
+  <table name="#mpConsume"> 39 44 48 52 54 55 58 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="400"/>
+  <set name="DisplayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4173" levels="7" name="BOSS Might">
+  <!---  Done by Magister! -->
+  <table name="#rate"> 1.08 1.12 1.15 1.08 1.12 1.15 1.15 </table>
+  <table name="#mpConsume"> 10 20 35 10 20 35 35 </table>
+  <table name="#power"> 1.0 2.0 3.0 1.0 2.0 3.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="skillTime" val="100"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <set name="displayId" val="1068"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0" stackOrder="#rate" stackType="pAtk">
+      <mul order="0x50" stat="pAtk" val="#rate"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4174" levels="7" name="BOSS Shield">
+  <!---  Done by Magister! -->
+  <table name="#rate"> 1.08 1.12 1.15 1.08 1.12 1.15 1.15 </table>
+  <table name="#mpConsume"> 10 20 35 10 20 35 35 </table>
+  <table name="#power"> 1.0 2.0 3.0 1.0 2.0 3.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="skillTime" val="100"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <set name="displayId" val="1040"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0" stackOrder="#rate" stackType="pDef">
+      <mul order="0x50" stat="pDef" val="#rate"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4175" levels="7" name="BOSS Haste">
+  <table name="#Tab-pAtkSpd"> 1.15 1.33 1.15 1.33 1.15 1.33 1.33 </table>
+  <table name="#mpConsume"> 14 33 14 33 14 33 33 </table>
+  <table name="#power"> 1.0 2.0 1.0 2.0 1.0 2.0 2.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="skillTime" val="100"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="400"/>
+  <set name="displayId" val="1086"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0" stackOrder="#Tab-pAtkSpd" stackType="pAtkSpeedUp">
+      <mul order="0x50" stat="pAtkSpd" val="#Tab-pAtkSpd"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4176" levels="7" name="BOSS Reflect Damage">
+  <!---  Done by Magister! -->
+  <table name="#rate"> 1.1 1.15 1.2 1.1 1.15 1.2 1.2 </table>
+  <table name="#mpConsume"> 35 42 48 35 42 48 48 </table>
+  <table name="#power"> 1.0 2.0 3.0 1.0 2.0 3.0 3.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="skillTime" val="100"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="1200000"/>
+  <set name="castRange" val="-1"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+      <mul order="0x50" stat="pDef" val="#rate"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4177" levels="7" name="Around Oneself: Cancel">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 44 49 54 59 64 69 74 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="NEGATE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="negateStats" val="STUN SLEEP MUTE FEAR CONFUSION POISON BLEED BUFF DEBUFF WEAKNESS PARALYZE"/>
+  <set name="negatePower" val="9.0"/>
+  <set name="displayId" val="1056"/>
+  <for>
+  </for>
+</skill>
+<skill id="4178" levels="7" name="BOSS Flame Strike">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 29 34 40 29 34 40 40 </table>
+  <table name="#power"> 13.0 16.0 19.0 22.0 25.0 28.0 31.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="15000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="500"/>
+  <set name="displayId" val="1181"/>
+  <for>
+  </for>
+</skill>
+<skill id="4179" levels="24" name="BOSS Power Strike">
+  <table name="#power"> 25.0 27.0 30.0 39.0 42.0 46.0 60.0 65.0 70.0 90.0 97.0 105.0 123.0 132.0 143.0 165.0 177.0 191.0 219.0 235.0 251.0 287.0 306.0 326.0 </table>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="skillTime" val="830"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="4180" levels="7" name="Shock">
+   <!-- Done by Magister -->
+  <table name="#mpConsume"> 39 44 48 52 54 55 58 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="400"/>
+  <set name="DisplayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4181" levels="7" name="BOSS Mortal Blow">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 10 10 11 13 13 14 17 </table>
+  <table name="#power"> 73.0 80.0 88.0 115.0 126.0 137.0 178.0 </table>
+  <set name="weaponsAllowed" val="16"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="reuseDelay" val="11000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="FATALBLOW"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <for>
+  </for>
+</skill>
+<skill id="4182" levels="7" name="Poison">
+  <!---  Done by Magister! -->
+  <table name="#dmg"> 3 5 6 8 11 13 14 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 2.0 3.0 4.0 5.0 6.0 7.0 8.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3500"/>
+  <set name="skillType" val="POISON"/>
+  <set name="stat" val="POISON"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="180000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="0129"/>
+  <for>
+    <effect count="6" name="DamOverTime" time="5" val="#dmg" abnormal="poison"/>
+  </for>
+</skill>
+<skill id="4183" levels="7" name="Decrease P. Atk.">
+  <!---  Done by Magister! -->
+  <table name="#Tab-pAtk"> 1.15 1.25 1.3 1.35 1.4 1.45 1.5 </table>
+  <table name="#power"> 1.0 1.0 2.0 2.0 4.0 4.0 4.0 5.0 </table>
+  <set name="power" val="#power"/>
+  <set name="save" val="6"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+      <div order="0x50" stat="pAtk" val="#Tab-pAtk"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4184" levels="7" name="Decrease Atk. Spd.">
+  <!---  Done by Magister! -->
+  <table name="#power"> 1.0 3.0 5.0 6.0 7.0 8.0 9.0 </table>
+  <table name="#Tab-pAtkSpd"> 1.1 1.3 1.5 1.6 1.7 1.8 1.9 </table>
+  <set name="save" val="5"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+       <div order='0x50' stat='pAtkSpd' val="#Tab-pAtkSpd"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4185" levels="7" name="Sleep">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="2"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="SLEEP"/>
+  <set name="stat" val="SLEEP"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1069"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Sleep" time="30" val="0"/>
+  </for>
+</skill>
+<skill id="4186" levels="7" name="Hold">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="ROOT"/>
+  <set name="stat" val="ROOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1201"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Root" time="30" val="0"/>
+  </for>
+</skill>
+<skill id="4187" levels="7" name="Decrease Speed">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 11.0 16.0 23.0 31.0 41.0 51.0 61.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="3"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3100"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+      <div order="0x50" stat="runSpd" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4188" levels="7" name="Bleed">
+  <!---  Done by Magister! -->
+  <table name="#dmg"> 2 3 5 6 8 9 10 </table>
+  <table name="#mpConsume"> 14 22 31 43 55 68 79 </table>
+  <table name="#power"> 3.0 4.0 5.0 6.0 7.0 8.0 9.0 </table>
+  <set name="weaponsAllowed" val="16"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="1080"/>
+  <set name="skillType" val="BLEED"/>
+  <set name="stat" val="BLEED"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="50"/>
+  <set name="displayId" val="0096"/>
+  <for>
+    <effect count="4" name="DamOverTime" time="5" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4189" levels="7" name="Paralyze">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="4"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="6000"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="stat" val="MOVEMENT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="400"/>
+  <set name="displayId" val="1170"/>
+  <for>
+    <effect count="1" name="Paralyze" time="120" val="0"/>
+  </for>
+</skill>
+<skill id="4190" levels="7" name="Decrease MP">
+  <!---  Done by Magister! -->
+  <table name="#dmg"> 3 5 6 8 11 13 14 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 2.0 3.0 4.0 5.0 6.0 7.0 8.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="2"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="MDOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="180000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1102"/>
+  <for>
+    <effect count="15" name="ManaDamOverTime" time="5" val="#dmg"/>
+  </for>
+</skill>
+<skill id="4191" levels="7" name="BOSS Wind Strike">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 12.0 13.0 15.0 18.0 21.0 23.0 26.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="1"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1177"/>
+  <for>
+  </for>
+</skill>
+<skill id="4192" levels="7" name="BOSS Vampiric Touch">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 20 23 27 29 32 34 36 </table>
+  <table name="#power"> 18.0 21.0 23.0 26.0 29.0 32.0 35.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="element" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="absorbPart" val="0.4" /><!-- absorbs 40% of damage -->
+  <set name="displayId" val="1147"/>
+  <for>
+  </for>
+</skill>
+<skill id="4193" levels="7" name="BOSS Life Drain">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 20 30 39 50 62 74 86 </table>
+  <table name="#power"> 15.0 21.0 26.0 33.0 39.0 45.0 51.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="element" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="absorbPart" val="0.8" /> <!-- absorbs 80% of damage -->
+  <set name="displayId" val="1090"/>
+  <for>
+  </for>
+</skill>
+<skill id="4194" levels="7" name="BOSS Aura Burn">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 14.0 21.0 30.0 42.0 55.0 68.0 82.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="1500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="150"/>
+  <set name="displayId" val="1172"/>
+  <for>
+  </for>
+</skill>
+<skill id="4195" levels="7" name="BOSS Twister">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 18 20 22 23 25 27 29 </table>
+  <table name="#power"> 23.0 26.0 29.0 32.0 35.0 38.0 42.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="1"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <set name="displayId" val="1178"/>
+  <for>
+  </for>
+</skill>
+<skill id="4196" levels="7" name="Decreases Speed">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 11.0 16.0 23.0 31.0 41.0 51.0 61.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="3"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="3100"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1235"/>
+  <for>
+    <effect count="1" name="Buff" time="1200" val="0">
+      <div order="0x50" stat="runSpd" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="4197" levels="7" name="Hold">
+  <!---  Done by Magister! -->
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="5"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2500"/>
+  <set name="skillType" val="ROOT"/>
+  <set name="stat" val="ROOT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="30000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="1201"/>
+  <for>
+    <effect count="1" name="Root" time="30" val="0"/>
+  </for>
+</skill>
+<skill id="4198" levels="7" name="Poison">
+  <!---  Done by Magister! -->
+  <table name="#dmg"> 3 5 6 8 11 13 14 </table>
+  <table name="#mpConsume"> 13 20 27 35 45 55 65 </table>
+  <table name="#power"> 2.0 3.0 4.0 5.0 6.0 7.0 8.0 </table>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="save" val="3"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillTime" val="2000"/>
+  <set name="skillType" val="POISON"/>
+  <set name="stat" val="POISON"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="180000"/>
+  <set name="castRange" val="600"/>
+  <set name="displayId" val="0129"/>
+  <for>
+    <effect count="6" name="DamOverTime" time="5" val="#dmg" abnormal="poison"/>
+  </for>
+</skill>
+<skill id="4199" levels="7" name="Decrease P. Atk.">
+  <!---  Done by Magister! -->
+  <table name="#Tab-pAtk"> 1.15 1.25 1.3 1.35 1.4 1.45 1.5 </table>
+  <table name="#power"> 1.0 1.0 2.0 2.0 4.0 4.0 4.0 5.0 </table>
+  <set name="power" val="#power"/>
+  <set name="save" val="6"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="buffDuration" val="120000"/>
+  <set name="castRange" val="-1"/>
+  <set name="levelModifier" val="2"/>
+  <for>
+    <effect count="1" name="Buff" time="120" val="0">
+      <div order="0x50" stat="pAtk" val="#Tab-pAtk"/>
+    </effect>
+  </for>
+</skill>
+</list>

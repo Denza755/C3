@@ -1,0 +1,1 @@
+ALTER TABLE `character_subclasses` ADD COLUMN `classindex` INT DEFAULT 0 NOT NULL;

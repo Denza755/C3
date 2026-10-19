@@ -1,0 +1,1077 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0105)http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+ 
+<title>Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6</title>
+<meta name="description" content="Описание : Исходники ява сервера С3. Размер : 11.60 MB Хроники : С3 (С4) Платформа : Java Совместимось : Все версии Windows Описание : Исходники ява сервера С3. Размер : 11.60 MB Хроники : С">
+<meta name="keywords" content="Добавлен, Fixed, Support, конфиг, Добавлена, другое, многое, player, скиллов, Added, возможность, skills, оптимизация, опция, прочее, новая, удаляем, Добавлены, server, самой">
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)">
+<link rel="search" type="application/opensearchdescription+xml" href="http://u.u.u.studio.cs-la2.ru/engine/opensearch.php" title="Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6">
+<link rel="alternate" type="application/rss+xml" title="Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6" href="http://u.u.u.studio.cs-la2.ru/rss.xml">
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/jquery.js"></script>
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/jqueryui.js"></script>
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/dle_js.js"></script>
+<!--[IF IE]>
+<script type="text/javascript" src="/engine/classes/masha/ierange.js"></script>
+<![ENDIF]-->
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/masha.js"></script>
+<link media="screen" href="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/styles.css" type="text/css" rel="stylesheet">
+<link media="screen" href="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/engine.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/jquery.jmpopups-0.5.1.js">
+    </script>
+<script type="text/javascript">
+	      //<![CDATA[
+	      $.setupJMPopups({
+		screenLockerBackground: "#000",
+		screenLockerOpacity: "0.7"
+	      }
+		             );
+	  function openStaticPopup() {
+	    $.openPopupLayer({
+	      name: "loginPopup",
+	      width: 370,
+	      target: "loginform"
+	    }
+		            );
+	  }
+	  //]]>
+  </script>
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/jquery.ui.tabs.js"></script>
+<script> 
+    $(function() {
+      $( "#tabs" ).tabs();
+    }
+     );
+  </script>
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/topmenu.js"></script>
+<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/openapi.js"></script>
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border-spacing:0;border:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+/* @noflip */
+.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+/* @noflip */
+.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{position:relative;display:-moz-inline-block;display:inline-block}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify;vertical-align:text-bottom}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_button_simple,
+.fb_button_simple_rtl{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yH/r/eIpbnVKI9lR.png);background-repeat:no-repeat;cursor:pointer;outline:none;text-decoration:none}
+.fb_button_simple_rtl{background-position:right 0}
+.fb_button_simple .fb_button_text{margin:0 0 0 20px;padding-bottom:1px}
+.fb_button_simple_rtl .fb_button_text{margin:0 10px 0 0}
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text{text-decoration:underline}
+.fb_button,
+.fb_button_rtl{background:#29447e url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/FGFbc80dUKj.png);background-repeat:no-repeat;cursor:pointer;display:inline-block;padding:0 0 0 1px;text-decoration:none;outline:none}
+.fb_button .fb_button_text,
+.fb_button_rtl .fb_button_text{background:#5f78ab url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/FGFbc80dUKj.png);border-top:solid 1px #879ac0;border-bottom:solid 1px #1a356e;color:#fff;display:block;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-weight:bold;padding:2px 6px 3px 6px;margin:1px 1px 0 21px;text-shadow:none}
+a.fb_button,
+a.fb_button_rtl,
+.fb_button,
+.fb_button_rtl{text-decoration:none}
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text{border-bottom:solid 1px #29447e;border-top:solid 1px #45619d;background:#4f6aa3;text-shadow:none}
+.fb_button_xlarge,
+.fb_button_xlarge_rtl{background-position:left -60px;font-size:24px;line-height:30px}
+.fb_button_xlarge .fb_button_text{padding:3px 8px 3px 12px;margin-left:38px}
+a.fb_button_xlarge:active{background-position:left -99px}
+.fb_button_xlarge_rtl{background-position:right -268px}
+.fb_button_xlarge_rtl .fb_button_text{padding:3px 8px 3px 12px;margin-right:39px}
+a.fb_button_xlarge_rtl:active{background-position:right -307px}
+.fb_button_large,
+.fb_button_large_rtl{background-position:left -138px;font-size:13px;line-height:16px}
+.fb_button_large .fb_button_text{margin-left:24px;padding:2px 6px 4px 6px}
+a.fb_button_large:active{background-position:left -163px}
+.fb_button_large_rtl{background-position:right -346px}
+.fb_button_large_rtl .fb_button_text{margin-right:25px}
+a.fb_button_large_rtl:active{background-position:right -371px}
+.fb_button_medium,
+.fb_button_medium_rtl{background-position:left -188px;font-size:11px;line-height:14px}
+a.fb_button_medium:active{background-position:left -210px}
+.fb_button_medium_rtl{background-position:right -396px}
+.fb_button_text_rtl,
+.fb_button_medium_rtl .fb_button_text{padding:2px 6px 3px 6px;margin-right:22px}
+a.fb_button_medium_rtl:active{background-position:right -418px}
+.fb_button_small,
+.fb_button_small_rtl{background-position:left -232px;font-size:10px;line-height:10px}
+.fb_button_small .fb_button_text{padding:2px 6px 3px;margin-left:17px}
+a.fb_button_small:active,
+.fb_button_small:active{background-position:left -250px}
+.fb_button_small_rtl{background-position:right -440px}
+.fb_button_small_rtl .fb_button_text{padding:2px 6px;margin-right:18px}
+a.fb_button_small_rtl:active{background-position:right -458px}
+.fb_share_count_wrapper{position:relative;float:left}
+.fb_share_count{background:#b0b9ec none repeat scroll 0 0;color:#333;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;text-align:center}
+.fb_share_count_inner{background:#e8ebf2;display:block}
+.fb_share_count_right{margin-left:-1px;display:inline-block}
+.fb_share_count_right .fb_share_count_inner{border-top:solid 1px #e8ebf2;border-bottom:solid 1px #b0b9ec;margin:1px 1px 0 1px;font-size:10px;line-height:10px;padding:2px 6px 3px;font-weight:bold}
+.fb_share_count_top{display:block;letter-spacing:-1px;line-height:34px;margin-bottom:7px;font-size:22px;border:solid 1px #b0b9ec}
+.fb_share_count_nub_top{border:none;display:block;position:absolute;left:7px;top:35px;margin:0;padding:0;width:6px;height:7px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yU/r/bSOHtKbCGYI.png)}
+.fb_share_count_nub_right{border:none;display:inline-block;padding:0;width:5px;height:10px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yX/r/i_oIVTKMYsL.png);vertical-align:top;background-position:right 5px;z-index:10;left:2px;margin:0 2px 0 0;position:relative}
+.fb_share_no_count{display:none}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner{font-size:10px}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner{font-size:11px;padding:2px 6px 3px;letter-spacing:-1px;line-height:14px}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner{font-size:13px;line-height:16px;padding:2px 6px 4px;font-weight:normal;letter-spacing:-1px}
+.fb_share_count_hidden .fb_share_count_nub_top,
+.fb_share_count_hidden .fb_share_count_top,
+.fb_share_count_hidden .fb_share_count_nub_right,
+.fb_share_count_hidden .fb_share_count_right{visibility:hidden}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body>
+ <div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '';
+var dle_group      = 5;
+var dle_skin       = 'csla2';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '0';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_del_news   = 'Удалить статью';
+var allow_dle_delete_news   = false;
+
+$(function(){
+		var timeoutHover = null;
+
+		$('body').append('<div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="#" class="tw"><span></span>Twitter</a></li><li><a href="#" class="fb"><span></span>Facebook</a></li><li><a href="#" class="vk"><span></span>\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435</a></li><li><a href="#" class="gp"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href=""><ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div>');
+
+		$("#share-popup").hover(
+			function(){
+				if (typeof timeout_hover!="undefined") {
+					window.clearTimeout(timeout_hover)
+				}
+
+			},
+			function(){
+				timeout_hover=window.setTimeout(function(){
+					hideSharePopup();
+				},2000);
+			}
+		);
+
+		MaSha.instance=new MaSha({
+				selectable:$("#dle-content")[0],
+				'ignored': '.ignore-select',
+				onMark:function(){
+				updateSharePopupContent();
+				showSharePopup($(".num"+ (this.counter-1), $(this.selectable))[0]);
+			},
+				onUnmark: function(){
+				"undefined"!=typeof hideSharePopup && hideSharePopup("",!0);
+				updateSharePopupContent();
+			}
+		});
+		updateSharePopupContent();
+
+});//-->
+</script>
+<div id="container">
+	<div class="toppanel">
+		<noindex>
+		<ul class="reset topmenu" id="topmenu">
+			<li>
+			<a href="http://u.u.u.studio.cs-la2.ru/">
+			<strong>
+			Главная </strong>
+			</a>
+			</li>
+			<li>
+			<a href="http://forum.cs-la2.ru/">
+			<strong>
+			Форум </strong>
+			</a>
+			</li>
+			<li>
+			<a class="sub" rel="submenu1" href="http://u.u.u.studio.cs-la2.ru/">
+			<strong>
+			Lineage </strong>
+			 </a>
+			</li>
+			<li>
+			<a class="sub" rel="submenu2" href="http://u.u.u.studio.cs-la2.ru/">
+			<strong>
+			Counter-Strike </strong>
+			 </a>
+			</li>
+			<li>
+			<a class="sub" rel="submenu3" href="http://u.u.u.studio.cs-la2.ru/">
+			<strong>
+			Aion </strong>
+			 </a>
+			</li>
+			<li>
+			<a href="http://diserror.ru/">
+			<strong>
+			Web-студия </strong>
+			</a>
+			</li>
+		</ul>
+		</noindex>
+		<div id="submenu1" class="submenu">
+			<ul class="reset">
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/news/">
+				Игровые новости </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2server/">
+				Java Сборки серверов </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2dopolnenia/">
+				Дополнения </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2web/">
+				Web </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2shablon/">
+				Web Шаблоны </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2progi/">
+				Программы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2chits/">
+				Читы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2geodata/">
+				Geodata </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2ishodniki/">
+				Исходники </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2faq/">
+				F.A.Q. </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2pts/">
+				PTS </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2npc/">
+				NPC | Мобы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2bagi/">
+				Баги </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2myvik/">
+				Мувики </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2bots/">
+				Боты </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2ctati/">
+				Статьи </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/l2quests/">
+				Квесты </a>
+				</li>
+			</ul>
+		</div>
+		<div id="submenu2" class="submenu">
+			<ul class="reset">
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csbackgrounds/">
+				Backgrounds </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cswad/">
+				Wad'ы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csantichit/">
+				Античиты </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csbots/">
+				Боты </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csplugins/">
+				Плагины для сервера </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cstriks/">
+				Триксы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csservers/">
+				Готовые сервера </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cszvyki/">
+				Звуки </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csmaps/">
+				Карты </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cskonfigs/">
+				Конфиги </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cslogos/">
+				Логосы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cscolorlogos/">
+				Цветные логосы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csmodels/">
+				Модели </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csmods/">
+				Моды </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cspaki/">
+				Паки </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cspatch/">
+				Патчи </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csprogramms/">
+				Программы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csruss/">
+				Русификаторы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cscekpet/">
+				Секреты карт </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csckrips/">
+				Скрипты </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csfootboll/">
+				Футбол в CS </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csshablon/">
+				Всё для web </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csdownload/">
+				Скачать CS 1.6 </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/cstails/">
+				Статьи </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/csmyvik/">
+				Мувики </a>
+				</li>
+			</ul>
+		</div>
+		<div id="submenu3" class="submenu">
+			<ul class="reset">
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/servers/">
+				Сборки серверов </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/web/">
+				Web-обвязки </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/addons/">
+				Дополнения </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/templates/">
+				Шаблоны </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/programs/">
+				Программы </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/news/">
+				Новости </a>
+				</li>
+				<li>
+				<a href="http://u.u.u.studio.cs-la2.ru/ai0n/article/">
+				Статьи </a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+	      		cssdropdown.startchrome("topmenu")
+ 		</script>
+
+			<form onsubmit="javascript: showBusyLayer()" method="post" action="" style="float:right; margin-right:-7px;"> 
+				<input type="hidden" name="do" value="search"> 
+				<input type="hidden" name="subaction" value="search"> 
+				<input name="story" id="story1" width="144" value="Поиск" onblur="if(this.value==&#39;&#39;) this.value=&#39;Поиск;" onfocus="if(this.value==&#39;Поиск&#39;) this.value=&#39;&#39;;" type="text" class="search_input"> 
+				<input class="search_but" alt="Поиск" type="submit" value=""> 
+			</form> 
+	   
+	</div>
+	<div id="header2">
+		<!--<a href="/"><div class="logo"></div></a>-->
+		<embed src="/templates/csla2/images/5010-purple.swf?TimeZone=GMT0300&amp;" class="logot" wmode="transparent" type="application/x-shockwave-flash">
+		<div id="reg_block">
+			 
+          
+
+
+<div id="reg_block">
+<a class="reg_but1" href="javascript:;" onclick="openStaticPopup()"></a>
+<a class="reg_but2" href="http://u.u.u.studio.cs-la2.ru/index.php?do=register"></a>
+</div>
+<div id="loginform" class="window">
+  <div class="popup">
+    <div class="popup-head">
+      <span class="lcol thide">WorldOS</span>
+    </div>
+    <div class="popup-body">
+      <form method="post" onsubmit="javascript:showBusyLayer()" action="">
+        <div class="lfield">
+          <p>Имя пользователя:</p>
+          <input type="text" name="login_name">
+        </div>
+        <div class="lfield">
+          <p>Пароль:</p>
+          <input type="password" name="login_password">
+        </div>
+        <input name="login" type="hidden" id="login" value="submit">
+        <div class="popsubmit"><input class="bbcodes" onclick="submit();" type="submit" value="Войти"></div>
+      </form>
+      <div class="poptext">
+        Вы вошли как гость, рекомендуем Вам авторизироваться либо пройти
+        процесс <a href="http://u.u.u.studio.cs-la2.ru/index.php?do=register">регистрации</a>. Если Вы забыли пароль, то Вы можете его <a href="http://u.u.u.studio.cs-la2.ru/index.php?do=lostpassword">восстановить</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+		<div id="banner">
+			<!-- OYY.ru --><script type="text/javascript"><!--
+			oyy_banner_id = '10904';
+			document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+			//-->
+			</script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/oyy.js"></script><link rel="stylesheet" type="text/css" href="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/banner.css"><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/saved_resource"></script><style type="text/css">#oyy10904{width:468px!important;}#oyy10904 .oyyban,#oyy10904 img{width:468px!important;height:60px!important;overflow:hidden!important;}#oyy10904 .zag{text-align:center!important;}#oyy10904 .zag img{width:468px!important;}</style><div id="oyy10904" class="oyyb"><div class="oyyban"><div class="zag"><a href="http://www.oyy.ru/10904/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/468x60.gif" title="Чтобы дать здесь рекламу - просто кликни!"></a></div></div></div> 
+		</div>
+			<div id="forumexc"> 
+<center><br>
+<table border="0" width="90%" bgcolor=""><tbody><tr align="left"><td width="50%"> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=47.0">Предоставляю\ищу услуги.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35402.msg280717;topicseen#new" target="_blank" style="color: #4682B4;">Взлом ВК, Маил</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=20257">leada</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=20.0">Флудилка</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35401.msg280716;topicseen#new" target="_blank" style="color: #4682B4;">One-nox заказы больше не принимаем </a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=14583">Digital Nox</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35211.msg280715;topicseen#new" target="_blank" style="color: #4682B4;">Продажа дизайна Fortress</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=20853">Jared Ceres</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=47.0">Предоставляю\ищу услуги.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35400.msg280714;topicseen#new" target="_blank" style="color: #4682B4;">Выделенные сервера в Германии</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=5063">SanSey</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=27.0">Арбитраж cs-la2</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35399.msg280713;topicseen#new" target="_blank" style="color: #4682B4;">Закрыто</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=13547">Trasken</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35287.msg280711;topicseen#new" target="_blank" style="color: #4682B4;">[продам]Дизайн сайта L2Hell</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=21987">sadnes</a><br></td><td> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=20.0">Флудилка</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35398.msg280710;topicseen#new" target="_blank" style="color: #4682B4;">IPad 4</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=4370">[MaD]Хакерс^_^</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35330.msg280706;topicseen#new" target="_blank" style="color: #4682B4;">Продам дизайн</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=12103">VaskoDaGama</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35324.msg280705;topicseen#new" target="_blank" style="color: #4682B4;">Продам дизайн</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=12103">VaskoDaGama</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35397.msg280704;topicseen#new" target="_blank" style="color: #4682B4;">Комплект для создания Linux Ботнетов! </a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=20873">JVSS</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35305.msg280701;topicseen#new" target="_blank" style="color: #4682B4;">Продажа дизайнов.</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=6051">Ромыч</a><br> [+] [<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?board=41.0">Продам.</a>] <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?topic=35334.msg280700;topicseen#new" target="_blank" style="color: #4682B4;">Покупаем новый дизайн!</a> от  <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=6051">Ромыч</a><br></td></tr></tbody></table> </center><br><div class="forumexs">
+		Всего пользователей: <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=mlist">13610</a>
+		Всего сообщений: 168250
+		Всего тем: 21093 
+		Всего категорий: 5
+		Всего разделов: 37<br>Сейчас на форуме:
+		26 Гостей, 2 Пользователей (3 Пауков)<br>
+			<a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=20257">leada</a>, <a href="http://forum.u.u.u.studio.cs-la2.ru/index.php?action=profile;u=14583">Digital Nox</a>, Yandex, Google (Mobile), Google</div><br><!-- create:23:12:03--></div>
+		<table cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td style="vertical-align: top; background: url(/templates/csla2/images/left_bg.png) repeat-y">
+				<div id="nav">
+					<div class="nav_top_bg">
+					</div>
+				</div>
+
+				<div style="margin-left: 30px; margin-top: -45px;">
+					<!-- OYY.ru --><script type="text/javascript"><!--
+					oyy_banner_id = '15446';
+					document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+					//-->
+					</script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/oyy(1).js"></script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/saved_resource(1)"></script><style type="text/css">#oyy15446{width:160px!important;}#oyy15446 .oyyban,#oyy15446 img{width:160px!important;height:350px!important;overflow:hidden!important;}#oyy15446 .zag{text-align:center!important;}#oyy15446 .zag img{width:160px!important;}#oyy15446 a,#oyy15446 a:hover{color:#FF0000!important;}#oyy15446 span{width:130px!important;}#oyy15446 span a,#oyy15446 span a:hover{color:#FFFFFF!important;}#oyy15446 .oyyad{background-color:#666666!important;}</style><div id="oyy15446" class="oyyb"><div class="oyyban"><div class="zag"><a href="http://www.oyy.ru/15446/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/160x350.gif" title="Чтобы дать здесь рекламу - просто кликни!"></a></div></div><div class="oyyad"><span><a href="http://www.oyy.ru/15446/" target="_blank">реклама на сайте</a></span><a href="http://www.oyy.ru/" target="_blank">ой!</a></div></div>
+				</div>
+
+
+				<div class="tit_l">
+					 Lineage
+				</div>
+				<div style="background: url(/templates/csla2/images/left_bg.png) repeat-y">
+					<div class="nav_menu">
+					</div>
+					<div class="br_m">
+					</div>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2server/" class="menubut">Java Сборки серверов</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2dopolnenia/" class="menubut">Дополнения</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2web/" class="menubut">Web</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2shablon/" class="menubut">Web Шаблоны</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2progi/" class="menubut">Программы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2chits/" class="menubut">Читы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2geodata/" class="menubut">Geodata</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2ishodniki/" class="menubut">Исходники</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2faq/" class="menubut">F.A.Q.</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2pts/" class="menubut">PTS</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2npc/" class="menubut">NPC | Мобы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2bagi/" class="menubut">Баги</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2myvik/" class="menubut">Мувики</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2bots/" class="menubut">Боты</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2ctati/" class="menubut">Статьи</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/l2quests/" class="menubut">Квесты</a>
+				</div>
+				
+				<div class="tit_l">
+					 Counter-Strike
+				</div>
+				<div style="background: url(/templates/csla2/images/left_bg.png) repeat-y">
+					<div class="nav_menu">
+					</div>
+					<div class="br_m">
+					</div>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csbackgrounds/" class="menubut">Backgrounds</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cswad/" class="menubut">Wad'ы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csantichit/" class="menubut">Античиты</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csbots/" class="menubut">Боты</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csplugins/" class="menubut">Плагины для сервера</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cstriks/" class="menubut">Триксы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csservers/" class="menubut">Готовые сервера</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cszvyki/" class="menubut">Звуки</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csmaps/" class="menubut">Карты</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cskonfigs/" class="menubut">Конфиги</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cslogos/" class="menubut">Логосы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cscolorlogos/" class="menubut">Цветные логосы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csmodels/" class="menubut">Модели</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csmods/" class="menubut">Моды</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cspaki/" class="menubut">Паки</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cspatch/" class="menubut">Патчи</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csprogramms/" class="menubut">Программы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csruss/" class="menubut">Русификаторы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cscekpet/" class="menubut">Секреты карт</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csckrips/" class="menubut">Скрипты</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csfootboll/" class="menubut">Футбол в CS</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csshablon/" class="menubut">Всё для web</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csdownload/" class="menubut">Скачать CS 1.6</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/cstails/" class="menubut">Статьи</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/csmyvik/" class="menubut">Мувики</a>
+				</div>
+				
+				<div class="tit_l">
+					 Aion
+				</div>
+				<div style="background: url(/templates/csla2/images/left_bg.png) repeat-y">
+					<div class="nav_menu">
+					</div>
+					<div class="br_m">
+					</div>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/servers/" class="menubut">Сборки серверов</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/web/" class="menubut">Web-обвязки</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/addons/" class="menubut">Дополнения</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/templates/" class="menubut">Шаблоны</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/programs/" class="menubut">Программы</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/news/" class="menubut">Новости</a>
+					 <a href="http://u.u.u.studio.cs-la2.ru/ai0n/article/" class="menubut">Статьи</a>
+				</div>
+
+
+				
+				
+				<br>
+				<div class="tit_l">
+					 АРХИВ НОВОСТЕЙ
+				</div>
+				<br>
+				<a class="archives" href="http://u.u.u.studio.cs-la2.ru/2013/03/"><b>Март 2013 (3)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2013/02/"><b>Февраль 2013 (40)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2013/01/"><b>Январь 2013 (51)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/12/"><b>Декабрь 2012 (8)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/11/"><b>Ноябрь 2012 (25)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/10/"><b>Октябрь 2012 (28)</b></a><br><div id="dle_news_archive" style="display:none;"><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/09/"><b>Сентябрь 2012 (16)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/08/"><b>Август 2012 (30)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/07/"><b>Июль 2012 (36)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/06/"><b>Июнь 2012 (67)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/05/"><b>Май 2012 (69)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/04/"><b>Апрель 2012 (50)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/03/"><b>Март 2012 (60)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/02/"><b>Февраль 2012 (89)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2012/01/"><b>Январь 2012 (86)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/12/"><b>Декабрь 2011 (78)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/11/"><b>Ноябрь 2011 (79)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/10/"><b>Октябрь 2011 (89)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/09/"><b>Сентябрь 2011 (82)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/08/"><b>Август 2011 (52)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/07/"><b>Июль 2011 (136)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/06/"><b>Июнь 2011 (99)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/05/"><b>Май 2011 (130)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/04/"><b>Апрель 2011 (132)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/03/"><b>Март 2011 (210)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/02/"><b>Февраль 2011 (183)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2011/01/"><b>Январь 2011 (251)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/12/"><b>Декабрь 2010 (224)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/11/"><b>Ноябрь 2010 (225)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/10/"><b>Октябрь 2010 (247)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/09/"><b>Сентябрь 2010 (132)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/08/"><b>Август 2010 (136)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/07/"><b>Июль 2010 (203)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/06/"><b>Июнь 2010 (124)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/05/"><b>Май 2010 (223)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/04/"><b>Апрель 2010 (219)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/03/"><b>Март 2010 (231)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/02/"><b>Февраль 2010 (171)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2010/01/"><b>Январь 2010 (118)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/12/"><b>Декабрь 2009 (54)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/11/"><b>Ноябрь 2009 (38)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/10/"><b>Октябрь 2009 (39)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/09/"><b>Сентябрь 2009 (29)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/08/"><b>Август 2009 (29)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/07/"><b>Июль 2009 (13)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/06/"><b>Июнь 2009 (80)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/05/"><b>Май 2009 (94)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/04/"><b>Апрель 2009 (175)</b></a><br><a class="archives" href="http://u.u.u.studio.cs-la2.ru/2009/03/"><b>Март 2009 (308)</b></a><br></div><div id="dle_news_archive_link"><br><a class="archives" onclick="$(&#39;#dle_news_archive&#39;).toggle(&#39;blind&#39;,{},700); return false;" href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#">Показать / скрыть весь архив</a></div>
+				
+				<br><br><br>
+				
+			
+		
+	</td>
+	<td style="vertical-align: top; background: white; width: 100%">
+		<div id="content">
+			<div class="content_top_left">
+			</div>
+			<div class="content_top_right">
+			</div>
+			<div class="content_top">
+			</div>
+			<div style="background: white;">
+				   <div id="dle-content">
+ <div style="background: white; margin-top: -10px;"><div class="news_top_left"></div><div class="news_top_right"></div><div class="news_top"><div id="news-title" class="news_top1"><span id="selection_index1" class="selection_index"></span>Исходники ява сервера C3 от команды Ultimate Dev. Team</div></div>
+<div style="padding: 10px;">
+  <div id="news-id-1111" style="display:inline;"><div align="center"><b><span id="selection_index2" class="selection_index"></span>Исходники Java сервера C3 от команды Ultimate Dev. Team</b></div><br><div align="center"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/1261939642_ultimatedev.jpg" alt="Исходники ява сервера C3 от команды Ultimate Dev. Team" title="Исходники ява сервера C3 от команды Ultimate Dev. Team"></div><br><span id="selection_index3" class="selection_index"></span>Описание : Исходники ява сервера С3.<br><span id="selection_index4" class="selection_index"></span>Размер : 11.60 MB<br><span id="selection_index5" class="selection_index"></span>Хроники : С3 (С4)<br><span id="selection_index6" class="selection_index"></span>Платформа : Java<br><span id="selection_index7" class="selection_index"></span>Совместимось : Все версии Windows<br><br><br><span id="selection_index8" class="selection_index"></span>Полное описание :<br><!--dle_spoiler--><div class="title_spoiler"><img id="image-e346161cab707f5d3cc62a12cca0224c" style="vertical-align: middle;border: none;" alt="" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/spoiler-minus.gif">&nbsp;<a href="javascript:ShowOrHide('e346161cab707f5d3cc62a12cca0224c')"><!--spoiler_title--><span id="selection_index9" class="selection_index"></span>Показать / Скрыть текст<!--spoiler_title_end--></a></div><div id="e346161cab707f5d3cc62a12cca0224c" class="text_spoiler" style=""><!--spoiler_text--><span id="selection_index10" class="selection_index"></span>Перевод нескольких html + кодировка UTF-8 <br><span id="selection_index11" class="selection_index"></span>Полный перевод конфигов <br><span id="selection_index12" class="selection_index"></span>Огромный список плохих слов (Настраивается в конфиге) <br><span id="selection_index13" class="selection_index"></span>Сделали Систему цветов ника за счетчик пвп пк <br><span id="selection_index14" class="selection_index"></span>есть новая команда .stat показывает статистику о выделенном чаре. дописал Копирайты в ГС и ЛС. и добавил титул для удобства запуска. <br><span id="selection_index15" class="selection_index"></span>DataPack? Lethal Shot и Lethal Blow <br><span id="selection_index16" class="selection_index"></span>убран конфиг AltLanguage? <br><span id="selection_index17" class="selection_index"></span>удаляем лишнее <br><span id="selection_index18" class="selection_index"></span>удаляем лишние <br><span id="selection_index19" class="selection_index"></span>Some Stuff <br><span id="selection_index20" class="selection_index"></span>Добавил новую команду для ГМов: снять все бафы с персонажа <br><span id="selection_index21" class="selection_index"></span>totally NO COMMENTS ..Полностью переведен: <br><span id="selection_index22" class="selection_index"></span>-tutorial <br><span id="selection_index23" class="selection_index"></span>-merchant <br><span id="selection_index24" class="selection_index"></span>-seven_signs(Включая мамонов) <br><span id="selection_index25" class="selection_index"></span>-trainer <br><span id="selection_index26" class="selection_index"></span>-tutorial <br><span id="selection_index27" class="selection_index"></span>fix.. <br><span id="selection_index28" class="selection_index"></span>оптимизация импортов <br><span id="selection_index29" class="selection_index"></span>также много не описаных на свне фиксов <br><span id="selection_index30" class="selection_index"></span>holydogsh1t. sorry my falt, forgot. <br><br><span id="selection_index31" class="selection_index"></span>До этого Фиксы: <br><span id="selection_index32" class="selection_index"></span>Работа проведёная в ядре: <br><span id="selection_index33" class="selection_index"></span>Очищение и оптимизация кода <br><span id="selection_index34" class="selection_index"></span>Суппорт с C3 и С4 Клиентами (Пакеты и прочее) <br><span id="selection_index35" class="selection_index"></span>Суппорт Альянса Войны (С клиентом С4) <br><span id="selection_index36" class="selection_index"></span>Рабочее Включение//Выключение авто изучения скиллов <br><span id="selection_index37" class="selection_index"></span>Включение выключение наших копирайтов (возможно ваших если поменяете текст) при входе в игру и самой игры ) <br><span id="selection_index38" class="selection_index"></span>Support создания вещей крафтером на клиенте С4 <br><span id="selection_index39" class="selection_index"></span>HP gain skills <br><span id="selection_index40" class="selection_index"></span>summon any monster as GM's pet <br><span id="selection_index41" class="selection_index"></span>sending Vietnamese messages in server -&gt; client <br><span id="selection_index42" class="selection_index"></span>теперь можно вызвать виверну (Раньше нельзя было) <br><span id="selection_index43" class="selection_index"></span>Fix Energy Stones <br><span id="selection_index44" class="selection_index"></span>Support for TARGET_AREA_CORPSE_MOB type skills <br><span id="selection_index45" class="selection_index"></span>Support for Signboard in town/arena <br><span id="selection_index46" class="selection_index"></span>Support for UNHOLY/SACRED element <br><span id="selection_index47" class="selection_index"></span>Fixed magic reuse delay now depend your cast speed <br><span id="selection_index48" class="selection_index"></span>Fixed TARGET_UNDEAD now check target type is Undead and don't Dead <br><span id="selection_index49" class="selection_index"></span>Fixed TARGET_AREA now work like retail <br><span id="selection_index50" class="selection_index"></span>Fixed TARGET_ALLY if player don't have ally will apply to clan <br><span id="selection_index51" class="selection_index"></span>Fixed FEAR skills now work <br><span id="selection_index52" class="selection_index"></span>И многое другое! <br><br><span id="selection_index53" class="selection_index"></span>Дополнения: <br><span id="selection_index54" class="selection_index"></span>Added max player record (DisateR) <br><span id="selection_index55" class="selection_index"></span>Добавлен журнал ГМ действий <br><span id="selection_index56" class="selection_index"></span>Добавлена возможность изменения конфигурации 7 Печатей. <br><span id="selection_index57" class="selection_index"></span>Добавлен фильтр запрещёных слов на сервере (Мат и прочее) (gameserver/config/sayfilter.txt) <br><span id="selection_index58" class="selection_index"></span>Добавлен Сервер конфиг в самой игре. (комманда: //config_server) <br><span id="selection_index59" class="selection_index"></span>Добавлена возможность просматривать статы/дроп с мобов shift кликом. ( THX L2JF) <br><span id="selection_index60" class="selection_index"></span>Выведена опция в конфиги для запрещения Deatch Penalty <br><span id="selection_index61" class="selection_index"></span>Added option for disable server restart player recommendation point <br><span id="selection_index62" class="selection_index"></span>Cделана новая, более удобная админ-Панель <br><span id="selection_index63" class="selection_index"></span>Добавлена опция в меню администратора установить уровень игрока <br><span id="selection_index64" class="selection_index"></span>Добавлена возможность настроить GM / VIP имена определёный цветом (Например гм зелёный а вип фиолетовый) <br><span id="selection_index65" class="selection_index"></span>Добавлен конфиг для телепорта всех игроков без проверки на 7 печатей в Necro/Catacomb (True//False) <br><span id="selection_index66" class="selection_index"></span>Добавлен конфиг для включения или выключения clan penalty <br><span id="selection_index67" class="selection_index"></span>Added config for maximum amount when buy/sell items <br><span id="selection_index68" class="selection_index"></span>и многое другое! <br><br><span id="selection_index69" class="selection_index"></span>ДатаПак: <br><span id="selection_index70" class="selection_index"></span>Catacomb Apostate/Branded/Forbiden Path/Witch <br><span id="selection_index71" class="selection_index"></span>Добавлен C4 spawnlist (Только для С4) <br><span id="selection_index72" class="selection_index"></span>Корректный droplist для catacomb и necropolis <br><span id="selection_index73" class="selection_index"></span>Корректные статы для суммонов <br><span id="selection_index74" class="selection_index"></span>Полный C3 Droplist <br><span id="selection_index75" class="selection_index"></span>Полные исправления для Necropolis и Sacrifice <br><span id="selection_index76" class="selection_index"></span>Фикс Punch of Doom (Stun) как на оффе! <br><span id="selection_index77" class="selection_index"></span>Добавлены C4 Скиллы <br><span id="selection_index78" class="selection_index"></span>Html файл для Innadril chamberlain <br><span id="selection_index79" class="selection_index"></span>Full C3 NPC stats from l2db.ru <br><span id="selection_index80" class="selection_index"></span>фикс квеста 231_TestOfMaestro (ещё на тесте) <br><span id="selection_index81" class="selection_index"></span>Fixed Servitor Ultimate Defense <br><span id="selection_index82" class="selection_index"></span>Data_fix фиксы для ToI NPC статов <br><span id="selection_index83" class="selection_index"></span>Фикс Всех скиллов осад. <br><span id="selection_index84" class="selection_index"></span>Фикс многих скиллов <br><span id="selection_index85" class="selection_index"></span>Support с C4 оружий и S grade армором и сетов (нужен специальный патч если будете использовать на С3) <br><span id="selection_index86" class="selection_index"></span>Tattoo Магазин <br><span id="selection_index87" class="selection_index"></span>Добавлены миньоны <br><span id="selection_index88" class="selection_index"></span>Correct reflectDam and absorbDam stacking for nomore 110% reflect dmg <br><span id="selection_index89" class="selection_index"></span>Spawnlist как на офф C3 для Catacomb/Necropolis <br><br><span id="selection_index90" class="selection_index"></span>И многое другое!<!--spoiler_text_end--></div><!--/dle_spoiler--><br><br><span id="selection_index91" class="selection_index"></span>Ссылки : <!--dle_leech_begin--><a href="http://u.u.u.studio.cs-la2.ru/engine/go.php?url=aHR0cDovL2RlcG9zaXRmaWxlcy5jb20vZmlsZXMvZmRzb3k4NzZo" target="_blank">скачать с depositfiles</a><!--dle_leech_end--></div></div>
+      <div class="rate" style="float: none"><div id="ratig-layer-1111"><div class="rating">
+		<ul class="unit-rating">
+		<li class="current-rating" style="width:85px;"><span id="selection_index92" class="selection_index"></span>85</li>
+		<li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#" title="Плохо" class="r1-unit" onclick="doRate(&#39;1&#39;, &#39;1111&#39;); return false;"><span id="selection_index93" class="selection_index"></span>1</a></li>
+		<li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#" title="Приемлемо" class="r2-unit" onclick="doRate(&#39;2&#39;, &#39;1111&#39;); return false;"><span id="selection_index94" class="selection_index"></span>2</a></li>
+		<li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#" title="Средне" class="r3-unit" onclick="doRate(&#39;3&#39;, &#39;1111&#39;); return false;"><span id="selection_index95" class="selection_index"></span>3</a></li>
+		<li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#" title="Хорошо" class="r4-unit" onclick="doRate(&#39;4&#39;, &#39;1111&#39;); return false;"><span id="selection_index96" class="selection_index"></span>4</a></li>
+		<li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#" title="Отлично" class="r5-unit" onclick="doRate(&#39;5&#39;, &#39;1111&#39;); return false;"><span id="selection_index97" class="selection_index"></span>5</a></li>
+		</ul>
+</div></div></div><a href="javascript:history.go(-1)"><div class="back"></div></a><div class="news_date"><span id="selection_index98" class="selection_index"></span>10  декабря 2009 / Автор: <a onclick="ShowProfile(&#39;MrArt&#39;, &#39;http://u.u.u.studio.cs-la2.ru/user/MrArt/&#39;, &#39;0&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/user/MrArt/">MrArt</a> / Комментариев: 4 / </div>
+<br>
+<div class="news_br"></div>
+
+<div style="margin-left: 15px; margin-right: 15px; margin-top: 25px;">
+<div style="color: #79b13e; font-size: 13px;"><span><b><span id="selection_index99" class="selection_index"></span>Другие новости по теме:</b></span></div>  
+    <ul class="reset">
+      <li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2server/5000-la2nara-x100-sborka.html"><span id="selection_index100" class="selection_index"></span>la2nara x100 Сборка</a></li><li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2server/4774-l2jimpulse-rev-2.html"><span id="selection_index101" class="selection_index"></span>L2JImpulse Rev 2</a></li><li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2server/3933-sborka-servera-abyss-world-team-interlude-reviziya-15-la2base-stable.html"><span id="selection_index102" class="selection_index"></span>Сборка сервера Abyss-World Team Interlude ревизия 1.5 (La2Base) STABLE</a></li><li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2server/1271-l2j-device-20u445.html"><span id="selection_index103" class="selection_index"></span>L2j-Device 2.0u445</a></li><li><a href="http://u.u.u.studio.cs-la2.ru/la2/l2server/1020-greyteam-121a-interlude.html"><span id="selection_index104" class="selection_index"></span>GreyTeam (1.2.1a) - Interlude</a></li>
+    </ul>
+    <br>
+  </div>
+
+      <div class="br_gor"></div><div style="margin: 5px;"><div style="color: #0a8db0; font-size: 13px; float: left;"><b><span id="selection_index105" class="selection_index"></span>Теги: </b></div> <i><a href="http://u.u.u.studio.cs-la2.ru/tags/C3/"><span id="selection_index106" class="selection_index"></span>C3</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Lineage+2+C3/">Lineage 2 C3</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%C8%F1%F5%EE%E4%ED%E8%EA%E8+C3/">Исходники C3</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/MrArt/">MrArt</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Ultimate+Dev+Team/">Ultimate Dev Team</a></i></div>
+
+  
+  <div class="clr berrors" style="margin: 0;"><span id="selection_index107" class="selection_index"></span>
+    Уважаемый посетитель, Вы зашли на сайт как незарегистрированный пользователь.<br><span id="selection_index108" class="selection_index"></span>
+    Мы рекомендуем Вам <a href="http://u.u.u.studio.cs-la2.ru/index.php?do=register">зарегистрироваться</a> либо войти на сайт под своим именем.
+  </div>
+  
+<div id="tabs" style="background: white;" class="ui-tabs ui-widget ui-widget-content ui-corner-all"> 
+  <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"> 
+    <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#tabs-1"><span id="selection_index109" class="selection_index"></span>Коментарии сайта</a></li> 
+    <li class="ui-state-default ui-corner-top"><a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#tabs-2"><span id="selection_index110" class="selection_index"></span>Основные соц. сети</a></li> 
+  </ul> 
+  <div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom"> 
+   <a name="comment"></a><form method="post" action="" name="dlemasscomments" id="dlemasscomments"><div id="dle-comments-list">
+<div id="comment-id-1422"><div style="padding: 7px; background: white;">
+  <table style="border:0; float: none; vertical-align:inherit; width: 100%;"><tbody><tr><td style="width: 100px; font-size: 10px"><p align="center"><img style="max-width: 80px;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/foto_1038.jpg" alt=""></p>
+      <p align="center"><span id="selection_index111" class="selection_index"></span>Комментариев: 126
+        Публикаций: 15<br><br></p>
+    </td>
+  <td style="width: 460px;"><div style="border-bottom: 1px gray dotted; height: 35px;"><div style="float: right;"></div><div style="color: gray; float: left; font-size: 10px;"><span id="selection_index112" class="selection_index"></span>Автор: </div><div style="color: gray; float: left; font-size: 10px;"><b><a onclick="ShowProfile(&#39;MrArt&#39;, &#39;http://u.u.u.studio.cs-la2.ru/user/MrArt/&#39;, &#39;0&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/user/MrArt/"><span id="selection_index113" class="selection_index"></span>MrArt</a></b></div><br>
+      <div style="color: gray; float: left; font-size: 10px;"><span id="selection_index114" class="selection_index"></span>Группа: <b>Посетители</b> | 27 декабря 2009 22:25 | Статус: <img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline"></div></div>
+      <div style="min-height: 85px;"><div id="comm-id-1422"><span id="selection_index115" class="selection_index"></span>Ну прям оперативно добавили новость!:)<br> <!--smile:new_year--><img style="vertical-align: middle;border: none;" alt="new_year" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/new_year.gif"><!--/smile--></div></div>
+      </td>
+    </tr></tbody></table>
+</div>
+<div class="br_gor"></div></div><div id="comment-id-1424"><div style="padding: 7px; background: white;">
+  <table style="border:0; float: none; vertical-align:inherit; width: 100%;"><tbody><tr><td style="width: 100px; font-size: 10px"><p align="center"><img style="max-width: 80px;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/foto_6769.gif" alt=""></p>
+      <p align="center"><span id="selection_index116" class="selection_index"></span>Комментариев: 42
+        Публикаций: 6<br><br></p>
+    </td>
+  <td style="width: 460px;"><div style="border-bottom: 1px gray dotted; height: 35px;"><div style="float: right;"></div><div style="color: gray; float: left; font-size: 10px;"><span id="selection_index117" class="selection_index"></span>Автор: </div><div style="color: gray; float: left; font-size: 10px;"><b><a onclick="ShowProfile(&#39;Punisher74&#39;, &#39;http://u.u.u.studio.cs-la2.ru/user/Punisher74/&#39;, &#39;0&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/user/Punisher74/"><span id="selection_index118" class="selection_index"></span>Punisher74</a></b></div><br>
+      <div style="color: gray; float: left; font-size: 10px;"><span id="selection_index119" class="selection_index"></span>Группа: <b>Посетители</b> | 28 декабря 2009 12:49 | Статус: <img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline"></div></div>
+      <div style="min-height: 85px;"><div id="comm-id-1424"><span id="selection_index120" class="selection_index"></span>чет как то мало веся исходники :)</div></div>
+      </td>
+    </tr></tbody></table>
+</div>
+<div class="br_gor"></div></div><div id="comment-id-1434"><div style="padding: 7px; background: white;">
+  <table style="border:0; float: none; vertical-align:inherit; width: 100%;"><tbody><tr><td style="width: 100px; font-size: 10px"><p align="center"><img style="max-width: 80px;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/foto_1038.jpg" alt=""></p>
+      <p align="center"><span id="selection_index121" class="selection_index"></span>Комментариев: 126
+        Публикаций: 15<br><br></p>
+    </td>
+  <td style="width: 460px;"><div style="border-bottom: 1px gray dotted; height: 35px;"><div style="float: right;"></div><div style="color: gray; float: left; font-size: 10px;"><span id="selection_index122" class="selection_index"></span>Автор: </div><div style="color: gray; float: left; font-size: 10px;"><b><a onclick="ShowProfile(&#39;MrArt&#39;, &#39;http://u.u.u.studio.cs-la2.ru/user/MrArt/&#39;, &#39;0&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/user/MrArt/"><span id="selection_index123" class="selection_index"></span>MrArt</a></b></div><br>
+      <div style="color: gray; float: left; font-size: 10px;"><span id="selection_index124" class="selection_index"></span>Группа: <b>Посетители</b> | 28 декабря 2009 20:45 | Статус: <img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline"></div></div>
+      <div style="min-height: 85px;"><div id="comm-id-1434"><b><span id="selection_index125" class="selection_index"></span>Punisher74</b> потому что это исходники С3 а не Финалки или ещё каких либо!:)<br> <!--smile:new_year--><img style="vertical-align: middle;border: none;" alt="new_year" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/new_year.gif"><!--/smile--></div></div>
+      </td>
+    </tr></tbody></table>
+</div>
+<div class="br_gor"></div></div><div id="comment-id-14916"><div style="padding: 7px; background: white;">
+  <table style="border:0; float: none; vertical-align:inherit; width: 100%;"><tbody><tr><td style="width: 100px; font-size: 10px"><p align="center"><img style="max-width: 80px;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/noavatar.png" alt=""></p>
+      <p align="center"><span id="selection_index126" class="selection_index"></span>Комментариев: 48
+        Публикаций: 2<br><br></p>
+    </td>
+  <td style="width: 460px;"><div style="border-bottom: 1px gray dotted; height: 35px;"><div style="float: right;"></div><div style="color: gray; float: left; font-size: 10px;"><span id="selection_index127" class="selection_index"></span>Автор: </div><div style="color: gray; float: left; font-size: 10px;"><b><a onclick="ShowProfile(&#39;gumacuk15&#39;, &#39;http://u.u.u.studio.cs-la2.ru/user/gumacuk15/&#39;, &#39;0&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/user/gumacuk15/"><span id="selection_index128" class="selection_index"></span>gumacuk15</a></b></div><br>
+      <div style="color: gray; float: left; font-size: 10px;"><span id="selection_index129" class="selection_index"></span>Группа: <b>Посетители</b> | 22 июля 2010 19:59 | Статус: <img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline"></div></div>
+      <div style="min-height: 85px;"><div id="comm-id-14916"><span id="selection_index130" class="selection_index"></span>Продаю чистые исходники L2DC rev.4799.Хроники Gracia Epilogue.<br><br><span id="selection_index131" class="selection_index"></span>Здесь смотрим фиксы : http://www.l2dcproject.com/category/changelog/<br><br><span id="selection_index132" class="selection_index"></span>Цена 300 wmz.<br><br><span id="selection_index133" class="selection_index"></span>Здесь не стану ничего доказывать , поэтому , если кого интересует , то в ICQ 329-578-346 все обговорим.<br><span id="selection_index134" class="selection_index"></span>Любые доказательства на наличие исходников предоставлю.(Удаленное подключение (TeamWiever) , для просмотра , тесты и тогдалие)</div></div>
+      </td>
+    </tr></tbody></table>
+</div>
+<div class="br_gor"></div></div>
+<div id="dle-ajax-comments"></div>
+</div></form>
+
+<!--dlenavigationcomments-->
+  <div class="br_gor"></div> 
+<div style="color: #0a8db0; font-size: 13px; margin-left: 5px;"><b><span id="selection_index135" class="selection_index"></span>Добавление комментария:</b></div>
+<div class="br_gor"></div>
+<!--dleaddcomments-->
+  </div> 
+  <div id="tabs-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"> 
+ <div id="baseform">
+   <div id="disqus_thread" style="padding: 10px;"></div>
+	   <script type="text/javascript"><span id="selection_index136" class="selection_index"></span>
+		  VK.init({apiId: 2791251, onlyWidgets: true});
+		</script>
+
+		<!-- Put this div tag to the place, where the Comments block will be -->
+		<div id="vk_comments" style="height: 143px; width: 585px; background-image: none; background-position: initial initial; background-repeat: initial initial;"><iframe name="fXDe8c3e" frameborder="0" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/widget_comments.htm" width="585" height="133" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 143px;"></iframe></div>
+		<script type="text/javascript"><span id="selection_index137" class="selection_index"></span>
+		VK.Widgets.Comments("vk_comments", {limit: 10, width: "585", attach: "*"});
+		</script>
+</div><br>
+</div> <div style="margin: 10px;">
+<b><span id="selection_index138" class="selection_index"></span>Информация</b><br><span id="selection_index139" class="selection_index"></span>
+Посетители, находящиеся в группе <b>Гости</b>, не могут оставлять комментарии к данной публикации.
+</div></div>
+					 <center>
+						<!-- OYY.ru --><script type="text/javascript"><span id="selection_index140" class="selection_index"></span><!--
+						oyy_banner_id = '11828';
+						document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+						//-->
+						</script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/oyy(2).js"></script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/saved_resource(2)"></script><style type="text/css">#oyy11828{width:468px!important;}#oyy11828 .oyyban,#oyy11828 img{width:468px!important;height:60px!important;overflow:hidden!important;}#oyy11828 .zag{text-align:center!important;}#oyy11828 .zag img{width:468px!important;}#oyy11828 a,#oyy11828 a:hover{color:#FF0000!important;}#oyy11828 span{width:438px!important;}#oyy11828 span a,#oyy11828 span a:hover{color:#FFFFFF!important;}#oyy11828 .oyyad{background-color:#666666!important;}</style><div id="oyy11828" class="oyyb"><div class="oyyban"><a href="http://ad.oyy.ru/adc/OTg5NSU3QzExODI4JTdDNTQyMjYlN0NhdXJlbi13b3JsZC5ydSUyRmlsJTJGaW5kZXgucGhw" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/54226.gif" title="auren x30 1"></a></div><div class="oyyad"><span><a href="http://www.oyy.ru/11828/" target="_blank"><span id="selection_index141" class="selection_index"></span>реклама на сайте</a></span><a href="http://www.oyy.ru/" target="_blank"><span id="selection_index142" class="selection_index"></span>ой!</a></div></div>
+					</center>
+				</div>
+			</div>
+		</div></div></td>
+		<td style="vertical-align: top; background: url(/templates/csla2/images/right_bg.png) repeat-y">
+		
+			<!-- OYY.ru --><script type="text/javascript"><!--
+			oyy_banner_id = '15445';
+			document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+			//-->
+			</script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/oyy(3).js"></script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/saved_resource(3)"></script><style type="text/css">#oyy15445{width:240px!important;}#oyy15445 .oyyban,#oyy15445 img{width:240px!important;height:400px!important;overflow:hidden!important;}#oyy15445 .zag{text-align:center!important;}#oyy15445 .zag img{width:240px!important;}#oyy15445 a,#oyy15445 a:hover{color:#FF0000!important;}#oyy15445 span{width:210px!important;}#oyy15445 span a,#oyy15445 span a:hover{color:#FFFFFF!important;}#oyy15445 .oyyad{background-color:#666666!important;}</style><div id="oyy15445" class="oyyb"><div class="oyyban"><a href="http://ad.oyy.ru/adc/OTg5NSU3QzE1NDQ1JTdDNDYwMTclN0N3d3cuZGktbmV0LnJ1JTJGY29sbG9jYXRpb24lMkYlN0NiYW5uZXI" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/46017.gif" title="Размещение (colo) и Аренда серверов"></a></div><div class="oyyad"><span><a href="http://www.oyy.ru/15445/" target="_blank">реклама на сайте</a></span><a href="http://www.oyy.ru/" target="_blank">ой!</a></div></div>
+			
+			<div id="aside">
+				<!--
+            <div class="aside_top_bg">
+              <div class="soc_block">
+                <div class="facebook">
+                </div>
+                <div class="twitter">
+                </div>
+                <div class="vk">
+                </div>
+              </div>
+            </div> -->
+
+				<div class="tit">
+					 ОПРОСЫ <br>
+					<a onclick="ShowAllVotes(); return false;">
+					<img style="position:relative; left: 70px; top: -24px;" title="Все опросы и результаты" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/vote_b.png">
+					</a>
+				</div>
+				 <script language="javascript" type="text/javascript">
+<!--
+function doVote( event ){
+
+	
+	var vote_check = $('#dle-vote input:radio[name=vote_check]:checked').val();
+
+	ShowLoading('');
+
+	$.get(dle_root + "engine/ajax/vote.php", { vote_id: "11", vote_action: event, vote_check: vote_check, vote_skin: dle_skin }, function(data){
+
+		HideLoading('');
+
+		$("#vote-layer").fadeOut(500, function() {
+			$(this).html(data);
+			$(this).fadeIn(500);
+		});
+
+	});
+}
+//-->
+</script><div id="vote-layer"><div id="votes" class="block" style="margin-bottom: 6px;">
+<form method="post" name="vote_result" action="">
+        <input type="hidden" name="vote_action" value="results">
+        <input type="hidden" name="vote_id" value="1">
+      </form>
+    </div>
+<p style="height: 40px; border-bottom: 1px #c2cfd2 solid; margin-left: 15px; margin-right: 15px;">Как в относитесь к цензуре в Интернете?</p>
+<div style="margin-left: 15px; margin-right: 15px;">
+      <form method="post" name="vote" action="">
+      <div id="dle-vote"><div class="vote"><input name="vote_check" type="radio" checked="checked" value="0"> Я считаю, что цензуры в Интернете быть не должно.</div><div class="vote"><input name="vote_check" type="radio" value="1"> Я считаю, цензура должна быть.</div><div class="vote"><input name="vote_check" type="radio" value="2"> Мне все равно.</div></div>
+      <br>
+      
+      
+        <input type="hidden" name="vote_action" value="vote">
+        <input type="hidden" name="vote_id" id="vote_id" value="1">
+      <p align="center"><a onclick="doVote(&#39;vote&#39;); return false;"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/make_vote.png"></a></p>
+      </form>
+      
+    </div>
+  <div class="dbtm">&nbsp;</div></div>
+				 
+				<!-- ой Start -->
+				<!-- OYY.ru --><script type="text/javascript"><!--
+				oyy_banner_id = '11144';
+				document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+				//-->
+				</script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/oyy(4).js"></script><script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/saved_resource(4)"></script><style type="text/css">#oyy11144{width:240px!important;}#oyy11144 .oyyban,#oyy11144 img{width:240px!important;height:400px!important;overflow:hidden!important;}#oyy11144 .zag{text-align:center!important;}#oyy11144 .zag img{width:240px!important;}#oyy11144 a,#oyy11144 a:hover{color:#FF0000!important;}#oyy11144 span{width:210px!important;}#oyy11144 span a,#oyy11144 span a:hover{color:#FFFFFF!important;}#oyy11144 .oyyad{background-color:#666666!important;}</style><div id="oyy11144" class="oyyb"><div class="oyyban"><a href="http://ad.oyy.ru/adc/OTg5NSU3QzExMTQ0JTdDNDMyMDElN0N3d3cuZGktbmV0LnJ1JTJGY29sbG9jYXRpb24lMkYlN0NiYW5uZXI" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/43201.gif" title="Размещение (colo) и Аренда серверов"></a></div><div class="oyyad"><span><a href="http://www.oyy.ru/11144/" target="_blank">реклама на сайте</a></span><a href="http://www.oyy.ru/" target="_blank">ой!</a></div></div>
+				  <!-- ой End -->
+
+					<style>
+					#oyy15445, #oyy11144 {
+						width: 210px!important;
+						margin-top:10px;
+					}
+					#oyy15445 .oyyban,#oyy15445 img, #oyy11144 .oyyban,#oyy11144 img {
+						width: 210px!important;
+						height: 350px!important;
+						overflow: hidden!important;
+					}
+					#oyy15445 .zag img, #oyy11144 .zag img {
+						width: 210px!important;
+					}
+					#oyy15445 span,#oyy11144 span {
+						width: 180px!important;
+					}
+					#oyy10904 { 
+					left: 13px;
+					position: relative;
+					top: -94px;
+					width: 468px !important;
+					}
+					</style>				  
+  
+  				<script type="text/javascript" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/openapi(1).js"></script>
+
+				<br>
+				<!-- VK Widget -->
+				<div id="vk_groups" style="height: 290px; width: 210px; background-image: none; background-position: initial initial; background-repeat: initial initial;"><iframe name="fXD3aa3e" frameborder="0" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/widget_community.htm" width="210" height="200" scrolling="no" id="vkwidget2" style="overflow: hidden; height: 290px;"></iframe></div>
+				<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 0, width: "210", height: "290"}, 26478368);
+				</script> 
+
+
+				<script src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/all.js"></script><fb:like-box href="http://www.facebook.com/pages/Официальная-группа-портала-cs-la2ru/127350330674513" width="210" show_faces="true" stream="false" header="true" fb-xfbml-state="rendered" class="fb_iframe_widget"><span style="height: 290px; width: 210px;"><iframe id="f723fb0d" name="f37457d5cc" scrolling="no" style="border: none; overflow: hidden; height: 290px; width: 210px;" class="fb_ltr" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/likebox.htm"></iframe></span></fb:like-box> 				
+				
+				<div class="tit">
+					 КАЛЕНДАРЬ СОБЫТИЙ
+				</div>
+				
+				<div id="calendar-layer"><table id="calendar" cellpadding="3" class="calendar"><tbody><tr><th colspan="7" class="monthselect"><a class="monthlink" onclick="doCalendar(&#39;02&#39;,&#39;2013&#39;,&#39;right&#39;); return false;" href="http://u.u.u.studio.cs-la2.ru/2013/02/" title="Предыдущий месяц">«</a>&nbsp;&nbsp;&nbsp;&nbsp;Март 2013&nbsp;&nbsp;&nbsp;&nbsp;»</th></tr><tr><th class="workday">Пн</th><th class="workday">Вт</th><th class="workday">Ср</th><th class="workday">Чт</th><th class="workday">Пт</th><th class="weekday">Сб</th><th class="weekday">Вс</th></tr><tr><td colspan="4">&nbsp;</td><td class="day">1</td><td class="weekday">2</td><td class="weekday">3</td></tr><tr><td class="day-active-v"><a class="day-active-v" href="http://u.u.u.studio.cs-la2.ru/2013/03/04/" title="Все посты за 04 марта 2013">4</a></td><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="weekday">9</td><td class="day-active"><a class="day-active" href="http://u.u.u.studio.cs-la2.ru/2013/03/10/" title="Все посты за 10 марта 2013">10</a></td></tr><tr><td class="day day-current">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="weekday">16</td><td class="weekday">17</td></tr><tr><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="weekday">23</td><td class="weekday">24</td></tr><tr><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="weekday">30</td><td class="weekday">31</td></tr></tbody></table></div>
+				
+				<div class="tit">
+					 ОБЛАКО ТЕГОВ
+				</div>
+				<div style="margin-left: 10px; margin-right: 10px; margin-top:5px;">
+					 <a href="http://u.u.u.studio.cs-la2.ru/tags/Aion/" class="clouds_small" title="Найдено публикаций: 74">Aion</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Basist/" class="clouds_xlarge" title="Найдено публикаций: 136">Basist</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/by/" class="clouds_medium" title="Найдено публикаций: 100">by</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/c6/" class="clouds_xsmall" title="Найдено публикаций: 16">c6</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/CS/" class="clouds_xsmall" title="Найдено публикаций: 24">CS</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/cs+1.6/" class="clouds_small" title="Найдено публикаций: 61">cs 1.6</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/CSDM/" class="clouds_xsmall" title="Найдено публикаций: 16">CSDM</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Freya/" class="clouds_xsmall" title="Найдено публикаций: 19">Freya</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Goddess+of+Destruction/" class="clouds_xsmall" title="Найдено публикаций: 23">Goddess of Destruction</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/High+Five/" class="clouds_xsmall" title="Найдено публикаций: 16">High Five</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Interlude/" class="clouds_large" title="Найдено публикаций: 124">Interlude</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/java/" class="clouds_xsmall" title="Найдено публикаций: 41">java</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/l2/" class="clouds_xsmall" title="Найдено публикаций: 23">l2</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/L2J/" class="clouds_xsmall" title="Найдено публикаций: 17">L2J</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/L2jFrozen/" class="clouds_xsmall" title="Найдено публикаций: 24">L2jFrozen</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/l2jserver/" class="clouds_xsmall" title="Найдено публикаций: 30">l2jserver</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/la2/" class="clouds_xsmall" title="Найдено публикаций: 25">la2</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/lekano/" class="clouds_xsmall" title="Найдено публикаций: 17">lekano</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Lineage/" class="clouds_xsmall" title="Найдено публикаций: 26">Lineage</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/LIneage+2/" class="clouds_xsmall" title="Найдено публикаций: 15">LIneage 2</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/lunix/" class="clouds_xsmall" title="Найдено публикаций: 26">lunix</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/NPC/" class="clouds_xsmall" title="Найдено публикаций: 16">NPC</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/psd/" class="clouds_xsmall" title="Найдено публикаций: 21">psd</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Public/" class="clouds_small" title="Найдено публикаций: 67">Public</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Public+server/" class="clouds_xsmall" title="Найдено публикаций: 34">Public server</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/RIP/" class="clouds_xsmall" title="Найдено публикаций: 30">RIP</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Server/" class="clouds_large" title="Найдено публикаций: 123">Server</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/skater/" class="clouds_small" title="Найдено публикаций: 62">skater</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/STRESS/" class="clouds_xsmall" title="Найдено публикаций: 19">STRESS</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/Vetal/" class="clouds_small" title="Найдено публикаций: 50">Vetal</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/web/" class="clouds_xsmall" title="Найдено публикаций: 19">web</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%C3%EE%F2%EE%E2%FB%E5+%D1%E5%F0%E2%E5%F0%E0/" class="clouds_xsmall" title="Найдено публикаций: 16">Готовые Сервера</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%C4%E8%E7%E0%E9%ED/" class="clouds_xsmall" title="Найдено публикаций: 24">Дизайн</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%D8%E0%E1%EB%EE%ED/" class="clouds_xsmall" title="Найдено публикаций: 32">Шаблон</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%E4%E8%E7%E0%E9%ED+%ED%E0+%E7%E0%EA%E0%E7/" class="clouds_xsmall" title="Найдено публикаций: 16">дизайн на заказ</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%EF%E0%E1%EB%E8%EA+%F1%E5%F0%E2%E5%F0/" class="clouds_xsmall" title="Найдено публикаций: 20">паблик сервер</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%F1%E5%F0%E2%E5%F0/" class="clouds_small" title="Найдено публикаций: 56">сервер</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%F1%E5%F0%E2%E5%F0+cs/" class="clouds_xsmall" title="Найдено публикаций: 36">сервер cs</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%F1%E5%F0%E2%E5%F0+cs+1.6/" class="clouds_xsmall" title="Найдено публикаций: 18">сервер cs 1.6</a>, <a href="http://u.u.u.studio.cs-la2.ru/tags/%F1%E5%F0%E2%E5%F0%E0+cs/" class="clouds_xsmall" title="Найдено публикаций: 17">сервера cs</a><br><br><a href="http://u.u.u.studio.cs-la2.ru/tags/">Показать все теги</a>
+				</div>
+				
+				<div class="tit">
+					 НАША КНОПКА
+				</div>
+				<center>
+					<textarea>&lt;a href="http://cs-la2.ru" target="_blank" title="Cs-la2.ru l У нас есть все что нужно для создание сервера Lineage 2 и cs 1.6"&gt;&lt;img src="/banner.gif" /&gt;&lt;/a&gt;</textarea>
+					<br>
+					<a href="http://cs-la2.ru/" target="_blank" title="Cs-la2.ru l У нас есть все что нужно для создание сервера Lineage 2 и cs 1.6"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/banner.gif"></a>
+				</center>
+				
+				
+				<div class="tit">
+					 КОНТАКТЫ
+				</div>
+				<div style="margin-left: 10px; margin-top: 10px;">
+					 ICQ: 76-91-92 <br>
+					 E-mail: admin[a]cs-la2.ru
+				</div>
+				<br><br>
+			</div>
+		</td>
+	</tr>
+	</tbody></table>
+	<div class="f_menu_l">
+	</div>
+	<div class="f_menu_r">
+	</div>
+	<div class="f_menu">
+		<table class="f_menu_bg">
+		<tbody><tr>
+			<td class="line_f">
+			</td>
+			<td class="f_menu1">
+				<a href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#">
+				Главная </a>
+			</td>
+			<td class="line_f">
+			</td>
+			<td class="f_menu1">
+				<a href="http://forum.cs-la2.ru/">
+				Форум </a>
+			</td>
+			<td class="line_f">
+			</td>
+			<td class="f_menu1">
+				<a href="http://diserror.ru/">
+				WEB-студия </a>
+			</td>
+			
+			<td class="line_f">
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+	<div id="footer">
+		<div class="copy">
+			<b>
+			Все права защищены © 2009-2013 </b>
+			<br>
+			Копирование материалов запрещено. 
+
+		</div>
+		<marquee id="friends_site" direction="up" scrollamount="2" onmouseover="this.scrollAmount=0" onmouseout="this.scrollAmount=2" width="180" height="200">
+			<noindex>
+			
+			<a href="http://o-kvadrat.ru/" target="_blank" title="Веб-студия «КРУГЛЫЙ КВАДРАТ»"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/kvadrat.gif"> </a>
+			<a href="http://la2-zone.ru/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/la2-zone.ru.gif"></a>
+			<a href="http://l2maxi.ru/" target="_blank" title="Lineage 2: сервера, база знаний, дополнения и программы на портале L2Maxi"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/knopka.gif"></a>
+			<a href="http://l2-scripts.ru/">
+			<img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/31420851.gif" style="border:0;height:31px;width:88px;"></a>
+			<a href="http://la2fake.ru/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/5.jpg" width="88px" height="31px" border="0"></a>
+			<a href="http://kos-master.ru/" target="_blank" title="kos-master"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/bann.gif"></a>
+			<a href="http://l2anons.ru/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/l2anons.gif" width="88" height="31" border="0"></a>
+			<a href="http://la2fm.ru/" target="_blank"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/knopka(1).gif" width="88" height="31" border="0"></a>
+			
+			<!--Rating@Mail.ru counter-->
+			<script language="javascript" type="text/javascript"><!--
+			d=document;var a='';a+=';r='+escape(d.referrer);js=10;//--></script>
+			<script language="javascript1.1" type="text/javascript"><!--
+			a+=';j='+navigator.javaEnabled();js=11;//--></script>
+			<script language="javascript1.2" type="text/javascript"><!--
+			s=screen;a+=';s='+s.width+'*'+s.height;
+			a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script>
+			<script language="javascript1.3" type="text/javascript"><!--
+			js=13;//--></script><script language="javascript" type="text/javascript"><!--
+			d.write('<a href="http://top.mail.ru/jump?from=1643755" target="_top">'+
+			'<img src="http://d4.c1.b9.a1.top.mail.ru/counter?id=1643755;t=210;js='+js+
+			a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" '+
+			'height="31" width="88"></a>');if(11<js)d.write('<'+'!-- ');//--></script><a href="http://top.mail.ru/jump?from=1643755" target="_top"><img src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/counter" alt="Рейтинг@Mail.ru" border="0" height="31" width="88"></a><!-- 
+			<noscript><a target="_top" href="http://top.mail.ru/jump?from=1643755">
+			<img src="http://d4.c1.b9.a1.top.mail.ru/counter?js=na;id=1643755;t=210" 
+			height="31" width="88" border="0" alt="Рейтинг@Mail.ru"></a></noscript>
+			<script language="javascript" type="text/javascript"><!--
+			if(11<js)d.write('--'+'>');//-->
+			<!--// Rating@Mail.ru counter-->
+			</noindex>
+		</marquee>
+	</div>
+	<div class="footer_r">
+		<a class="up" href="javascript:scroll(0,0);">
+		&nbsp; </a>
+	</div>
+	<div class="footer">
+
+	</div>
+</div>
+
+
+
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
+</div><div id="share-popup" style="display:none"><div class="social"><p>Поделиться ссылкой на выделенный текст</p><ul><li><a href="http://twitter.com/share?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html&text=%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%8F%D0%B2%D0%B0%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%20C3%20%D0%BE%D1%82%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Ultimate%20Dev.%20Team" class="tw" onclick="window.open(&#39;http://twitter.com/share?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html&amp;text=%D0%98%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%8F%D0%B2%D0%B0%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%20C3%20%D0%BE%D1%82%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20Ultimate%20Dev.%20Team&#39;,&#39;plusshare&#39;,&#39;width=650,height=400,resizable=1,scrollbars=1,left=&#39;+(screen.availWidth/2-325)+&#39;,top=&#39;+(screen.availHeight/2-200)+&#39;&#39;);return false;"><span></span>Twitter</a></li><li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html" class="fb" onclick="window.open(&#39;http://www.facebook.com/share.php?u=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html&#39;,&#39;plusshare&#39;,&#39;width=650,height=400,resizable=1,scrollbars=1,left=&#39;+(screen.availWidth/2-325)+&#39;,top=&#39;+(screen.availHeight/2-200)+&#39;&#39;);return false;"><span></span>Facebook</a></li><li><a href="http://vk.com/share.php?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html" class="vk" onclick="window.open(&#39;http://vk.com/share.php?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html&#39;,&#39;plusshare&#39;,&#39;width=650,height=400,resizable=1,scrollbars=1,left=&#39;+(screen.availWidth/2-325)+&#39;,top=&#39;+(screen.availHeight/2-200)+&#39;&#39;);return false;"><span></span>Вконтакте</a></li><li><a href="https://plus.google.com/share?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html" class="gp" onclick="window.open(&#39;https://plus.google.com/share?url=http%3A%2F%2Fu.u.u.studio.cs-la2.ru%2Fla2%2Fl2ishodniki%2F1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html&#39;,&#39;plusshare&#39;,&#39;width=650,height=500,resizable=1,scrollbars=1,left=&#39;+(screen.availWidth/2-325)+&#39;,top=&#39;+(screen.availHeight/2-250)+&#39;&#39;);return false;"><span></span>Google+</a></li></ul></div><div class="link"><p>Прямая ссылка:</p><a href="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6.htm">http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html<ins></ins></a><span>Нажмите правой клавишей мыши и выберите «Копировать ссылку»</span></div></div><a id="txtselect_marker" href="http://u.u.u.studio.cs-la2.ru/la2/l2ishodniki/1111-isxodniki-yava-servera-c3-ot-komandy-ultimate-dev.html#"></a><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: none;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/xd_arbiter.htm"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: none;" src="./Исходники ява сервера C3 от команды Ultimate Dev. Team » Cs-la2.ru l У нас есть все что нужно для создания сервера Lineage 2 и cs 1.6_files/xd_arbiter(1).htm"></iframe></div></div></div></body></html>

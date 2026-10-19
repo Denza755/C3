@@ -1,0 +1,20 @@
+<html><body>
+
+<font color="LEVEL">[ tmp_forum_data post>topic topic.title ]</font>
+
+<br>
+
+<table width=100%><tr>
+<td><a action="bypass -h jbf_forums-list">Форумы</a></td>
+<td>»</td>
+<td><a action="bypass -h jbf_show-forum [ tmp_forum_data post>topic topic>forum dup ]">[ forum.name 14 str-left-cut ]</a></td>
+<td>»</td>
+<td><a action="bypass -h jbf_show-topic [ tmp_forum_data post>topic dup ]">[ topic.title 14 str-left-cut ]</a></td>
+</tr></table>
+
+<br>
+
+<table width=90%><tr><td>
+[ "SELECT message FROM punbb.posts WHERE id=" tmp_forum_data s+ query drop list> drop 'message' m@ ]
+</td></tr></table>
+</body></html>

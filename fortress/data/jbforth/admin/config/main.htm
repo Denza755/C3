@@ -1,0 +1,24 @@
+<html>
+<center>
+<table width=100%><tr>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td width=180><center>Server configuration</center></td>
+<td width=40><button value="Back" action="bypass -h admin_server" width=40 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr></table>
+<br><br><br>
+</center>
+
+*Дроп:* [forth 'jbforth/admin/config/drop-npc.htm' show|NPC] / [forth 'jbforth/admin/config/drop-players.htm' show|игроков] / [forth 'jbforth/admin/config/drop-pk.htm' show|ПК]%%
+*Прочее:* [admin_altconfig|Доп.настройки]%%
+
+<table width=100%>
+[ 'ALLOW_DISCARDITEM' 'Allow Discard Item' htm-config-boolean-parse ]
+[ 'DEBUG' 'Debug info' htm-config-boolean-parse ]
+[ 'DEVELOPER' 'Developer info' htm-config-boolean-parse ]
+[ 'ENABLE_TRANSLIT_ENGINE' 'Translit engine' htm-config-boolean-parse ]
+[ 'RATE_DROP_EQUIPMENT' 'Rate drop equipment' htm-config-float-parse ]
+[ 'RATE_RAID_REGEN_HP' 'Rate raid regen HP' htm-config-float-parse ]
+[ 'RATE_RAID_REGEN_MP' 'Rate raid regen MP' htm-config-float-parse ]
+</table>
+[ "jbforth/admin/config/main.htm" to dialog-back "" ]
+</body></html>
